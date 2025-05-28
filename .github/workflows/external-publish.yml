@@ -1,9 +1,8 @@
 name: Merge External Publish
 
 on:
-  push:
-    branches:
-      - "**" # Trigger for all branches
+  repository_dispatch:
+    types: [subtree-published]
 
 jobs:
   merge_external_publish:
@@ -19,6 +18,9 @@ jobs:
           git fetch origin main
           git checkout origin/main -- .github/scripts/external_publish_*.sh
           git reset HEAD .github/scripts/external_publish_*.sh
+
+      - name: Set GITHUB_REF_NAME for compatibility
+        run: echo "GITHUB_REF_NAME=${{ github.event.client_payload.branch }}" >> $GITHUB_ENV
 
       - name: Setup (before script)
         run: bash .github/scripts/external_publish_before.sh | tee -a job.log
