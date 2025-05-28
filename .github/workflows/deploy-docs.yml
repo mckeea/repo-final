@@ -1,0 +1,26 @@
+name: Deploy Documentation
+
+on:
+  push:
+    branches:
+      - develop
+      - test
+      - main
+
+jobs:
+  deploy_docs:
+    runs-on: ubuntu-latest
+    container:
+      image: mckeea/quarto-doc-builder:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Docs
+        run: .github/scripts/build-docs.sh
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
+          target-folder: ${{ github.ref_name }}
+          clean: false
+          token: ${{ secrets.GITHUB_TOKEN }}

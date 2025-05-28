@@ -1,0 +1,25 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - test
+      - main
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container:
+      image: node:23
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup release environment
+            run: |
+              npm install --no-save semantic-release \
+                @semantic-release/git \
+                @semantic-release/changelog \
+                @semantic-release/exec \
+                @semantic-release/github
+              export GH_TOKEN="${{ secrets.GH_RELEASE_TOKEN }}"
+      - name: Run Semantic Release
+        run: echo "costam" #npx semantic-release

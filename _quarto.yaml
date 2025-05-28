@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: _site
+  execute-dir: project
+  render:
+    - DOCS/index.qmd
+    - DOCS/guidelines/*.qmd
+    - DOCS/products/*.qmd
+    - DOCS/**/*.qmd
+
+resources:
+  - assets/ # Ensure images are copied to _site/
+
+website:
+  title: "Technical Library"
+  site-url: "https://eea.github.io/CLMS_documents"
+  page-navigation: true
+  navbar:
+    background: "#a0b128"
+    foreground: "#ffffff"
+    search: false
+    left:
+      - text: "Guidelines"
+        href: DOCS/guidelines/index.qmd
+
+format:
+  html:
+    output-dir: ../_site # Moves rendered files outside src/
+    include-before-body: DOCS/styles/main-logos.html
+    css: DOCS/styles/main.css
+
+filters:
+  - .github/scripts/filters/extract-images.lua

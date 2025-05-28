@@ -1,0 +1,10 @@
+---
+title: "Documents"
+listing:
+  type: table
+  contents:
+    - "guidelines/index.qmd"
+    - "products/index.qmd"
+  sort: title
+  fields: [title]
+---

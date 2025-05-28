@@ -1,0 +1,31 @@
+name: Merge External Publish
+
+on:
+  push:
+    branches:
+      - publish-*
+
+jobs:
+  merge_external_publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Restore needed merge scripts from main
+        run: |
+          git fetch origin main
+          git checkout origin/main -- .github/scripts/external_publish_*.sh
+          git reset HEAD .github/scripts/external_publish_*.sh
+
+      - name: Setup (before script)
+        run: bash .github/scripts/external_publish_before.sh | tee -a job.log
+
+      - name: Merge publish content
+        run: bash .github/scripts/external_publish_main.sh | tee -a job.log
+
+      - name: Cleanup
+        run: |
+          bash .github/scripts/external_publish_after.sh || true
+          #bash .github/scripts/external_publish_report_failure.sh || true
