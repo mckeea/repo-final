@@ -28,6 +28,9 @@ git pull origin develop
 mkdir -p tmp_publish
 git archive "$PUBLISH_COMMIT" DOCS/$PROJECT_NAME | tar -x -C tmp_publish
 
+# ✅ Remove any GitHub workflows injected into the subtree
+rm -rf tmp_publish/DOCS/${PROJECT_NAME}/.github
+
 echo "🔍 Finding modified and deleted files only..."
 MODIFIED_FILES=()
 while IFS= read -r file; do
