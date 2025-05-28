@@ -1,11 +1,8 @@
 name: Merge External Publish
 
 on:
-  workflow_dispatch:
-    inputs:
-      branch:
-        required: true
-        description: "Name of the publish-* branch"
+  repository_dispatch:
+    types: [subtree-published]
 
 jobs:
   merge_external_publish:
