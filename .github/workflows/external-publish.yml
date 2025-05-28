@@ -6,7 +6,7 @@ on:
 
 jobs:
   merge_external_publish:
-    if: startsWith(github.ref, 'refs/heads/publish-')
+    if: startsWith(github.event.client_payload.branch, 'publish-')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
