@@ -3,10 +3,11 @@ name: Merge External Publish
 on:
   push:
     branches:
-      - publish-*
+      - "**" # Trigger for all branches
 
 jobs:
   merge_external_publish:
+    if: startsWith(github.ref, 'refs/heads/publish-')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
