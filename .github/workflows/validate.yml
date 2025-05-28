@@ -54,7 +54,7 @@ jobs:
   notify_failure:
     if: failure() && github.ref_name == 'develop'
     runs-on: ubuntu-latest
-    needs: secure_publish
+    needs: merge_external_publish
     steps:
       - uses: actions/checkout@v4
         with:
