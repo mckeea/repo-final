@@ -3,42 +3,6 @@ set -euo pipefail
 
 source "$(dirname "$0")/helpers/git-utils.sh"
 
-filter_changed_files() {
-  local input_file="$1"
-  local -n exclude_list=$2
-
-  if [[ ! -f "$input_file" ]]; then
-    echo "❌ Input file '$input_file' not found!" >&2
-    return 1
-  fi
-
-  if [[ ! -s "$input_file" ]]; then
-    echo "⚠️ Input file '$input_file' is empty." >&2
-    return 0
-  fi
-
-  # Escape filenames for grep
-  local pattern=""
-  for path in "${exclude_list[@]}"; do
-    local escaped
-    escaped=$(printf '%s\n' "$path" | sed -E 's/[][\.^$*+?(){}|]/\\&/g')
-    pattern+="^${escaped}$|"
-  done
-  pattern="${pattern%|}"
-
-  echo "🔍 Filtering '$input_file' with escaped pattern: $pattern"
-
-  # Filter the file
-  if grep -vE "$pattern" "$input_file" > "${input_file}.filtered"; then
-    mv "${input_file}.filtered" "$input_file"
-    echo "✅ Filtered file saved to '$input_file'"
-  else
-    echo "❌ grep failed with pattern: $pattern" >&2
-    cat "$input_file" || echo "(could not read input file)"
-    return 1
-  fi
-}
-
 
 echo "🚀 Starting validation..."
 PROJECT_NAME=$(echo "$PUBLISH_BRANCH" | sed -E 's/^publish-(.+)-[0-9]{8}-[0-9]{6}$/\1/')
@@ -49,15 +13,8 @@ run_git "fetching develop branch" fetch origin develop
 PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
 echo "PUBLISH_COMMIT: $PUBLISH_COMMIT"
 
-EXCLUDE_FILES=(
-  ".github/workflows/trigger.yml"
-  ".gitignore"
-)
-
-# Build grep pattern
-PATTERN=$(printf '%s\n' "${EXCLUDE_FILES[@]}" | sed -E 's/[][\.^$*+?(){}|]/\\&/g' | sed 's|^|^|' | sed 's|$|$|' | paste -sd'|' -)
-git ls-tree -r --name-only "$PUBLISH_COMMIT" | grep -vE "$PATTERN" > changed-files.txt
-#git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
+git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
+sed -i '/^\.gitignore$/d; /^\.github\/workflows\/trigger\.yml$/d' changed-files.txt
 cat changed-files.txt
 
 INVALID_FILES=$(grep -v "^DOCS/${PROJECT_NAME}/" changed-files.txt || true)
