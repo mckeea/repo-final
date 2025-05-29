@@ -61,7 +61,11 @@ printf '%s\n' "${MODIFIED_FILES[@]}"
 echo "🗑️ Deleted files:"
 printf '%s\n' "${DELETED_FILES[@]}"
 
-for file in "${MODIFIED_FILES[@]}"; do cp "tmp_publish/$file" "$file"; done
+for file in "${MODIFIED_FILES[@]}"; do
+  mkdir -p "$(dirname "$file")"
+  cp "tmp_publish/$file" "$file"; 
+done
+
 if [ "${#DELETED_FILES[@]}" -gt 0 ]; then
     run_git "removing deleted files" rm "${DELETED_FILES[@]}"
 fi
