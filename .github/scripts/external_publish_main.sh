@@ -3,6 +3,20 @@ set -euo pipefail
 
 source "$(dirname "$0")/helpers/git-utils.sh"
 
+filter_changed_files() {
+  local input_file="$1"
+  local -n exclude_list=$2  # Reference to array by name
+
+  # Build exclusion pattern
+  local pattern
+  pattern=$(printf '^%s$|' "${exclude_list[@]}")
+  pattern="${pattern%|}"  # Remove trailing pipe
+
+  # Filter the file
+  grep -vE "$pattern" "$input_file" > "${input_file}.filtered"
+  mv "${input_file}.filtered" "$input_file"
+}
+
 echo "🚀 Starting validation..."
 PROJECT_NAME=$(echo "$PUBLISH_BRANCH" | sed -E 's/^publish-(.+)-[0-9]{8}-[0-9]{6}$/\1/')
 echo "Project: $PROJECT_NAME"
@@ -12,6 +26,16 @@ run_git "fetching develop branch" fetch origin develop
 PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
 echo "PUBLISH_COMMIT: $PUBLISH_COMMIT"
 git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
+
+# Define the list of files to remove
+EXCLUDE_FILES=(
+  ".github/workflows/trigger.yml"
+  ".gitignore"
+)
+
+# Call the function
+filter_changed_files "changed-files.txt" EXCLUDE_FILES
+
 cat changed-files.txt
 
 INVALID_FILES=$(grep -v "^DOCS/${PROJECT_NAME}/" changed-files.txt || true)
@@ -31,6 +55,7 @@ git archive "$PUBLISH_COMMIT" DOCS/$PROJECT_NAME | tar -x -C tmp_publish
 
 # ✅ Remove any GitHub workflows injected into the subtree
 rm -rf tmp_publish/DOCS/${PROJECT_NAME}/.github
+rm -rf tmp_publish/DOCS/${PROJECT_NAME}/.gitignore
 
 echo "🔍 Finding modified and deleted files only..."
 MODIFIED_FILES=()
