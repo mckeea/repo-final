@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GITHUB_REF_NAME: ${{ github.event.client_payload.branch }}
+      PUBLISH_BRANCH: ${{ github.event.client_payload.branch }}
 
     steps:
       - uses: actions/checkout@v4

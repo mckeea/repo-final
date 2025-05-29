@@ -4,7 +4,7 @@ set -euo pipefail
 source "$(dirname "$0")/helpers/git-utils.sh"
 
 echo "🚀 Starting validation..."
-PROJECT_NAME=$(echo "$GITHUB_REF_NAME" | sed -E 's/^publish-(.+)-[0-9]{8}-[0-9]{6}$/\1/')
+PROJECT_NAME=$(echo "$PUBLISH_BRANCH" | sed -E 's/^publish-(.+)-[0-9]{8}-[0-9]{6}$/\1/')
 echo "Project: $PROJECT_NAME"
 
 echo "🔎 Checking files inside publish branch (fast tree scan)..."
@@ -65,10 +65,10 @@ for file in "${MODIFIED_FILES[@]}"; do
 done
 
 COMMIT_MSG=$(cat <<EOF
-[CI Merge] Update DOCS/$PROJECT_NAME from $GITHUB_REF_NAME
+[CI Merge] Update DOCS/$PROJECT_NAME from $PUBLISH_BRANCH
 
 Triggered by: CI Workflow
-Branch: $GITHUB_REF_NAME
+Branch: $PUBLISH_BRANCH
 Commit: $GITHUB_SHA
 Repo: https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA
 EOF
