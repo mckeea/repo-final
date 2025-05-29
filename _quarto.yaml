@@ -27,7 +27,15 @@ website:
     title: Documentation
     contents:
       - DOCS/index.qmd
-      - DOCS/**/**/*.qmd
+      - section: Guidelines
+        contents: DOCS/guidelines/*.qmd
+      - section: Products
+        contents: DOCS/products/*.qmd
+      - section: Other
+        contents: DOCS/*/*.qmd
+
+metadata:
+  sidebar: docs
 
 format:
   html:
