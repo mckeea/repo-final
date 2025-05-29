@@ -25,6 +25,8 @@ jobs:
 
       - name: Setup (before script)
         run: bash .github/scripts/external_publish_before.sh | tee -a job.log
+        env:
+          CI_DEPLOY_KEY: ${{ secrets.CI_DEPLOY_KEY }}
 
       - name: Merge publish content
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
