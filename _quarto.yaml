@@ -23,8 +23,11 @@ website:
       - text: "Guidelines"
         href: DOCS/guidelines/index.qmd
   sidebar:
+    id: docs
+    title: Documentation
     contents:
-      - DOCS/**.qmd
+      - DOCS/index.qmd
+      - DOCS/**/**/*.qmd
 
 format:
   html:
