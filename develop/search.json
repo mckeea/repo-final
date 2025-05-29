@@ -1,54 +1,94 @@
 [
   {
-    "objectID": "DOCS/templates/index.html",
-    "href": "DOCS/templates/index.html",
-    "title": "templates",
-    "section": "",
-    "text": "templates\n\nCLMS_ATBD_Template\nCLMS_PUM_Template",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates"
-    ]
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "Document control information: (internal project use)",
+    "text": "Document control information: (internal project use)\n\nDetails about the management and oversight of the document, including version control, document identifiers, and distribution lists.\n\n\n\n\n\n\n\nDocument Title\nDx.y Product User Manual\n\n\n\n\nProject Title\nCopernicus Land Monitoring Service – “name of the product”\n\n\nDocument Author\nName (Entity)\n\n\nProject Owner\nName (Entity)\n\n\nProject Manager\nName (Entity)\n\n\nDocument Code\nDx.y\n\n\nDocument Version\nx.y\n\n\nDistribution\nParties to whom the document is provided"
   },
   {
-    "objectID": "DOCS/templates/CLMS_PUM_Template-media/index.html",
-    "href": "DOCS/templates/CLMS_PUM_Template-media/index.html",
-    "title": "templates/CLMS_PUM_Template-media",
-    "section": "",
-    "text": "templates/CLMS_PUM_Template-media"
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-approvers-and-reviewers-internal-project-use",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#document-approvers-and-reviewers-internal-project-use",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "Document approver(s) and reviewer(s): (internal project use)",
+    "text": "Document approver(s) and reviewer(s): (internal project use)\n\nNames and roles of individuals who have reviewed and approved the document, ensuring its accuracy, completeness, and compliance with relevant standards.\n\n\n\n\n\n\n\n\n\nName\nRole\nAction\nDate\n\n\n\n\n\nAuthor\n\ndd.mm.yyyy\n\n\n\nReview\n\ndd.mm.yyyy\n\n\n\nApproval\n\ndd.mm.yyyy"
   },
   {
-    "objectID": "DOCS/templates/CLMS_ATBD_Template-media/index.html",
-    "href": "DOCS/templates/CLMS_ATBD_Template-media/index.html",
-    "title": "templates/CLMS_ATBD_Template-media",
-    "section": "",
-    "text": "templates/CLMS_ATBD_Template-media"
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-history-internal-project-use",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#document-history-internal-project-use",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "Document history: (internal project use)",
+    "text": "Document history: (internal project use)\n\nRecord of changes made to the document before the initial published version, including version numbers, dates of revisions, and a summary of modifications.\n\n\n\n\n\n\n\n\n\nVersion\nDate\nCreated by\nShort description of changes\n\n\n\n\n0.1\ndd.mm.yyyy\n\nInitial draft\n\n\n0.2\ndd.mm.yyyy\n\nContent revisions (e.g., structure, formatting)\n\n\n0.3\ndd.mm.yyyy\n\nMinor revisions (e.g., grammar fixes)"
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-history",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#document-history",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "Document history:",
+    "text": "Document history:\n\nRecord of changes made to the document over time after the initial published version, including version numbers, dates of revisions, and a summary of modifications. This table must be only included in the initial PUM published version and without the personal information (“Created by:” filed must be removed).\n\n\n\n\n\n\n\n\nVersion\nDate\nShort description of changes\n\n\n\n\n1.0\ndd.mm.yyyy\nInitial published issue\n\n\n1.1\ndd.mm.yyyy\nMinor revisions (e.g., grammar fixes)\n\n\nx.y\ndd.mm.yyyy\n…"
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#overview-of-the-product-and-contained-layers-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#overview-of-the-product-and-contained-layers-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "7.1 Overview of the product and contained layers (mandatory subchapter)",
+    "text": "7.1 Overview of the product and contained layers (mandatory subchapter)\n\nIntroduces the product (-suite) including the contained layers and their key features, components and the relation between them. The contained products/layers may be structured as needed. The suggestion is to use either separate third-level subchapters (i.e. 7.1.x) or any useful categorization () of contained products/layers without third-level subchapters."
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-characteristics-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#product-characteristics-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "7.2 Product characteristics (mandatory subchapter)",
+    "text": "7.2 Product characteristics (mandatory subchapter)\n\nDescribes the characteristics of the product, the thematic definition and the relation with different products/layers, the elements included and excluded, classified features and the layer’s coding. Use third-level subchapters to structure if needed."
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-specifications-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#product-specifications-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "7.3 Product specifications (mandatory subchapter)",
+    "text": "7.3 Product specifications (mandatory subchapter)\n\nDetails the description of each layer, including specific details about its resolution, accuracy, data type, other technical specifications, and geographic coverage. Use third-level subchapters to structure if needed.\nThe following tables shall be used as guidance to describe the layers specifications. Use separate tables for separate layers (if applicable).\nPlease note that:\n\nIf a field from Table 7.1 and Table 7.2 is not applicable, please insert the code 'NA' in the content description. Tables should ideally be formatted to fit on one page.\nBoth Table 7.1 and Table 7.2 must fit on a single page. If any content descriptions are too lengthy and cause these tables to extend beyond one page (e.g., vector attributes), such content should be relocated to the annex section. References to this content must then be included in Table 7.1 and Table 7.2 accordingly.\n\n\n\n\n\nTable 7.1 Vector product/layer sheet (replace with field ‘Layer name’)\n\n\n\n\n\n\n\n\n\n\nField\nContent description\n\n\n\n\nLayer name\nDescriptive name of the layer (e.g., Urban Atlas Land Cover/Land Use 2021; CLCplus Backbone 2018 vector)\n\n\nAcronym\nAbbreviation or shortened form of the layer name (align with file naming)\n\n\nProduct (group/family)\nBroader category or group to which the layer belongs within the CLMS portfolio (e.g. Urban Atlas (Priority Area Monitoring); CLCplus (Land Cover and Land Use Mapping))\n\n\nLayer category\nCategorization of a layer according to its content, purpose, timeliness, level of processing or similar (e.g. status/change/auxiliary/reference layer; near-real time)\n\n\nSummary\nBrief description of the layer, including the data type (vector), spatial resolution, input data sources, reference dates, and auxiliary features\n\n\nReference year/cycle/period\nSpecific year, cycle or period that the data represents (e.g. 2018, 2017-2024, days 1-10)\n\n\nGeometric resolution\nMapping scale of the vector data (e.g. scale of 1:10 000)\n\n\nCoordinate Reference System\nSpatial reference system used (e.g. European ETRS89 LAEA projection/national projections)\n\n\nCoverage\nGeographic area covered by the product area (and reference of EEA coverage) (e.g. EEA-38 + UK)\n\n\nGeometric accuracy\nPositional accuracy of the product, expressed in meters at a specific % confidence level (e.g. ~11m at 95.5% confidence)\n\n\nThematic accuracy\nAccuracy of the thematic classification (according to the target technical requirements), expressed as a percentage for omission and commission errors (e.g. 95% overall accuracy, with omission errors and commission errors not exceeding 15% per class)\n\n\nMinimum Mapping Unit\nSmallest area that is represented in the product (e.g., 0.5 ha)\n\n\nMinimum Mapping Width\nSmallest width of features that is represented in the product (e.g., 20 m)\n\n\nVector classes\nValues assigned to different thematic categories within the vector data\n11: Very high sealing degree\n21: Pure needle leaved\n...\n\n\nAttributes\nAttribute information associated with vector features, including the following minimum fields:\n\n\nField\nDescription\nType\nValue(s)\nNoData value\n\n\nShape\nPolygon\nGeometry\nPolygon\n\n\n\nShape_Area\nArea\nDouble\n0.001 to 1.8E308\n\n\n\nX_code\nX vector LC class\nInteger\n\n254\n\n\nMetadata\nDescription of the accompanying metadata, including its format and content (e.g. XML metadata files compliant with INSPIRE metadata standards)\n\n\nDelivery format\nFile format in which the layer and ancillary files are delivered (e.g. geopackage, dataset in HDF5, external colour tables in *.lyr and *.lyrx formats)\n\n\nQuality -- Production verification\nQuality statement of the layer detailing the results of production verification: user's/producer's or/and overall quality of the layer (e.g. layer thematic accuracy reached/exceed the 90% producer's and user's target.)\n\n\n\n\n\n\n\nTable 7.2 Raster product/layer sheet (replace with field 'Layer name')\n\n\n\n\n\n\n\nField\nContent description\n\n\n\n\nLayer name\nDescriptive name of the layer (e.g. HRL Forest - Tree Cover Density 10m)\n\n\nAcronym\nAbbreviation or shortened form of the layer name (align with file naming)\n\n\nProduct (group/family)\nBroader category or group to which the layer belongs within the CLMS portfolio (e.g. VLCC/HRL Forest (Land Cover and Land Use Mapping; HR-VPP (Bio-geophysical Parameters)\n\n\nLayer category\nCategorization of a layer according to its content, purpose, timeliness, level of processing or similar (e.g. status/change/auxiliary/reference layer; near-real time)\n\n\nSummary\nBrief description of the layer, including the data type (vector), spatial resolution, input data sources, reference dates, and auxiliary features\n\n\nReference year/cycle/period\nSpecific year, cycle or period that the data represents (e.g. 2018, 2017-2024, days 1-10)\n\n\nGeometric resolution\nMapping scale of the vector data (e.g. scale of 1:10 000)\n\n\nCoordinate Reference System\nSpatial reference system used (e.g. European ETRS89 LAEA projection/national projections)\n\n\nCoverage\nGeographic area covered by the layer (and reference of EEA coverage) (e.g. EEA-38 + UK)\n\n\nGeometric accuracy\nPositional accuracy of the layer, expressed in meters at a specific % confidence level (e.g. ~11m at 95.5% confidence)\n\n\nThematic accuracy\nAccuracy of the thematic classification (according to the target technical requirements), expressed as a percentage for omission and commission errors (e.g. 95% overall accuracy, with omission errors and commission errors not exceeding 15% per class)\n\n\nMinimum Mapping Unit (MMU)\nSmallest area that is represented in the layer (e.g. 0.5 ha (50 pixels))\n\n\nRaster coding\nValues assigned to different thematic categories within the raster data 0: all non-tree covered areas\n1-100: tree cover density %\n...\n\n\nMetadata\nDescription of the accompanying metadata, including its format and content (e.g. XML metadata files compliant with INSPIRE metadata standards)\n\n\nDelivery format\nFile format in which layer is delivered (e.g. GeoTiff)\n\n\nQuality - Production verification\nQuality statement of the layer detailing the results of production verification: user's/producer's or/and overall quality of the layer (e.g. layer thematic accuracy reached/exceed the 90% producer's and user's target.)"
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#known-thematic-overlaps-of-the-product-optional-chapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#known-thematic-overlaps-of-the-product-optional-chapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "7.4 Known thematic overlaps of the product (optional chapter)",
+    "text": "7.4 Known thematic overlaps of the product (optional chapter)\n\nProvides guidance to assist users in selecting the most appropriate dataset when thematic overlaps exist between CLMS products and known external datasets. The guidance can outline criteria for choosing the best product based on factors such as:\n\nTemporal and spatial resolution\nData accuracy and validation\nData harmonization and interoperability\n\nA few illustrative use cases can help users to recognize where they might encounter thematic overlaps. Additionally, introducing a simple decision tree can help guide users through the process of evaluating overlapping datasets, addressing questions such as whether higher spatial resolution is required, the need for the most recent data, and whether the dataset includes the necessary thematic classes."
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#terms-of-use-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#terms-of-use-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "9.1 Terms of use (mandatory subchapter)",
+    "text": "9.1 Terms of use (mandatory subchapter)\n\nPresents information on the legal use of data for added products or derivative works.\nHere an example of a standard text.\n\n\nThe Terms of Use for the product(s) described in this document, acknowledge the following:\nFree, full and open access to the products and services of the Copernicus Land Monitoring Service is made on the conditions that:\n\nWhen distributing or communicating Copernicus Land Monitoring Service products and services (data, software scripts, web services, user and methodological documentation and similar) to the public, users shall inform the public of the source of these products and services and shall acknowledge that the Copernicus Land Monitoring Service products and services were produced “with funding by the European Union”.\nWhere the Copernicus Land Monitoring Service products and services have been adapted or modified by the user, the user shall clearly state this.\nUsers shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the European Union.\n\nThe user has all intellectual property rights to the products he/she has created based on the Copernicus Land Monitoring Service products and services.\nCopernicus Land Monitoring Service - Data policy"
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#citation-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#citation-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "9.2 Citation (mandatory subchapter)",
+    "text": "9.2 Citation (mandatory subchapter)\n\nPresents guidelines on how to properly cite and reference the products and services of the CLMS.\nHere are examples of standard text to be used according to the situation:\n\n\nWhen planning to publish a publication (scientific, commercial, etc.), it shall explicitly mention:\n\n“This publication has been prepared using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen developing a product or service using the products or services of the Copernicus Land Monitoring Service, it should shall explicitly mention:\n\n“Generated using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen redistributing a part of the Copernicus Land Monitoring Service (product, dataset, documentation, picture, web service, etc.), it shall explicitly mention:\n\n“European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\n\nCopernicus Land Monitoring Service - Data policy"
+  },
+  {
+    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-technical-support-mandatory-subchapter",
+    "href": "DOCS/templates/CLMS_PUM_Template.html#product-technical-support-mandatory-subchapter",
+    "title": "Product SHORT NAME Product User Manual (PUM)",
+    "section": "9.3 Product Technical support (mandatory subchapter)",
+    "text": "9.3 Product Technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)"
   },
   {
     "objectID": "DOCS/project-a/sample-doc2.html",
     "href": "DOCS/project-a/sample-doc2.html",
     "title": "Technical Library",
     "section": "",
-    "text": "nowy docs",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "project-a",
-      "Sample Doc2"
-    ]
+    "text": "nowy docs"
   },
   {
     "objectID": "DOCS/project-a/index.html",
     "href": "DOCS/project-a/index.html",
-    "title": "project-a",
+    "title": "Project A",
     "section": "",
-    "text": "project-a\n\nsample-doc1\nsample-doc2",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "project-a"
-    ]
+    "text": "Project A\nBrowse all documents in this section.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\ncalkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/guidelines/user_guidelines.html#step-1-create-your-feature-branch",
@@ -95,122 +135,79 @@
   {
     "objectID": "DOCS/guidelines/index.html",
     "href": "DOCS/guidelines/index.html",
-    "title": "guidelines",
+    "title": "Guidelines",
     "section": "",
-    "text": "guidelines\n\nIT_Architecture_Principles_and_Implementation_Guidelines\ntechnical_overview\nuser_guidelines",
-    "crumbs": [
-      "Guidelines"
-    ]
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nversion\n\n\n\nDate\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n1.4b\n\n\nApr 8, 2025\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n \n\n\n \n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/index.html",
     "href": "DOCS/index.html",
-    "title": "Documentation Index",
+    "title": "Documentation",
     "section": "",
-    "text": "Documentation\n\nguidelines\nproducts\nproject-a\nstyles\ntemplates",
-    "crumbs": [
-      "Guidelines",
-      "Documentation Index"
-    ]
+    "text": "All Documentation\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#architecture",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#architecture",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.1 Architecture",
-    "text": "4.1 Architecture\nFoundational and design principles for maintaining sound infrastructure and IT solution architecture. These sub-principles addresses best-practices and industry standard design patterns.\n\n\n\n\n\n\n\nArchitecture 1:\nClient specific IT solutions should have a modular structure\n\n\n\n\nWhat:\nModular structure of client specific IT solutions is a requirement. This may be achieved using e.g. microservice architecture\n\n\nWhy:\nA modular structure is sought to ensure further development, and updates are possible. The possibility of substituting or adding modules in an IT solution will increase the lifespan of a solution and increase scalability\n\n\nConsequence:\nModular architecture of IT solutions is a requisite\n\n\nExample:\nIf the client specific IT solution has, for Example, grown its user base since the launch of the solution, then scaling up shall be possible at any time – scaling containers, vertically (more CPUs, RAM) and horizontally (more VMs)\n\n\n\n\n\n\n\n\n\n\nArchitecture 2:\nIT solutions are to be Dockerized or similar\n\n\n\n\nWhat:\nThe use of container technology is encouraged\n\n\nWhy:\nContainerization is crucial for building scalable IT solutions and container technology eases the work of moving IT solutions around the IT infrastructure making deployment easier to automate\n\n\nConsequence:\nIT solutions are to be deployed using Docker containers or similar\n\n\nExample:\nSoftware components of the client specific IT solution shall be provided as docker containers so that deployment is flexible with respect to hardware\n\n\n\n\n\n\n\n\n\n\nArchitecture 3:\nClient specific IT solutions must be able to interface with other IT solutions\n\n\n\n\nWhat:\nThe IT deliverable must be able to be used in conjunction with other deliverables to form a composite solution\n\n\nWhy:\nTo make the most of the funds available the developed solutions should form part of an IT ecosystem making up a whole\n\n\nConsequence:\nIT deliverables must be equipped with documented APIs for interfacing with other IT applications\n\n\nExample:\nA client specific product, which can be used for extracting and manipulating data, should be accessible programmatically through e.g. well documented REST services\n\n\n\n\n\n\n\n\n\n\nArchitecture 4:\nIT solutions should be cloud agnostic\n\n\n\n\nWhat:\nIf the IT solution is built for cloud environments, measures must be taken to make the solution cloud agnostic.\n\n\nWhy:\nVendor lock-in must be avoided to remove vendor specific dependencies, making the IT solution easier to migrate to a different cloud vendor\n\n\nConsequence:\nIT solutions must minimize the usage of vendor specific functionality and non-standardized infrastructure\n\n\nExample:\nAn IT solution that makes use of serverless functions should be built in a way that allows for using another vendors serverless functionality with little or no changes in case of migrating from one platform to another",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.1 Architecture\nFoundational and design principles for maintaining sound infrastructure and IT solution architecture. These sub-principles addresses best-practices and industry standard design patterns.\n\n\n\n\n\n\n\nArchitecture 1:\nClient specific IT solutions should have a modular structure\n\n\n\n\nWhat:\nModular structure of client specific IT solutions is a requirement. This may be achieved using e.g. microservice architecture\n\n\nWhy:\nA modular structure is sought to ensure further development, and updates are possible. The possibility of substituting or adding modules in an IT solution will increase the lifespan of a solution and increase scalability\n\n\nConsequence:\nModular architecture of IT solutions is a requisite\n\n\nExample:\nIf the client specific IT solution has, for Example, grown its user base since the launch of the solution, then scaling up shall be possible at any time – scaling containers, vertically (more CPUs, RAM) and horizontally (more VMs)\n\n\n\n\n\n\n\n\n\n\nArchitecture 2:\nIT solutions are to be Dockerized or similar\n\n\n\n\nWhat:\nThe use of container technology is encouraged\n\n\nWhy:\nContainerization is crucial for building scalable IT solutions and container technology eases the work of moving IT solutions around the IT infrastructure making deployment easier to automate\n\n\nConsequence:\nIT solutions are to be deployed using Docker containers or similar\n\n\nExample:\nSoftware components of the client specific IT solution shall be provided as docker containers so that deployment is flexible with respect to hardware\n\n\n\n\n\n\n\n\n\n\nArchitecture 3:\nClient specific IT solutions must be able to interface with other IT solutions\n\n\n\n\nWhat:\nThe IT deliverable must be able to be used in conjunction with other deliverables to form a composite solution\n\n\nWhy:\nTo make the most of the funds available the developed solutions should form part of an IT ecosystem making up a whole\n\n\nConsequence:\nIT deliverables must be equipped with documented APIs for interfacing with other IT applications\n\n\nExample:\nA client specific product, which can be used for extracting and manipulating data, should be accessible programmatically through e.g. well documented REST services\n\n\n\n\n\n\n\n\n\n\nArchitecture 4:\nIT solutions should be cloud agnostic\n\n\n\n\nWhat:\nIf the IT solution is built for cloud environments, measures must be taken to make the solution cloud agnostic.\n\n\nWhy:\nVendor lock-in must be avoided to remove vendor specific dependencies, making the IT solution easier to migrate to a different cloud vendor\n\n\nConsequence:\nIT solutions must minimize the usage of vendor specific functionality and non-standardized infrastructure\n\n\nExample:\nAn IT solution that makes use of serverless functions should be built in a way that allows for using another vendors serverless functionality with little or no changes in case of migrating from one platform to another"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#reproducibility",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#reproducibility",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.2 Reproducibility",
-    "text": "4.2 Reproducibility\nThe overarching principle of reproducibility is further unfolded below in the following sub-principles:\n\n\n\n\n\n\n\nReproducibility 1:\nDescription of workflows must be provided\n\n\n\n\nWhat:\nDeliverables which are a result of pre-processing of data must be provided with a description of the workflow for the pre-processing\n\n\nWhy:\nTo ensure that the deliverable can be re-produced, details must be provided on how this can be achieved\n\n\nConsequence:\nDescriptions of pre-processing workflow steps are to be provided with deliverables. Ideally the workflows delivered as scripts or similar. At a minimum documentation of how the workflows are to be set up is to be provided\n\n\nExample:\nA delivery that includes a web application, shall include description of the build process, such as the compilation of source code, packaging of the application, and deployment steps. This for instance could include details on the specific versions of tools used (e.g. Node.js, Docker etc.)\n\n\n\n\n\n\n\n\n\n\nReproducibility 2:\nData sources to be supplied with deliverables\n\n\n\n\nWhat:\nIT solutions which utilize data sources must supply the data sources\n\n\nWhy:\nTo ensure that the deliverable can be re-produced details are required on data sources used along with any enrichment which have been applied to the data source\n\n\nConsequence:\nData source location must be provided if data are publicly available. If data are not accessible to the CLMS, the data are to be provided as part of the deliverable\n\n\nExample:\nIf the software relies on a proprietary weather data API that is not publicly accessible, the data, or at least a sample dataset, should be provided with the delivery. If the API is publicly available, detailed instructions on how to access it (e.g., API keys, endpoint URLs) must be included\n\n\n\n\n\n\n\n\n\n\nReproducibility 3:\nList of software used in development of IT solution to be provided\n\n\n\n\nWhat:\nThe software products which have been used in the development of the software are to be listed as part of the deliverable\n\n\nWhy:\nTo ensure that the IT solution can be further developed details are required of the software components/products that were used in the development\n\n\nConsequence:\nList of software development tools used in the production to be provided. Further for client specific developments the source code must also be provided\n\n\nExample:\nA system consisting of several building blocks, such as User Interface, backend, importer, and exporter modules, shall be provided with a list of software development tools, used for production of these building blocks and modules\n\n\n\n\n\n\n\n\n\n\nReproducibility 4:\nAutomation tool/scripts used in the production of the IT solution must be provided\n\n\n\n\nWhat:\nIT solutions which include automation scripts/workflows in the development must supply these scripts as part of the deliverable\n\n\nWhy:\nAutomation scripts used in development are viewed as part of the deliverable and are required for reproduction of the solution\n\n\nConsequence:\nAutomation scripts whether as stand-alone scripts or as a configuration of standard/commercial software must be provided as part of the deliverable\n\n\nExample:\nIf the IT deliverable includes an automatic backup that generates full backups in certain increments, then the automation scripts behind the backup generation must be provided as part of the deliverable, so that they could be recreated\n\n\n\n\n\n\n\n\n\n\nReproducibility 5:\nIf a solution includes outcomes of pre-executed algorithms the prerequisites for running the algorithms must be provided\n\n\n\n\nWhat:\nTo ensure reproducibility, the algorithms must be provided either as pseudo code or as source code\n\n\nWhy:\nThe foundation of the IT solution must be re-producible to ensure future enhancements are possible say if new insights/data become available also after the end of the contractual agreement\n\n\nConsequence:\nSupplier must as part of the deliverable also detail any algorithms which form the basis of the solution\n\n\nExample:\nA spatial product, providing a detailed pan-European wall to wall 10-meter spatial resolution raster product, that is based on a supervised classification of satellite image time-series. The supplier must provide a detailed description of the algorithm that was used for classifying satellite-imagery time-series",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.2 Reproducibility\nThe overarching principle of reproducibility is further unfolded below in the following sub-principles:\n\n\n\n\n\n\n\nReproducibility 1:\nDescription of workflows must be provided\n\n\n\n\nWhat:\nDeliverables which are a result of pre-processing of data must be provided with a description of the workflow for the pre-processing\n\n\nWhy:\nTo ensure that the deliverable can be re-produced, details must be provided on how this can be achieved\n\n\nConsequence:\nDescriptions of pre-processing workflow steps are to be provided with deliverables. Ideally the workflows delivered as scripts or similar. At a minimum documentation of how the workflows are to be set up is to be provided\n\n\nExample:\nA delivery that includes a web application, shall include description of the build process, such as the compilation of source code, packaging of the application, and deployment steps. This for instance could include details on the specific versions of tools used (e.g. Node.js, Docker etc.)\n\n\n\n\n\n\n\n\n\n\nReproducibility 2:\nData sources to be supplied with deliverables\n\n\n\n\nWhat:\nIT solutions which utilize data sources must supply the data sources\n\n\nWhy:\nTo ensure that the deliverable can be re-produced details are required on data sources used along with any enrichment which have been applied to the data source\n\n\nConsequence:\nData source location must be provided if data are publicly available. If data are not accessible to the CLMS, the data are to be provided as part of the deliverable\n\n\nExample:\nIf the software relies on a proprietary weather data API that is not publicly accessible, the data, or at least a sample dataset, should be provided with the delivery. If the API is publicly available, detailed instructions on how to access it (e.g., API keys, endpoint URLs) must be included\n\n\n\n\n\n\n\n\n\n\nReproducibility 3:\nList of software used in development of IT solution to be provided\n\n\n\n\nWhat:\nThe software products which have been used in the development of the software are to be listed as part of the deliverable\n\n\nWhy:\nTo ensure that the IT solution can be further developed details are required of the software components/products that were used in the development\n\n\nConsequence:\nList of software development tools used in the production to be provided. Further for client specific developments the source code must also be provided\n\n\nExample:\nA system consisting of several building blocks, such as User Interface, backend, importer, and exporter modules, shall be provided with a list of software development tools, used for production of these building blocks and modules\n\n\n\n\n\n\n\n\n\n\nReproducibility 4:\nAutomation tool/scripts used in the production of the IT solution must be provided\n\n\n\n\nWhat:\nIT solutions which include automation scripts/workflows in the development must supply these scripts as part of the deliverable\n\n\nWhy:\nAutomation scripts used in development are viewed as part of the deliverable and are required for reproduction of the solution\n\n\nConsequence:\nAutomation scripts whether as stand-alone scripts or as a configuration of standard/commercial software must be provided as part of the deliverable\n\n\nExample:\nIf the IT deliverable includes an automatic backup that generates full backups in certain increments, then the automation scripts behind the backup generation must be provided as part of the deliverable, so that they could be recreated\n\n\n\n\n\n\n\n\n\n\nReproducibility 5:\nIf a solution includes outcomes of pre-executed algorithms the prerequisites for running the algorithms must be provided\n\n\n\n\nWhat:\nTo ensure reproducibility, the algorithms must be provided either as pseudo code or as source code\n\n\nWhy:\nThe foundation of the IT solution must be re-producible to ensure future enhancements are possible say if new insights/data become available also after the end of the contractual agreement\n\n\nConsequence:\nSupplier must as part of the deliverable also detail any algorithms which form the basis of the solution\n\n\nExample:\nA spatial product, providing a detailed pan-European wall to wall 10-meter spatial resolution raster product, that is based on a supervised classification of satellite image time-series. The supplier must provide a detailed description of the algorithm that was used for classifying satellite-imagery time-series"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#reusability",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#reusability",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.3 Reusability",
-    "text": "4.3 Reusability\nThe principle of reusability is detailed in the following sub-principles:\n\n\n\n\n\n\n\nReusability 1:\nIT solutions should be open-ended equipped with APIs\n\n\n\n\nWhat:\nIT solutions should be open-ended equipped with APIs through which functionality or data key for the end user may be accessed\n\n\nWhy:\nTo ensure that further work benefit from existing solutions it is paramount that systems delivered are open ended. Future work can hereby utilize and benefit from previous work. Delivered IT solutions should form part of the overall IT ecosystem of the EEA CLMS program so that the “whole is greater than the sum”\n\n\nConsequence:\nIT solutions should be provided with APIs which access key functionality of the IT solutions\n\n\nExample:\nA webservice provided, which publishes geospatial data, has an API Rest service, which grants users direct access to the data\n\n\n\n\n\n\n\n\n\n\nReusability 2:\nScripts used in production must be delivered as part of IT solutions\n\n\n\n\nWhat:\nScripts should be delivered with code so that they may be used as templates for the end user for further development\n\n\nWhy:\nData, conditions, or requirements may change for an IT solution. To ensure that such changes can be accommodated the underlying script must be possible to modify to reflect and support such changes\n\n\nConsequence:\nScripts used in the productions form part of the final deliverable\n\n\nExample:\nIT delivery, consisting of several building blocks, shall be provided with scripts, included with the final delivery of the code, so that the end users of the system could modify, expand, or adopt the building blocks/modules to suit specific needs or add new features",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.3 Reusability\nThe principle of reusability is detailed in the following sub-principles:\n\n\n\n\n\n\n\nReusability 1:\nIT solutions should be open-ended equipped with APIs\n\n\n\n\nWhat:\nIT solutions should be open-ended equipped with APIs through which functionality or data key for the end user may be accessed\n\n\nWhy:\nTo ensure that further work benefit from existing solutions it is paramount that systems delivered are open ended. Future work can hereby utilize and benefit from previous work. Delivered IT solutions should form part of the overall IT ecosystem of the EEA CLMS program so that the “whole is greater than the sum”\n\n\nConsequence:\nIT solutions should be provided with APIs which access key functionality of the IT solutions\n\n\nExample:\nA webservice provided, which publishes geospatial data, has an API Rest service, which grants users direct access to the data\n\n\n\n\n\n\n\n\n\n\nReusability 2:\nScripts used in production must be delivered as part of IT solutions\n\n\n\n\nWhat:\nScripts should be delivered with code so that they may be used as templates for the end user for further development\n\n\nWhy:\nData, conditions, or requirements may change for an IT solution. To ensure that such changes can be accommodated the underlying script must be possible to modify to reflect and support such changes\n\n\nConsequence:\nScripts used in the productions form part of the final deliverable\n\n\nExample:\nIT delivery, consisting of several building blocks, shall be provided with scripts, included with the final delivery of the code, so that the end users of the system could modify, expand, or adopt the building blocks/modules to suit specific needs or add new features"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#transparency",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#transparency",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.4 Transparency",
-    "text": "4.4 Transparency\nThe CLMS is funded by the EU and supports its community with data and services. As such, these products and services are to be part of the foundation for further work in the field and accessible to the community. To support this, the principle of transparency is detailed in the following subprinciples:\n\n\n\n\n\n\n\nTransparency 1:\nSource code of client specific software to be supplied with IT solution\n\n\n\n\nWhat:\nSource code of client specific IT solution is supplied as part of the deliverable and made publicly available under the EUPL-1.2 license 1\n\n\nWhy:\nTo ensure transparency, it is essential to have clear insights into the client-specific software. This enables efficient future developments and modifications\n\n\nConsequence:\nSource code of client specific software must be delivered with IT solution. The source code shall include Docker recipes and scripts for building the source code and be published under the EUPL-1.2 license\n\n\nExample:\nSource code of all the components of the specific IT solution must be delivered. Any updates or developments of the source code shall be reflected in the EEA GitHub repository, which is the main repository of the system. Moreover, the specific client IT solutions shall be published under the EUPL-1.2 license, so the openness and transparency are ensured\n\n\n\n\n\n\n\n\n\n\nTransparency 2:\nInline documentation of the source code\n\n\n\n\nWhat:\nSource code of client specific IT solution must be documented in-line\n\n\nWhy:\nTo effectuate the handover from one developer to the next inline documentation are to be included to guide the developer on the job\n\n\nConsequence:\nSource code must have inline documentation. Inline code should be formatted so that it may be easily extracted to generate online documentation\n\n\nExample:\nSource code of all the components of the IT solution must have inline documentation. The documentation shall be structured, following common conventions, and kept at a minimal, but comprehensive level\n\n\n\n\n\n\n\n\n\n\nTransparency 3:\nCommercial software used in the production must be attainable by the EEA or a third-party provider\n\n\n\n\nWhat:\nCommercial software which are prerequisites must be attainable on comparable terms. Such software is justified only if no open alternative exists\n\n\nWhy:\nTo ensure that further work may be carried out any prerequisites in the form of software must be attainable by the EEA or a supplier\n\n\nConsequence:\nGenerally attainable commercial software used in production must be listed when delivering an IT solution. Name of software, version, EOL and EOS to be supplied\n\n\nExample:\nAn IT solution is deploying various components and the set-up of the virtual machines that houses the components is done by means of an infrastructure as-a-code-tool. All the capabilities of the infrastructure as-a-code-tool, that require purchasing must be listed when delivering the IT solution",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.4 Transparency\nThe CLMS is funded by the EU and supports its community with data and services. As such, these products and services are to be part of the foundation for further work in the field and accessible to the community. To support this, the principle of transparency is detailed in the following subprinciples:\n\n\n\n\n\n\n\nTransparency 1:\nSource code of client specific software to be supplied with IT solution\n\n\n\n\nWhat:\nSource code of client specific IT solution is supplied as part of the deliverable and made publicly available under the EUPL-1.2 license 1\n\n\nWhy:\nTo ensure transparency, it is essential to have clear insights into the client-specific software. This enables efficient future developments and modifications\n\n\nConsequence:\nSource code of client specific software must be delivered with IT solution. The source code shall include Docker recipes and scripts for building the source code and be published under the EUPL-1.2 license\n\n\nExample:\nSource code of all the components of the specific IT solution must be delivered. Any updates or developments of the source code shall be reflected in the EEA GitHub repository, which is the main repository of the system. Moreover, the specific client IT solutions shall be published under the EUPL-1.2 license, so the openness and transparency are ensured\n\n\n\n\n\n\n\n\n\n\nTransparency 2:\nInline documentation of the source code\n\n\n\n\nWhat:\nSource code of client specific IT solution must be documented in-line\n\n\nWhy:\nTo effectuate the handover from one developer to the next inline documentation are to be included to guide the developer on the job\n\n\nConsequence:\nSource code must have inline documentation. Inline code should be formatted so that it may be easily extracted to generate online documentation\n\n\nExample:\nSource code of all the components of the IT solution must have inline documentation. The documentation shall be structured, following common conventions, and kept at a minimal, but comprehensive level\n\n\n\n\n\n\n\n\n\n\nTransparency 3:\nCommercial software used in the production must be attainable by the EEA or a third-party provider\n\n\n\n\nWhat:\nCommercial software which are prerequisites must be attainable on comparable terms. Such software is justified only if no open alternative exists\n\n\nWhy:\nTo ensure that further work may be carried out any prerequisites in the form of software must be attainable by the EEA or a supplier\n\n\nConsequence:\nGenerally attainable commercial software used in production must be listed when delivering an IT solution. Name of software, version, EOL and EOS to be supplied\n\n\nExample:\nAn IT solution is deploying various components and the set-up of the virtual machines that houses the components is done by means of an infrastructure as-a-code-tool. All the capabilities of the infrastructure as-a-code-tool, that require purchasing must be listed when delivering the IT solution"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#maintainability",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#maintainability",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.5 Maintainability",
-    "text": "4.5 Maintainability\nThe EEA aims in the CLMS program to be able to provide updated products when new data becomes available. To reduce the time to market the principle of maintainability is to be followed.\n\n\n\n\n\n\n\nMaintainability 1:\nIT solutions are to be delivered on a principle of CI/CD\n\n\n\n\nWhat:\nThe launch of new releases of IT deliverables are to be configured and managed so that new functionality is available as soon as possible. The principle of CI/CD are to be adhered to\n\n\nWhy:\nTime to market is to be reduced through an approach of maintainability of deployments as soon as possible\n\n\nConsequence:\nIT deliverables are to be supplied with a dev-ops set-up which supports CI/CD\n\n\nExample:\nA delivered IT solution is organized with a test server environment potentially a pre-production environment, used for quality assurance and continuous development, so that deployment to production can be initiated smoothly\n\n\n\n\n\n\n\n\n\n\nMaintainability 2:\nTests are to be organised so that they may be automated\n\n\n\n\nWhat:\nTests are to be structured so that they may be easily automated\n\n\nWhy:\nTo ensure that the build and CI/CD process does not introduce bugs or deployment failures, tests are to be automated so that they can continuously be run to ensure the quality of the solution and its possible enhancements\n\n\nConsequence:\nTests are to be delivered so that they can be automated\n\n\nExample:\nThe delivered solution has in the test phase run through a number of tests e.g. unit tests and result verification tests. These will be the basis for automated regression tests\n\n\n\n\n\n\n\n\n\n\nMaintainability 3:\nDocumentation of IT solutions are to be provided\n\n\n\n\nWhat:\nDocumentation of the developed IT solutions must be provided. The requested documentation shall also be provided in quarto markdown format on the dedicated EEA GitHub repository\n\n\nWhy:\nFor the further use and improvements of the IT solution, technical documentation is paramount.\n\n\nConsequence:\nDocumentation including but not limited to System Description Document (SDD), System Deployment Document and Examples must be provided with IT solution deliverables. The requested documents shall also be provided in the quarto markdown format.\n\n\nExample:\nAn IT delivery, consisting of several building blocks, shall be provided with SDD, user guidelines, and detailed documentation of system deployment, including, but not limited to system and storage architecture, infrastructure setup, provisioning, monitoring, disaster recovery, accessibility, scalability options and performance. If requested, this documentation shall be provided in quarto markdown format on the dedicated EEA GitHub repository\n\n\n\n\n\n\n\n\n\n\nMaintainability 4:\nCommercial software used in the development must be attainable by the EEA or a third-party provider\n\n\n\n\nWhat:\nCommercial software which are prerequisites must be attainable on comparable terms. Such software is justified only if no open alternative exists\n\n\nWhy:\nTo ensure that further work may be carried out any prerequisites in the form of software must be attainable by the EEA or a supplier\n\n\nConsequence:\nGenerally attainable commercial software used in development or production must be listed when delivering an IT solution. Name of software, version, EOL and EOS to be supplied\n\n\nExample:\nAn IT solution using commercial components or tools, like PDF generator, code analysis tools, data transformation software must be listed\n\n\n\n\n\n\n\n\n\n\nMaintainability 5:\nDeployment and integration scripts of client specific software to be supplied with IT solution\n\n\n\n\nWhat:\nDeployment and integration scripts of client specific IT solution is supplied as part of the deliverable\n\n\nWhy:\nTo ensure transparency and efficient maintainability, it is essential to have clear insights into the build and deploy processes of client-specific software. This enables efficient future developments and modifications\n\n\nConsequence:\nScripts or playbooks and documentation for CI/CD (Continuous Integration/Continuous Development), Docker recipes and build scripts must be delivered\n\n\nExample:\nSource code of all the components of the specific IT solution must be delivered. Any updates or developments of the source code shall be reflected in the EEA GitHub repository, which is the main repository of the system. Moreover, the specific client IT solutions shall be published under the EUPL-1.2 license, so the openness and transparency are ensured",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.5 Maintainability\nThe EEA aims in the CLMS program to be able to provide updated products when new data becomes available. To reduce the time to market the principle of maintainability is to be followed.\n\n\n\n\n\n\n\nMaintainability 1:\nIT solutions are to be delivered on a principle of CI/CD\n\n\n\n\nWhat:\nThe launch of new releases of IT deliverables are to be configured and managed so that new functionality is available as soon as possible. The principle of CI/CD are to be adhered to\n\n\nWhy:\nTime to market is to be reduced through an approach of maintainability of deployments as soon as possible\n\n\nConsequence:\nIT deliverables are to be supplied with a dev-ops set-up which supports CI/CD\n\n\nExample:\nA delivered IT solution is organized with a test server environment potentially a pre-production environment, used for quality assurance and continuous development, so that deployment to production can be initiated smoothly\n\n\n\n\n\n\n\n\n\n\nMaintainability 2:\nTests are to be organised so that they may be automated\n\n\n\n\nWhat:\nTests are to be structured so that they may be easily automated\n\n\nWhy:\nTo ensure that the build and CI/CD process does not introduce bugs or deployment failures, tests are to be automated so that they can continuously be run to ensure the quality of the solution and its possible enhancements\n\n\nConsequence:\nTests are to be delivered so that they can be automated\n\n\nExample:\nThe delivered solution has in the test phase run through a number of tests e.g. unit tests and result verification tests. These will be the basis for automated regression tests\n\n\n\n\n\n\n\n\n\n\nMaintainability 3:\nDocumentation of IT solutions are to be provided\n\n\n\n\nWhat:\nDocumentation of the developed IT solutions must be provided. The requested documentation shall also be provided in quarto markdown format on the dedicated EEA GitHub repository\n\n\nWhy:\nFor the further use and improvements of the IT solution, technical documentation is paramount.\n\n\nConsequence:\nDocumentation including but not limited to System Description Document (SDD), System Deployment Document and Examples must be provided with IT solution deliverables. The requested documents shall also be provided in the quarto markdown format.\n\n\nExample:\nAn IT delivery, consisting of several building blocks, shall be provided with SDD, user guidelines, and detailed documentation of system deployment, including, but not limited to system and storage architecture, infrastructure setup, provisioning, monitoring, disaster recovery, accessibility, scalability options and performance. If requested, this documentation shall be provided in quarto markdown format on the dedicated EEA GitHub repository\n\n\n\n\n\n\n\n\n\n\nMaintainability 4:\nCommercial software used in the development must be attainable by the EEA or a third-party provider\n\n\n\n\nWhat:\nCommercial software which are prerequisites must be attainable on comparable terms. Such software is justified only if no open alternative exists\n\n\nWhy:\nTo ensure that further work may be carried out any prerequisites in the form of software must be attainable by the EEA or a supplier\n\n\nConsequence:\nGenerally attainable commercial software used in development or production must be listed when delivering an IT solution. Name of software, version, EOL and EOS to be supplied\n\n\nExample:\nAn IT solution using commercial components or tools, like PDF generator, code analysis tools, data transformation software must be listed\n\n\n\n\n\n\n\n\n\n\nMaintainability 5:\nDeployment and integration scripts of client specific software to be supplied with IT solution\n\n\n\n\nWhat:\nDeployment and integration scripts of client specific IT solution is supplied as part of the deliverable\n\n\nWhy:\nTo ensure transparency and efficient maintainability, it is essential to have clear insights into the build and deploy processes of client-specific software. This enables efficient future developments and modifications\n\n\nConsequence:\nScripts or playbooks and documentation for CI/CD (Continuous Integration/Continuous Development), Docker recipes and build scripts must be delivered\n\n\nExample:\nSource code of all the components of the specific IT solution must be delivered. Any updates or developments of the source code shall be reflected in the EEA GitHub repository, which is the main repository of the system. Moreover, the specific client IT solutions shall be published under the EUPL-1.2 license, so the openness and transparency are ensured"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#observability",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#observability",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.6 Observability",
-    "text": "4.6 Observability\nIT solutions of the EEA CLMS must collect relevant metrics for monitoring and assessment, to detect any issues and have predictable operation of the solutions.\n\n\n\n\n\n\n\nObservability 1:\nIT solutions are to be regularly assessed\n\n\n\n\nWhat:\nIT solutions are to be automatically monitored with a notification service, and their performance routinely evaluated to ensure optimal functioning\n\n\nWhy:\nRegular assessments ensure that IT solutions can be maintained so as to meet emerging needs, threats and technological advancements\n\n\nConsequence:\nIT solution’s scalability, security, and overall performance are continuously monitored and evaluated to address performance and security issues\n\n\nExample:\nThe delivered IT solution and its associated dependencies are regularly assessed and evaluated. The evaluation process should also account for advancements in technology and track developments to ensure the solution remains relevant and effective\n\n\n\n\n\n\n\n\n\n\nObservability 2:\nContinuous monitoring of metrics\n\n\n\n\nWhat:\nIT solutions logs metrics on it’s components and containers for tracking system performance and application health\n\n\nWhy:\nContinuous monitoring gives a data-driven insight of a solutions components performance and health and provide the metrics for automatically scaled solutions and self-recovering solutions\n\n\nConsequence:\nComponents and containers in the solution logs relevant metrics to be collected and monitored. As minimum liveliness and readiness should be logged\n\n\nExample:\nA software solution with an orhcestrating component and a worker component use liveliness and readiness to monitor if the solution is healthy and automatically scale the number of worker instances according to the readiness metrics",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.6 Observability\nIT solutions of the EEA CLMS must collect relevant metrics for monitoring and assessment, to detect any issues and have predictable operation of the solutions.\n\n\n\n\n\n\n\nObservability 1:\nIT solutions are to be regularly assessed\n\n\n\n\nWhat:\nIT solutions are to be automatically monitored with a notification service, and their performance routinely evaluated to ensure optimal functioning\n\n\nWhy:\nRegular assessments ensure that IT solutions can be maintained so as to meet emerging needs, threats and technological advancements\n\n\nConsequence:\nIT solution’s scalability, security, and overall performance are continuously monitored and evaluated to address performance and security issues\n\n\nExample:\nThe delivered IT solution and its associated dependencies are regularly assessed and evaluated. The evaluation process should also account for advancements in technology and track developments to ensure the solution remains relevant and effective\n\n\n\n\n\n\n\n\n\n\nObservability 2:\nContinuous monitoring of metrics\n\n\n\n\nWhat:\nIT solutions logs metrics on it’s components and containers for tracking system performance and application health\n\n\nWhy:\nContinuous monitoring gives a data-driven insight of a solutions components performance and health and provide the metrics for automatically scaled solutions and self-recovering solutions\n\n\nConsequence:\nComponents and containers in the solution logs relevant metrics to be collected and monitored. As minimum liveliness and readiness should be logged\n\n\nExample:\nA software solution with an orhcestrating component and a worker component use liveliness and readiness to monitor if the solution is healthy and automatically scale the number of worker instances according to the readiness metrics"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#it-security",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#it-security",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.7 IT security",
-    "text": "4.7 IT security\nThe IT solutions of the CLMS program shall ensure system integrity against various security threats, protection of the data, and maintenance of privacy. The following sub-principals are to be followed:\n\n\n\n\n\n\n\nIT security 1:\nIncorporate security considerations from the beginning of the system development\n\n\n\n\nWhat:\nEnsure security is integrated into all stages of the system development lifecycle, from planning to deployment\n\n\nWhy:\nEarly integration of security measures reduces vulnerabilities, lowers costs associated with late-stage fixes, and ensures robust protection against threats\n\n\nConsequence:\nThreat modelling and security assessments need to be conducted from the start, as well as allocation of resources for ongoing security reviews and testing\n\n\nExample:\nStandard aspects such as two factor authentication, protection against SQL injection, encryption of sensitive data, no root users in containers, etc.\n\n\n\n\n\n\n\n\n\n\nIT security 2:\nCompliance with relevant laws, regulations and industry standards\n\n\n\n\nWhat:\nIT-solutions must adhere to legal requirements, industry standards, and regulations e.g. EUDPR, ISO\n\n\nWhy:\nCompliance ensures legal and regulatory adherence, builds trust, protects sensitive data, and mitigates risk of legal penalties and breaches\n\n\nConsequence:\nIT deliverables need to incorporate robust security measures, include documentation of compliance efforts, and ensure features and processes aligned with legal and industry measures\n\n\nExample:\nData handling agreements must be in place, consideration of server location in EU, etc.\n\n\n\n\n\n\n\n\n\n\nIT security 3:\nEnsuring that users and systems have appropriate permissions based on their roles and responsibilities\n\n\n\n\nWhat:\nImplement role-based access control (RBAC) to manage user and system permissions according to their roles\n\n\nWhy:\nIt prevents unauthorized access, minimizes the risk of data breaches, and ensures that users only have access to the information necessary for their roles\n\n\nConsequence:\nThe provider will need to define clear roles and responsibilities, implement RBAC policies, regularly review and update access controls\n\n\nExample:\nA delivered IT solution has role-based accesses, which ensures that only Admin-Users are allowed to manage (add, edit, activate, inactivate) users and organisations. Also, only administrator can view and edit any ingestion and extraction within the system to support users if they need any help\n\n\n\n\n\n\n\n\n\n\nIT security 4:\nLogging warnings and errors\n\n\n\n\nWhat:\nThe IT solution must log all errors, warnings and events with audit relevance from every component to a file based storage\n\n\nWhy:\nIn order to inspect system events and detect potential security incidents is crucial for maintaining the system integrity and resilience. Log information must not be revealed to the user, but must be stored internally.\n\n\nConsequence:\nAll components of an IT solution must log audit, error and warning information coming from executing the code of the solution\n\n\nExample:\nA user logs in to an application, trying to download a large dataset for processing in the application, the system encounters some fatal errors with the download. Login, user activity and technical error information and severity is logged to a persistent file storage.",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.7 IT security\nThe IT solutions of the CLMS program shall ensure system integrity against various security threats, protection of the data, and maintenance of privacy. The following sub-principals are to be followed:\n\n\n\n\n\n\n\nIT security 1:\nIncorporate security considerations from the beginning of the system development\n\n\n\n\nWhat:\nEnsure security is integrated into all stages of the system development lifecycle, from planning to deployment\n\n\nWhy:\nEarly integration of security measures reduces vulnerabilities, lowers costs associated with late-stage fixes, and ensures robust protection against threats\n\n\nConsequence:\nThreat modelling and security assessments need to be conducted from the start, as well as allocation of resources for ongoing security reviews and testing\n\n\nExample:\nStandard aspects such as two factor authentication, protection against SQL injection, encryption of sensitive data, no root users in containers, etc.\n\n\n\n\n\n\n\n\n\n\nIT security 2:\nCompliance with relevant laws, regulations and industry standards\n\n\n\n\nWhat:\nIT-solutions must adhere to legal requirements, industry standards, and regulations e.g. EUDPR, ISO\n\n\nWhy:\nCompliance ensures legal and regulatory adherence, builds trust, protects sensitive data, and mitigates risk of legal penalties and breaches\n\n\nConsequence:\nIT deliverables need to incorporate robust security measures, include documentation of compliance efforts, and ensure features and processes aligned with legal and industry measures\n\n\nExample:\nData handling agreements must be in place, consideration of server location in EU, etc.\n\n\n\n\n\n\n\n\n\n\nIT security 3:\nEnsuring that users and systems have appropriate permissions based on their roles and responsibilities\n\n\n\n\nWhat:\nImplement role-based access control (RBAC) to manage user and system permissions according to their roles\n\n\nWhy:\nIt prevents unauthorized access, minimizes the risk of data breaches, and ensures that users only have access to the information necessary for their roles\n\n\nConsequence:\nThe provider will need to define clear roles and responsibilities, implement RBAC policies, regularly review and update access controls\n\n\nExample:\nA delivered IT solution has role-based accesses, which ensures that only Admin-Users are allowed to manage (add, edit, activate, inactivate) users and organisations. Also, only administrator can view and edit any ingestion and extraction within the system to support users if they need any help\n\n\n\n\n\n\n\n\n\n\nIT security 4:\nLogging warnings and errors\n\n\n\n\nWhat:\nThe IT solution must log all errors, warnings and events with audit relevance from every component to a file based storage\n\n\nWhy:\nIn order to inspect system events and detect potential security incidents is crucial for maintaining the system integrity and resilience. Log information must not be revealed to the user, but must be stored internally.\n\n\nConsequence:\nAll components of an IT solution must log audit, error and warning information coming from executing the code of the solution\n\n\nExample:\nA user logs in to an application, trying to download a large dataset for processing in the application, the system encounters some fatal errors with the download. Login, user activity and technical error information and severity is logged to a persistent file storage."
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#resilience",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#resilience",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "4.8 Resilience",
-    "text": "4.8 Resilience\n\n\n\n\n\n\n\nResilience 1:\nIT solution should have a disaster recovery plan\n\n\n\n\nWhat:\nIT solution should have a well-defined process of restoring IT systems, data, and operations following a disruption\n\n\nWhy:\nTo ensure that the IT solution and data are recoverable after an unforeseen event\n\n\nConsequence:\nIT deliverables will be provided with well-prepared disaster recovery plan that will ensure a rapid restoration of services and data integrity, and minimize damage\n\n\nExample:\nA delivered IT solution has a disaster recovery plan that includes backup protocols, data replication, and recovery timelines\n\n\n\n\n\n\n\n\n\n\nResilience 2:\nEnsuring IT solution continuity\n\n\n\n\nWhat:\nIT solution is designed and implemented in a way that ensures continuous operation during a disruption\n\n\nWhy:\nTo maintain critical operations with a minimal downtime, even when confronted with unforeseen events\n\n\nConsequence:\nIT deliverables are designed for high availability, incorporating redundancy so that in case of a disruption/failure, restore service can immediately take over, minimizing downtime and ensuring continuous operation\n\n\nExample:\nIn the event of a system failure or disruption of the delivered IT solution, restore service automatically take over to maintain service continuity. For instance, if a primary system goes down, a secondary system activates, ensuring that users experience no downtime.",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "4.8 Resilience\n\n\n\n\n\n\n\nResilience 1:\nIT solution should have a disaster recovery plan\n\n\n\n\nWhat:\nIT solution should have a well-defined process of restoring IT systems, data, and operations following a disruption\n\n\nWhy:\nTo ensure that the IT solution and data are recoverable after an unforeseen event\n\n\nConsequence:\nIT deliverables will be provided with well-prepared disaster recovery plan that will ensure a rapid restoration of services and data integrity, and minimize damage\n\n\nExample:\nA delivered IT solution has a disaster recovery plan that includes backup protocols, data replication, and recovery timelines\n\n\n\n\n\n\n\n\n\n\nResilience 2:\nEnsuring IT solution continuity\n\n\n\n\nWhat:\nIT solution is designed and implemented in a way that ensures continuous operation during a disruption\n\n\nWhy:\nTo maintain critical operations with a minimal downtime, even when confronted with unforeseen events\n\n\nConsequence:\nIT deliverables are designed for high availability, incorporating redundancy so that in case of a disruption/failure, restore service can immediately take over, minimizing downtime and ensuring continuous operation\n\n\nExample:\nIn the event of a system failure or disruption of the delivered IT solution, restore service automatically take over to maintain service continuity. For instance, if a primary system goes down, a secondary system activates, ensuring that users experience no downtime."
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#footnotes",
     "href": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#footnotes",
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://commission.europa.eu/content/european-union-public-licence_en↩︎",
-    "crumbs": [
-      "Guidelines",
-      "IT Architecture Principles and Implementation Guidelines"
-    ]
+    "text": "Footnotes\n\n\nhttps://commission.europa.eu/content/european-union-public-licence_en↩︎"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html#overview",
@@ -250,388 +247,127 @@
   {
     "objectID": "DOCS/products/index.html",
     "href": "DOCS/products/index.html",
-    "title": "products",
+    "title": "Documents",
     "section": "",
-    "text": "products",
-    "crumbs": [
-      "Guidelines",
-      "Products"
-    ]
+    "text": "Title\nversion\nDate\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/project-a/sample-doc1.html",
     "href": "DOCS/project-a/sample-doc1.html",
     "title": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222",
     "section": "",
-    "text": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "project-a",
-      "calkiem nowy plik doc1 UPDATE123 44444  NOWA TRESSC 22222"
-    ]
-  },
-  {
-    "objectID": "DOCS/styles/index.html",
-    "href": "DOCS/styles/index.html",
-    "title": "styles",
-    "section": "",
-    "text": "styles",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "styles"
-    ]
+    "text": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "Document control information: (internal project use)",
-    "text": "Document control information: (internal project use)\n\nDetails about the management and oversight of the document, including version control, document identifiers, and distribution lists.\n\n\n\n\n\n\n\nDocument Title\nDx.y Algorithm Theoretical Basis Document\n\n\n\n\nProject Title\nCopernicus Land Monitoring Service – “name of the product”\n\n\nDocument Author\nName (Entity)\n\n\nProject Owner\nName (Entity)\n\n\nProject Manager\nName (Entity)\n\n\nDocument Code\nDx.y\n\n\nDocument Version\nx.y\n\n\nDistribution\nParties to whom the document is provided\n\n\nDate\ndd.mm.yyyy",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "Document control information: (internal project use)\n\nDetails about the management and oversight of the document, including version control, document identifiers, and distribution lists.\n\n\n\n\n\n\n\nDocument Title\nDx.y Algorithm Theoretical Basis Document\n\n\n\n\nProject Title\nCopernicus Land Monitoring Service – “name of the product”\n\n\nDocument Author\nName (Entity)\n\n\nProject Owner\nName (Entity)\n\n\nProject Manager\nName (Entity)\n\n\nDocument Code\nDx.y\n\n\nDocument Version\nx.y\n\n\nDistribution\nParties to whom the document is provided\n\n\nDate\ndd.mm.yyyy"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-approvers-and-reviewers-internal-project-use",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#document-approvers-and-reviewers-internal-project-use",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "Document approver(s) and reviewer(s): (internal project use)",
-    "text": "Document approver(s) and reviewer(s): (internal project use)\n\nNames and roles of individuals who have reviewed and approved the document, ensuring its accuracy, completeness, and compliance with relevant standards.\n\n\n\n\n\n\n\n\n\nName\nRole\nAction\nDate\n\n\n\n\n\nAuthor\n\ndd.mm.yyyy\n\n\n\nReview\n\ndd.mm.yyyy\n\n\n\nApproval\n\ndd.mm.yyyy",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "Document approver(s) and reviewer(s): (internal project use)\n\nNames and roles of individuals who have reviewed and approved the document, ensuring its accuracy, completeness, and compliance with relevant standards.\n\n\n\n\n\n\n\n\n\nName\nRole\nAction\nDate\n\n\n\n\n\nAuthor\n\ndd.mm.yyyy\n\n\n\nReview\n\ndd.mm.yyyy\n\n\n\nApproval\n\ndd.mm.yyyy"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-history-internal-project-use",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#document-history-internal-project-use",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "Document history: (internal project use)",
-    "text": "Document history: (internal project use)\n\nRecord of changes made to the document before the initial published version, including version numbers, dates of revisions, and a summary of modifications.\n\n\n\n\n\n\n\n\n\nVersion\nDate\nCreated by\nShort description of changes\n\n\n\n\n0.1\ndd.mm.yyyy\n\nInitial draft\n\n\n0.2\ndd.mm.yyyy\n\nContent revisions (e.g., structure, formatting)\n\n\n0.3\ndd.mm.yyyy\n\nMinor revisions (e.g., grammar fixes)",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "Document history: (internal project use)\n\nRecord of changes made to the document before the initial published version, including version numbers, dates of revisions, and a summary of modifications.\n\n\n\n\n\n\n\n\n\nVersion\nDate\nCreated by\nShort description of changes\n\n\n\n\n0.1\ndd.mm.yyyy\n\nInitial draft\n\n\n0.2\ndd.mm.yyyy\n\nContent revisions (e.g., structure, formatting)\n\n\n0.3\ndd.mm.yyyy\n\nMinor revisions (e.g., grammar fixes)"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-history",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#document-history",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "Document history:",
-    "text": "Document history:\n\nRecord of changes made to the document over time after the initial published version, including version numbers, dates of revisions, and a summary of modifications. This table must be only included in the initial ATBD published version and without the personal information (“Created by:” filed must be removed).\n\n\n\n\n\n\n\n\nVersion\nDate\nShort description of changes\n\n\n\n\n1.0\ndd.mm.yyyy\nInitial published issue\n\n\n1.1\ndd.mm.yyyy\nMinor revisions (e.g., grammar fixes)\n\n\nx.y\ndd.mm.yyyy\n…\n\n\n\n\n # Executive summary (mandatory chapter)\n\nPresents an overview of the product, including purpose and main features.\nAn executive summary should concisely communicate the key points of the CLMS product to decision-makers and stakeholders. It should provide an overview of the CLMS, highlight the products generated, and summarize what the ATBD presents. To achieve this, consider the following suggestions:\n\nKnow the audience: Write with executives and stakeholders in mind. Focus on what they need to know to make informed decisions and avoid unnecessary details.\nHighlight key points: Clearly summarize the most important aspects of the product, including objectives, key findings, and recommendations, being direct and to the point.\nBe clear and concise: Use straightforward language, aiming for sentences to be no longer than 20–25 words whenever possible. This executive summary should not exceed two pages.\nPrioritize Information: Lead with the most critical information and ensure that the most important details are easily accessible. Use bullet points or subheadings to break down complex information.\nUse active voice: Make your writing more engaging by using active voice. Focus on actions and outcomes, emphasizing what has been done and what is recommended.\nMinimize jargon: Use technical terms only when necessary, and ensure they are clearly explained, and avoid industry-specific jargon that might be unfamiliar to a broader audience.\n\n\n # Background of the document (mandatory chapter)\n\nDetails the scope, the intended audience, content, and structure of the document.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "Document history:\n\nRecord of changes made to the document over time after the initial published version, including version numbers, dates of revisions, and a summary of modifications. This table must be only included in the initial ATBD published version and without the personal information (“Created by:” filed must be removed).\n\n\n\n\n\n\n\n\nVersion\nDate\nShort description of changes\n\n\n\n\n1.0\ndd.mm.yyyy\nInitial published issue\n\n\n1.1\ndd.mm.yyyy\nMinor revisions (e.g., grammar fixes)\n\n\nx.y\ndd.mm.yyyy\n…\n\n\n\n\n # Executive summary (mandatory chapter)\n\nPresents an overview of the product, including purpose and main features.\nAn executive summary should concisely communicate the key points of the CLMS product to decision-makers and stakeholders. It should provide an overview of the CLMS, highlight the products generated, and summarize what the ATBD presents. To achieve this, consider the following suggestions:\n\nKnow the audience: Write with executives and stakeholders in mind. Focus on what they need to know to make informed decisions and avoid unnecessary details.\nHighlight key points: Clearly summarize the most important aspects of the product, including objectives, key findings, and recommendations, being direct and to the point.\nBe clear and concise: Use straightforward language, aiming for sentences to be no longer than 20–25 words whenever possible. This executive summary should not exceed two pages.\nPrioritize Information: Lead with the most critical information and ensure that the most important details are easily accessible. Use bullet points or subheadings to break down complex information.\nUse active voice: Make your writing more engaging by using active voice. Focus on actions and outcomes, emphasizing what has been done and what is recommended.\nMinimize jargon: Use technical terms only when necessary, and ensure they are clearly explained, and avoid industry-specific jargon that might be unfamiliar to a broader audience.\n\n\n # Background of the document (mandatory chapter)\n\nDetails the scope, the intended audience, content, and structure of the document."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#scope-and-objectives-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#scope-and-objectives-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.1 Scope and objectives (mandatory subchapter)",
-    "text": "0.1 Scope and objectives (mandatory subchapter)\n\nExplains the primary purpose and coverage of the document.\n\n\nHere an example:\nThis Algorithm Theoretical Basis Document summarizes the product characteristics and describes production methodologies and workflows of “PRODUCT SHORT NAME”.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.1 Scope and objectives (mandatory subchapter)\n\nExplains the primary purpose and coverage of the document.\n\n\nHere an example:\nThis Algorithm Theoretical Basis Document summarizes the product characteristics and describes production methodologies and workflows of “PRODUCT SHORT NAME”."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#content-and-structure-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#content-and-structure-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.2 Content and structure (mandatory subchapter)",
-    "text": "0.2 Content and structure (mandatory subchapter)\n\nOutlines the document's structure, including chapters on product descriptions, quality, access, and references.\nIn detail, the document is structured as follows:\n\n\n\nChapter 1 provides the executive summary of the project along with a general information about European Union's Earth Observation Programme and Copernicus Land Monitoring Service (CLMS).\nChapter 2 outlines the scope, content and structure of this document.\nChapter 3 details the general thematic content and product descriptions with the methodology, workflows and internal quality control processes.\nChapter 4 discusses know issues of the current methodology and the product.\nChapter 5 presents the terms of use, citation guidelines, and technical support for the product.\nChapter 6 defines key terms used in the document.\nand the Abbreviations & Acronyms, References, Annex, and Appendices Chapters provide citations, supplementary information, and additional reference materials.\n\n\n # Methodology (mandatory chapter)\n\nDescribes the workflow, input datasets, production methodology including data pre-processing, processing, post-processing and quality control and product verification.\nIn the “Methodology Description” chapter, some of the subchapters are classified as mandatory, but only if they are relevant to the methodology being described. Optional subchapters can be included or omitted, allowing flexibility to adapt the structure to the specific characteristics of the product.\nIf any of the following mandatory sections cannot be described or are not applicable, please include a statement in the corresponding section explaining the reason.\nProvide an overview table of methodology. Follow the example below:\n\n\n\n\nCategory Title\nDescription/Details\n\n\n\n\nRetrieval Methodology\nExample: Convolutional Neural Network (CNN), Time Series Analysis, Change Detection, etc.\n\n\nInput Data\nExample: Sentinel-2 (S2A, S2B), Level-2ª (processing baseline 05.11), retrieved via ESA Copernicus Open Access Hub\n\n\nAncillary Data\nExample: OSM: Open Street Map roads, parking lots, runways and building footprints, CLC: CORINE Land Cover 2018 (1.2.2 Road and rail networks and associated land)\n\n\nProcessing Workflow\nExample: Cloud masking, atmospheric correction, radiometric calibration, temporal compositing\n\n\nSpatial/Temporal Resolution\nExample: 10m spatial resolution\n\n\nVerification and Accuracy\nExample: Product verification using ground-based reference, accuracy assessment with RMSE calculations.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.2 Content and structure (mandatory subchapter)\n\nOutlines the document's structure, including chapters on product descriptions, quality, access, and references.\nIn detail, the document is structured as follows:\n\n\n\nChapter 1 provides the executive summary of the project along with a general information about European Union's Earth Observation Programme and Copernicus Land Monitoring Service (CLMS).\nChapter 2 outlines the scope, content and structure of this document.\nChapter 3 details the general thematic content and product descriptions with the methodology, workflows and internal quality control processes.\nChapter 4 discusses know issues of the current methodology and the product.\nChapter 5 presents the terms of use, citation guidelines, and technical support for the product.\nChapter 6 defines key terms used in the document.\nand the Abbreviations & Acronyms, References, Annex, and Appendices Chapters provide citations, supplementary information, and additional reference materials.\n\n\n # Methodology (mandatory chapter)\n\nDescribes the workflow, input datasets, production methodology including data pre-processing, processing, post-processing and quality control and product verification.\nIn the “Methodology Description” chapter, some of the subchapters are classified as mandatory, but only if they are relevant to the methodology being described. Optional subchapters can be included or omitted, allowing flexibility to adapt the structure to the specific characteristics of the product.\nIf any of the following mandatory sections cannot be described or are not applicable, please include a statement in the corresponding section explaining the reason.\nProvide an overview table of methodology. Follow the example below:\n\n\n\n\nCategory Title\nDescription/Details\n\n\n\n\nRetrieval Methodology\nExample: Convolutional Neural Network (CNN), Time Series Analysis, Change Detection, etc.\n\n\nInput Data\nExample: Sentinel-2 (S2A, S2B), Level-2ª (processing baseline 05.11), retrieved via ESA Copernicus Open Access Hub\n\n\nAncillary Data\nExample: OSM: Open Street Map roads, parking lots, runways and building footprints, CLC: CORINE Land Cover 2018 (1.2.2 Road and rail networks and associated land)\n\n\nProcessing Workflow\nExample: Cloud masking, atmospheric correction, radiometric calibration, temporal compositing\n\n\nSpatial/Temporal Resolution\nExample: 10m spatial resolution\n\n\nVerification and Accuracy\nExample: Product verification using ground-based reference, accuracy assessment with RMSE calculations."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#theoretical-background-optional-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#theoretical-background-optional-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.3 Theoretical Background (optional subchapter)",
-    "text": "0.3 Theoretical Background (optional subchapter)\n\nProvides an overview of concepts, common definitions and assumptions of the product and links it to related previous studies and work to allow an understanding of the product and applied methodology.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.3 Theoretical Background (optional subchapter)\n\nProvides an overview of concepts, common definitions and assumptions of the product and links it to related previous studies and work to allow an understanding of the product and applied methodology."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#methodology-and-workflow-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#methodology-and-workflow-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.4 Methodology and workflow (mandatory subchapter)",
-    "text": "0.4 Methodology and workflow (mandatory subchapter)\n\nProvides an overview of the product generation, highlighting the workflow, the input datasets, key processes involved, and algorithms used. Ideally, the description is complemented by a traceability diagram that allows users to understand the uncertainty budget of the product as a result of its inputs and workflow (if needed, add subchapter).\nBelow is a generic example that should be adapted to the specific needs of the product to provide an overview of the production process workflow.\n\n\n\n\nFigure 1.1 Example of a generic workflow (insert your caption here, delete feature and insert your feature)",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.4 Methodology and workflow (mandatory subchapter)\n\nProvides an overview of the product generation, highlighting the workflow, the input datasets, key processes involved, and algorithms used. Ideally, the description is complemented by a traceability diagram that allows users to understand the uncertainty budget of the product as a result of its inputs and workflow (if needed, add subchapter).\nBelow is a generic example that should be adapted to the specific needs of the product to provide an overview of the production process workflow.\n\n\n\n\nFigure 1.1 Example of a generic workflow (insert your caption here, delete feature and insert your feature)"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#source-data-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#source-data-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.5 Source data (mandatory subchapter)",
-    "text": "0.5 Source data (mandatory subchapter)\n\nExplain which datasets (e.g., Sentinel-x, DEM, or other CLMS products) serve as input for the product. Clarify internal dependencies within the product, such as primary data used to generate secondary outputs. Reference external thematic data where applicable and ensure the workflow diagram illustrates the connections between different datasets.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.5 Source data (mandatory subchapter)\n\nExplain which datasets (e.g., Sentinel-x, DEM, or other CLMS products) serve as input for the product. Clarify internal dependencies within the product, such as primary data used to generate secondary outputs. Reference external thematic data where applicable and ensure the workflow diagram illustrates the connections between different datasets."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#pre-processing-optional-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#pre-processing-optional-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.6 Pre-processing (optional subchapter)",
-    "text": "0.6 Pre-processing (optional subchapter)\n\nDetails the initial steps taken to prepare the data for further processing, including corrections and adjustments to raw data. Sub-chapter structure optional.\n\n\n0.6.1 Pre-processing overview (optional subchapter)\n\nIntroduces the pre-processing stage, outlining its purpose and significance in the overall methodology.\n\n\n\n0.6.2 Input data for pre-processing (optional subchapter)\n\nLists the various input datasets used in the pre-processing stage.\n\n\n\n0.6.3 Pre-processing methodology (optional subchapter)\n\nDescribes the specific workflow and steps involved in pre-processing the input data, including correction (e.g. atmospheric, topographic, geometric corrections) and cleaning operations within the project activities.\n\n\n\n0.6.4 Intermediate outputs (optional subchapter)\n\nSpecifies the types of output data generated from the pre-processing stage, which will be used in subsequent processing steps.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.6 Pre-processing (optional subchapter)\n\nDetails the initial steps taken to prepare the data for further processing, including corrections and adjustments to raw data. Sub-chapter structure optional.\n\n\n0.6.1 Pre-processing overview (optional subchapter)\n\nIntroduces the pre-processing stage, outlining its purpose and significance in the overall methodology.\n\n\n\n0.6.2 Input data for pre-processing (optional subchapter)\n\nLists the various input datasets used in the pre-processing stage.\n\n\n\n0.6.3 Pre-processing methodology (optional subchapter)\n\nDescribes the specific workflow and steps involved in pre-processing the input data, including correction (e.g. atmospheric, topographic, geometric corrections) and cleaning operations within the project activities.\n\n\n\n0.6.4 Intermediate outputs (optional subchapter)\n\nSpecifies the types of output data generated from the pre-processing stage, which will be used in subsequent processing steps."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#processing-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#processing-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.7 Processing (mandatory subchapter)",
-    "text": "0.7 Processing (mandatory subchapter)\n\nDetails the core processing steps that transform pre-processed data into the final products, and the configuration of the tools used for corrections. Product derivation tasks, such as aggregation rules and change layer calculation can be described in this section.\nThe subchapter structure is optional.\n\n\n0.7.1 Processing overview (optional subchapter)\n\nSummarizes the main goals and components of the processing stage.\n\n\n\n0.7.2 Input data for processing (optional subchapter)\n\nIdentifies the input data required for the processing stage, including pre-processed datasets and additional ancillary data.\n\n\n\n0.7.3 Processing methodology (optional subchapter)\n\nOutlines the workflow and methods used during the processing stage, detailing each step.\n\n\n\n0.7.4 Algorithm descriptions (optional subchapter)\n\nProvides detailed descriptions of the algorithms used in the processing stage.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.7 Processing (mandatory subchapter)\n\nDetails the core processing steps that transform pre-processed data into the final products, and the configuration of the tools used for corrections. Product derivation tasks, such as aggregation rules and change layer calculation can be described in this section.\nThe subchapter structure is optional.\n\n\n0.7.1 Processing overview (optional subchapter)\n\nSummarizes the main goals and components of the processing stage.\n\n\n\n0.7.2 Input data for processing (optional subchapter)\n\nIdentifies the input data required for the processing stage, including pre-processed datasets and additional ancillary data.\n\n\n\n0.7.3 Processing methodology (optional subchapter)\n\nOutlines the workflow and methods used during the processing stage, detailing each step.\n\n\n\n0.7.4 Algorithm descriptions (optional subchapter)\n\nProvides detailed descriptions of the algorithms used in the processing stage."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#post-processing-optional-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#post-processing-optional-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.8 Post-processing (optional subchapter)",
-    "text": "0.8 Post-processing (optional subchapter)\n\nPresents tasks typically involved in the refinement, quality assurance and control, and finalization of the datasets such has manual steps, filtering and smoothing, integration of ancillary data, reprojecting, resampling or merging, classification improvements and preparing data for end-users. A subchapter structure as suggested with previous sections may be introduced if necessary.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.8 Post-processing (optional subchapter)\n\nPresents tasks typically involved in the refinement, quality assurance and control, and finalization of the datasets such has manual steps, filtering and smoothing, integration of ancillary data, reprojecting, resampling or merging, classification improvements and preparing data for end-users. A subchapter structure as suggested with previous sections may be introduced if necessary."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#output-products-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#output-products-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.9 Output products (mandatory subchapter)",
-    "text": "0.9 Output products (mandatory subchapter)\n\nSpecifies the types of output products generated (e.g., status layer/change/auxiliary layer, reference layer, near-real time).\n\n # Quality control and production verification (mandatory subchapter)\n\nDiscusses the methods and criteria used to assess the internal quality assurance and control process as well as production verification, the quality and accuracy of the products, ensuring they meet the required standards and specifications.\n\n # Recognized technical issues (mandatory chapter)\n\nDiscusses any challenges or limitations of the current methodology, algorithm, input and reference data or technical aspects relevant to the product that might influence its quality, validity or reliability. At the same time, any foreseeable planned developments could be mentioned here.\n\n # Terms of use and product technical support (mandatory chapter)\n\nPresents information on the terms of use, citation guidelines, and technical support for the products.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.9 Output products (mandatory subchapter)\n\nSpecifies the types of output products generated (e.g., status layer/change/auxiliary layer, reference layer, near-real time).\n\n # Quality control and production verification (mandatory subchapter)\n\nDiscusses the methods and criteria used to assess the internal quality assurance and control process as well as production verification, the quality and accuracy of the products, ensuring they meet the required standards and specifications.\n\n # Recognized technical issues (mandatory chapter)\n\nDiscusses any challenges or limitations of the current methodology, algorithm, input and reference data or technical aspects relevant to the product that might influence its quality, validity or reliability. At the same time, any foreseeable planned developments could be mentioned here.\n\n # Terms of use and product technical support (mandatory chapter)\n\nPresents information on the terms of use, citation guidelines, and technical support for the products."
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#terms-of-use-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#terms-of-use-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.10 Terms of use (mandatory subchapter)",
-    "text": "0.10 Terms of use (mandatory subchapter)\n\nPresents information on the legal use of data for added products or derivative works.\nHere an example of a standard text.\n\n\nThe Terms of Use for the product(s) described in this document, acknowledge the following:\nFree, full and open access to the products and services of the Copernicus Land Monitoring Service is made on the conditions that:\n\nWhen distributing or communicating Copernicus Land Monitoring Service products and services (data, software scripts, web services, user and methodological documentation and similar) to the public, users shall inform the public of the source of these products and services and shall acknowledge that the Copernicus Land Monitoring Service products and services were produced “with funding by the European Union”.\nWhere the Copernicus Land Monitoring Service products and services have been adapted or modified by the user, the user shall clearly state this.\nUsers shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the European Union.\n\nThe user has all intellectual property rights to the products he/she has created based on the Copernicus Land Monitoring Service products and services.\nConsult Data policy — Copernicus Land Monitoring Service for further details",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.10 Terms of use (mandatory subchapter)\n\nPresents information on the legal use of data for added products or derivative works.\nHere an example of a standard text.\n\n\nThe Terms of Use for the product(s) described in this document, acknowledge the following:\nFree, full and open access to the products and services of the Copernicus Land Monitoring Service is made on the conditions that:\n\nWhen distributing or communicating Copernicus Land Monitoring Service products and services (data, software scripts, web services, user and methodological documentation and similar) to the public, users shall inform the public of the source of these products and services and shall acknowledge that the Copernicus Land Monitoring Service products and services were produced “with funding by the European Union”.\nWhere the Copernicus Land Monitoring Service products and services have been adapted or modified by the user, the user shall clearly state this.\nUsers shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the European Union.\n\nThe user has all intellectual property rights to the products he/she has created based on the Copernicus Land Monitoring Service products and services.\nConsult Data policy — Copernicus Land Monitoring Service for further details"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#citation-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#citation-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.11 Citation (mandatory subchapter)",
-    "text": "0.11 Citation (mandatory subchapter)\n\nPresents guidelines on how to properly cite and reference the products and services of the CLMS.\nHere are examples of standard text to be used according to the situation:\n\n\nWhen planning to publish a publication (scientific, commercial, etc.), it shall explicitly mention:\n\n“This publication has been prepared using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen developing a product or service using the products or services of the Copernicus Land Monitoring Service, it shall explicitly mention:\n\n“Generated using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen redistributing a part of the Copernicus Land Monitoring Service (product, dataset, documentation, picture, web service, etc.), it shall explicitly mention:\n\n“European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nConsult Data policy — Copernicus Land Monitoring Service for further details",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
+    "text": "0.11 Citation (mandatory subchapter)\n\nPresents guidelines on how to properly cite and reference the products and services of the CLMS.\nHere are examples of standard text to be used according to the situation:\n\n\nWhen planning to publish a publication (scientific, commercial, etc.), it shall explicitly mention:\n\n“This publication has been prepared using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen developing a product or service using the products or services of the Copernicus Land Monitoring Service, it shall explicitly mention:\n\n“Generated using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen redistributing a part of the Copernicus Land Monitoring Service (product, dataset, documentation, picture, web service, etc.), it shall explicitly mention:\n\n“European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nConsult Data policy — Copernicus Land Monitoring Service for further details"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#product-technical-support-mandatory-subchapter",
     "href": "DOCS/templates/CLMS_ATBD_Template.html#product-technical-support-mandatory-subchapter",
     "title": "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
     "section": "0.12 Product technical support (mandatory subchapter)",
-    "text": "0.12 Product technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)\n\n # List of abbreviations & acronyms (mandatory chapter)\n\nLists abbreviations and acronyms used throughout the document.\n\n\n\n\n\n\n\n\n\nAbbreviation\nName\nReference\n\n\n\n\nATBD\nAlgorithm Theoretical Basis Document\n\n\n\nDOI\nDigital Object Identifier\n\n\n\nEEA\nEuropean Environment Agency\nwww.eea.europa.eu\n\n\nPUM\nProduct User Manual\n\n\n\n\n # References (mandatory chapter)\n\nLists references cited throughout the document.\n\n # Annexes (optional chapter)\n\nAnnexes should be kept to a minimum but can be placed as needed to present technical details, data and information repository, resources on product development.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "Document control information: (internal project use)",
-    "text": "Document control information: (internal project use)\n\nDetails about the management and oversight of the document, including version control, document identifiers, and distribution lists.\n\n\n\n\n\n\n\nDocument Title\nDx.y Product User Manual\n\n\n\n\nProject Title\nCopernicus Land Monitoring Service – “name of the product”\n\n\nDocument Author\nName (Entity)\n\n\nProject Owner\nName (Entity)\n\n\nProject Manager\nName (Entity)\n\n\nDocument Code\nDx.y\n\n\nDocument Version\nx.y\n\n\nDistribution\nParties to whom the document is provided",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-approvers-and-reviewers-internal-project-use",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#document-approvers-and-reviewers-internal-project-use",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "Document approver(s) and reviewer(s): (internal project use)",
-    "text": "Document approver(s) and reviewer(s): (internal project use)\n\nNames and roles of individuals who have reviewed and approved the document, ensuring its accuracy, completeness, and compliance with relevant standards.\n\n\n\n\n\n\n\n\n\nName\nRole\nAction\nDate\n\n\n\n\n\nAuthor\n\ndd.mm.yyyy\n\n\n\nReview\n\ndd.mm.yyyy\n\n\n\nApproval\n\ndd.mm.yyyy",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-history-internal-project-use",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#document-history-internal-project-use",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "Document history: (internal project use)",
-    "text": "Document history: (internal project use)\n\nRecord of changes made to the document before the initial published version, including version numbers, dates of revisions, and a summary of modifications.\n\n\n\n\n\n\n\n\n\nVersion\nDate\nCreated by\nShort description of changes\n\n\n\n\n0.1\ndd.mm.yyyy\n\nInitial draft\n\n\n0.2\ndd.mm.yyyy\n\nContent revisions (e.g., structure, formatting)\n\n\n0.3\ndd.mm.yyyy\n\nMinor revisions (e.g., grammar fixes)",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-history",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#document-history",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "Document history:",
-    "text": "Document history:\n\nRecord of changes made to the document over time after the initial published version, including version numbers, dates of revisions, and a summary of modifications. This table must be only included in the initial PUM published version and without the personal information (“Created by:” filed must be removed).\n\n\n\n\n\n\n\n\nVersion\nDate\nShort description of changes\n\n\n\n\n1.0\ndd.mm.yyyy\nInitial published issue\n\n\n1.1\ndd.mm.yyyy\nMinor revisions (e.g., grammar fixes)\n\n\nx.y\ndd.mm.yyyy\n…",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#overview-of-the-product-and-contained-layers-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#overview-of-the-product-and-contained-layers-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "7.1 Overview of the product and contained layers (mandatory subchapter)",
-    "text": "7.1 Overview of the product and contained layers (mandatory subchapter)\n\nIntroduces the product (-suite) including the contained layers and their key features, components and the relation between them. The contained products/layers may be structured as needed. The suggestion is to use either separate third-level subchapters (i.e. 7.1.x) or any useful categorization () of contained products/layers without third-level subchapters.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-characteristics-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#product-characteristics-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "7.2 Product characteristics (mandatory subchapter)",
-    "text": "7.2 Product characteristics (mandatory subchapter)\n\nDescribes the characteristics of the product, the thematic definition and the relation with different products/layers, the elements included and excluded, classified features and the layer’s coding. Use third-level subchapters to structure if needed.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-specifications-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#product-specifications-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "7.3 Product specifications (mandatory subchapter)",
-    "text": "7.3 Product specifications (mandatory subchapter)\n\nDetails the description of each layer, including specific details about its resolution, accuracy, data type, other technical specifications, and geographic coverage. Use third-level subchapters to structure if needed.\nThe following tables shall be used as guidance to describe the layers specifications. Use separate tables for separate layers (if applicable).\nPlease note that:\n\nIf a field from Table 7.1 and Table 7.2 is not applicable, please insert the code 'NA' in the content description. Tables should ideally be formatted to fit on one page.\nBoth Table 7.1 and Table 7.2 must fit on a single page. If any content descriptions are too lengthy and cause these tables to extend beyond one page (e.g., vector attributes), such content should be relocated to the annex section. References to this content must then be included in Table 7.1 and Table 7.2 accordingly.\n\n\n\n\n\nTable 7.1 Vector product/layer sheet (replace with field ‘Layer name’)\n\n\n\n\n\n\n\n\n\n\nField\nContent description\n\n\n\n\nLayer name\nDescriptive name of the layer (e.g., Urban Atlas Land Cover/Land Use 2021; CLCplus Backbone 2018 vector)\n\n\nAcronym\nAbbreviation or shortened form of the layer name (align with file naming)\n\n\nProduct (group/family)\nBroader category or group to which the layer belongs within the CLMS portfolio (e.g. Urban Atlas (Priority Area Monitoring); CLCplus (Land Cover and Land Use Mapping))\n\n\nLayer category\nCategorization of a layer according to its content, purpose, timeliness, level of processing or similar (e.g. status/change/auxiliary/reference layer; near-real time)\n\n\nSummary\nBrief description of the layer, including the data type (vector), spatial resolution, input data sources, reference dates, and auxiliary features\n\n\nReference year/cycle/period\nSpecific year, cycle or period that the data represents (e.g. 2018, 2017-2024, days 1-10)\n\n\nGeometric resolution\nMapping scale of the vector data (e.g. scale of 1:10 000)\n\n\nCoordinate Reference System\nSpatial reference system used (e.g. European ETRS89 LAEA projection/national projections)\n\n\nCoverage\nGeographic area covered by the product area (and reference of EEA coverage) (e.g. EEA-38 + UK)\n\n\nGeometric accuracy\nPositional accuracy of the product, expressed in meters at a specific % confidence level (e.g. ~11m at 95.5% confidence)\n\n\nThematic accuracy\nAccuracy of the thematic classification (according to the target technical requirements), expressed as a percentage for omission and commission errors (e.g. 95% overall accuracy, with omission errors and commission errors not exceeding 15% per class)\n\n\nMinimum Mapping Unit\nSmallest area that is represented in the product (e.g., 0.5 ha)\n\n\nMinimum Mapping Width\nSmallest width of features that is represented in the product (e.g., 20 m)\n\n\nVector classes\nValues assigned to different thematic categories within the vector data\n11: Very high sealing degree\n21: Pure needle leaved\n...\n\n\nAttributes\nAttribute information associated with vector features, including the following minimum fields:\n\n\nField\nDescription\nType\nValue(s)\nNoData value\n\n\nShape\nPolygon\nGeometry\nPolygon\n\n\n\nShape_Area\nArea\nDouble\n0.001 to 1.8E308\n\n\n\nX_code\nX vector LC class\nInteger\n\n254\n\n\nMetadata\nDescription of the accompanying metadata, including its format and content (e.g. XML metadata files compliant with INSPIRE metadata standards)\n\n\nDelivery format\nFile format in which the layer and ancillary files are delivered (e.g. geopackage, dataset in HDF5, external colour tables in *.lyr and *.lyrx formats)\n\n\nQuality -- Production verification\nQuality statement of the layer detailing the results of production verification: user's/producer's or/and overall quality of the layer (e.g. layer thematic accuracy reached/exceed the 90% producer's and user's target.)\n\n\n\n\n\n\n\nTable 7.2 Raster product/layer sheet (replace with field 'Layer name')\n\n\n\n\n\n\n\nField\nContent description\n\n\n\n\nLayer name\nDescriptive name of the layer (e.g. HRL Forest - Tree Cover Density 10m)\n\n\nAcronym\nAbbreviation or shortened form of the layer name (align with file naming)\n\n\nProduct (group/family)\nBroader category or group to which the layer belongs within the CLMS portfolio (e.g. VLCC/HRL Forest (Land Cover and Land Use Mapping; HR-VPP (Bio-geophysical Parameters)\n\n\nLayer category\nCategorization of a layer according to its content, purpose, timeliness, level of processing or similar (e.g. status/change/auxiliary/reference layer; near-real time)\n\n\nSummary\nBrief description of the layer, including the data type (vector), spatial resolution, input data sources, reference dates, and auxiliary features\n\n\nReference year/cycle/period\nSpecific year, cycle or period that the data represents (e.g. 2018, 2017-2024, days 1-10)\n\n\nGeometric resolution\nMapping scale of the vector data (e.g. scale of 1:10 000)\n\n\nCoordinate Reference System\nSpatial reference system used (e.g. European ETRS89 LAEA projection/national projections)\n\n\nCoverage\nGeographic area covered by the layer (and reference of EEA coverage) (e.g. EEA-38 + UK)\n\n\nGeometric accuracy\nPositional accuracy of the layer, expressed in meters at a specific % confidence level (e.g. ~11m at 95.5% confidence)\n\n\nThematic accuracy\nAccuracy of the thematic classification (according to the target technical requirements), expressed as a percentage for omission and commission errors (e.g. 95% overall accuracy, with omission errors and commission errors not exceeding 15% per class)\n\n\nMinimum Mapping Unit (MMU)\nSmallest area that is represented in the layer (e.g. 0.5 ha (50 pixels))\n\n\nRaster coding\nValues assigned to different thematic categories within the raster data 0: all non-tree covered areas\n1-100: tree cover density %\n...\n\n\nMetadata\nDescription of the accompanying metadata, including its format and content (e.g. XML metadata files compliant with INSPIRE metadata standards)\n\n\nDelivery format\nFile format in which layer is delivered (e.g. GeoTiff)\n\n\nQuality - Production verification\nQuality statement of the layer detailing the results of production verification: user's/producer's or/and overall quality of the layer (e.g. layer thematic accuracy reached/exceed the 90% producer's and user's target.)",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#known-thematic-overlaps-of-the-product-optional-chapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#known-thematic-overlaps-of-the-product-optional-chapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "7.4 Known thematic overlaps of the product (optional chapter)",
-    "text": "7.4 Known thematic overlaps of the product (optional chapter)\n\nProvides guidance to assist users in selecting the most appropriate dataset when thematic overlaps exist between CLMS products and known external datasets. The guidance can outline criteria for choosing the best product based on factors such as:\n\nTemporal and spatial resolution\nData accuracy and validation\nData harmonization and interoperability\n\nA few illustrative use cases can help users to recognize where they might encounter thematic overlaps. Additionally, introducing a simple decision tree can help guide users through the process of evaluating overlapping datasets, addressing questions such as whether higher spatial resolution is required, the need for the most recent data, and whether the dataset includes the necessary thematic classes.",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#terms-of-use-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#terms-of-use-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "9.1 Terms of use (mandatory subchapter)",
-    "text": "9.1 Terms of use (mandatory subchapter)\n\nPresents information on the legal use of data for added products or derivative works.\nHere an example of a standard text.\n\n\nThe Terms of Use for the product(s) described in this document, acknowledge the following:\nFree, full and open access to the products and services of the Copernicus Land Monitoring Service is made on the conditions that:\n\nWhen distributing or communicating Copernicus Land Monitoring Service products and services (data, software scripts, web services, user and methodological documentation and similar) to the public, users shall inform the public of the source of these products and services and shall acknowledge that the Copernicus Land Monitoring Service products and services were produced “with funding by the European Union”.\nWhere the Copernicus Land Monitoring Service products and services have been adapted or modified by the user, the user shall clearly state this.\nUsers shall make sure not to convey the impression to the public that the user's activities are officially endorsed by the European Union.\n\nThe user has all intellectual property rights to the products he/she has created based on the Copernicus Land Monitoring Service products and services.\nCopernicus Land Monitoring Service - Data policy",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#citation-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#citation-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "9.2 Citation (mandatory subchapter)",
-    "text": "9.2 Citation (mandatory subchapter)\n\nPresents guidelines on how to properly cite and reference the products and services of the CLMS.\nHere are examples of standard text to be used according to the situation:\n\n\nWhen planning to publish a publication (scientific, commercial, etc.), it shall explicitly mention:\n\n“This publication has been prepared using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen developing a product or service using the products or services of the Copernicus Land Monitoring Service, it should shall explicitly mention:\n\n“Generated using European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\nWhen redistributing a part of the Copernicus Land Monitoring Service (product, dataset, documentation, picture, web service, etc.), it shall explicitly mention:\n\n“European Union's Copernicus Land Monitoring Service information; &lt;insert all relevant DOI links here, if applicable&gt;”\n\n\nCopernicus Land Monitoring Service - Data policy",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
-  },
-  {
-    "objectID": "DOCS/templates/CLMS_PUM_Template.html#product-technical-support-mandatory-subchapter",
-    "href": "DOCS/templates/CLMS_PUM_Template.html#product-technical-support-mandatory-subchapter",
-    "title": "Product SHORT NAME Product User Manual (PUM)",
-    "section": "9.3 Product Technical support (mandatory subchapter)",
-    "text": "9.3 Product Technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)",
-    "crumbs": [
-      "Guidelines",
-      "Other",
-      "templates",
-      "Product SHORT NAME Product User Manual (PUM)"
-    ]
+    "text": "0.12 Product technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)\n\n # List of abbreviations & acronyms (mandatory chapter)\n\nLists abbreviations and acronyms used throughout the document.\n\n\n\n\n\n\n\n\n\nAbbreviation\nName\nReference\n\n\n\n\nATBD\nAlgorithm Theoretical Basis Document\n\n\n\nDOI\nDigital Object Identifier\n\n\n\nEEA\nEuropean Environment Agency\nwww.eea.europa.eu\n\n\nPUM\nProduct User Manual\n\n\n\n\n # References (mandatory chapter)\n\nLists references cited throughout the document.\n\n # Annexes (optional chapter)\n\nAnnexes should be kept to a minimum but can be placed as needed to present technical details, data and information repository, resources on product development."
   }
 ]

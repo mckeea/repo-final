@@ -1,13 +1,9 @@
 [
   {
-    "listing": "/DOCS/products/index.html",
-    "items": []
-  },
-  {
-    "listing": "/DOCS/index.html",
+    "listing": "/DOCS/project-a/index.html",
     "items": [
-      "/DOCS/products/index.html",
-      "/DOCS/guidelines/index.html"
+      "/DOCS/project-a/sample-doc1.html",
+      "/DOCS/project-a/sample-doc2.html"
     ]
   },
   {
@@ -17,5 +13,17 @@
       "/DOCS/guidelines/technical_overview.pdf",
       "/DOCS/guidelines/user_guidelines.pdf"
     ]
+  },
+  {
+    "listing": "/DOCS/index.html",
+    "items": [
+      "/DOCS/products/index.html",
+      "/DOCS/guidelines/index.html",
+      "/DOCS/project-a/index.html"
+    ]
+  },
+  {
+    "listing": "/DOCS/products/index.html",
+    "items": []
   }
 ]
