@@ -21,10 +21,6 @@ listing:
   sort: title
   fields: [title]
 ---
-
-# ${title}
-
-Browse all documents in this section.
 `;
 
   try {
@@ -46,8 +42,6 @@ ${subfolders.map((f) => `    - ${f}/index.qmd`).join("\n")}
   sort: title
   fields: [title]
 ---
-
-# All Documentation
 `;
 
   await writeFile(indexPath, indexContent);
