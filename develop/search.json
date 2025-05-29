@@ -79,16 +79,16 @@
   {
     "objectID": "DOCS/project-a/sample-doc2.html",
     "href": "DOCS/project-a/sample-doc2.html",
-    "title": "Technical Library",
+    "title": "plik 2",
     "section": "",
-    "text": "nowy docs"
+    "text": "plik 2\nnowy docs"
   },
   {
     "objectID": "DOCS/project-a/index.html",
     "href": "DOCS/project-a/index.html",
     "title": "Project A",
     "section": "",
-    "text": "Project A\nBrowse all documents in this section.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\ncalkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\ncalkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n\n\nplik 2\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/guidelines/user_guidelines.html#step-1-create-your-feature-branch",
@@ -144,7 +144,7 @@
     "href": "DOCS/index.html",
     "title": "Documentation",
     "section": "",
-    "text": "All Documentation\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#architecture",
