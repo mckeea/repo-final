@@ -81,14 +81,14 @@
     "href": "DOCS/project-a/sample-doc2.html",
     "title": "plik 2",
     "section": "",
-    "text": "plik 2\nnowy docs"
+    "text": "plik 2\nnowy docs\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/project-a/index.html",
     "href": "DOCS/project-a/index.html",
     "title": "Project A",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\ncalkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n\n\nplik 2\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\ncalkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n\n\nplik 2\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/user_guidelines.html#step-1-create-your-feature-branch",
@@ -137,14 +137,14 @@
     "href": "DOCS/guidelines/index.html",
     "title": "Guidelines",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nversion\n\n\n\nDate\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n1.4b\n\n\nApr 8, 2025\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n \n\n\n \n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nversion\n\n\n\nDate\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n1.4b\n\n\nApr 8, 2025\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n \n\n\n \n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/index.html",
     "href": "DOCS/index.html",
     "title": "Documentation",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html#architecture",
@@ -249,14 +249,14 @@
     "href": "DOCS/products/index.html",
     "title": "Documents",
     "section": "",
-    "text": "Title\nversion\nDate\n\n\n\n\n\nNo matching items"
+    "text": "Title\nversion\nDate\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/project-a/sample-doc1.html",
     "href": "DOCS/project-a/sample-doc1.html",
     "title": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222",
     "section": "",
-    "text": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222"
+    "text": "calkiem nowy plik doc1 UPDATE123 44444 NOWA TRESSC 22222\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",
