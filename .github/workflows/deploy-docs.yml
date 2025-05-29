@@ -1,14 +1,16 @@
 name: Deploy Documentation
 
 on:
-  push:
-    branches:
-      - develop
-      - test
-      - main
+  workflow_run:
+    workflows: ["merge_external_publish"]
+    types:
+      - completed
 
 jobs:
   deploy_docs:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      contains(['main', 'test', 'develop'], github.event.workflow_run.head_branch)
     runs-on: ubuntu-latest
     container:
       image: mckeea/quarto-doc-builder:latest
