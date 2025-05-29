@@ -48,19 +48,16 @@ echo "🔎 Checking files inside publish branch (fast tree scan)..."
 run_git "fetching develop branch" fetch origin develop
 PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
 echo "PUBLISH_COMMIT: $PUBLISH_COMMIT"
-git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
-cat changed-files.txt
-echo "filteruingout"
 
-# Define the list of files to remove
 EXCLUDE_FILES=(
   ".github/workflows/trigger.yml"
   ".gitignore"
 )
 
-# Call the function
-filter_changed_files "changed-files.txt" EXCLUDE_FILES || exit 1
-
+# Build grep pattern
+PATTERN=$(printf '%s\n' "${EXCLUDE_FILES[@]}" | sed -E 's/[][\.^$*+?(){}|]/\\&/g' | sed 's|^|^|' | sed 's|$|$|' | paste -sd'|' -)
+git ls-tree -r --name-only "$PUBLISH_COMMIT" | grep -vE "$PATTERN" > changed-files.txt
+#git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
 cat changed-files.txt
 
 INVALID_FILES=$(grep -v "^DOCS/${PROJECT_NAME}/" changed-files.txt || true)
