@@ -13,13 +13,13 @@ description: "This document presents the IT Architecture Principles and Implemen
   adaptable, and efficiently operated."
 
 metadata-files:
-- ../../metadata/default.yml
+- ../../includes/default.yml
 
 format:
   html:
-    css: ../styles/styles.css
+    css: ../theme/styles.css
   docx:
-    reference-doc: ../styles/template-guideline.docx
+    reference-doc: ../theme/template-guideline.docx
   pdf: default
 keywords: ["framework eea", "clms architecture", "eea clms", "functionality automation",
   "standardized infrastructure", "terms software", "responsibilities implement", "program

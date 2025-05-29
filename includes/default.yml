@@ -10,8 +10,8 @@ keywords: "{keywords_str}"
 format:
   html:
     include-in-header:
-      - ../../metadata/json-ld.html
-    include-before-body: ../../metadata/default-before-body.html
+      - ../../includes/json-ld.html
+    include-before-body: ../../includes/default-before-body.html
     code-fold: true # Allow code blocks to be foldable
     self-contained: true # Embed resources like CSS and images
   docx:

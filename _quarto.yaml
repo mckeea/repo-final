@@ -15,19 +15,25 @@ website:
   title: "Technical Library"
   site-url: "https://eea.github.io/CLMS_documents"
   page-navigation: true
+  page-navigation-title: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  search: true
   navbar:
     background: "#a0b128"
     foreground: "#ffffff"
     search: false
-    # left:
-    #   - text: "Guidelines"
-    #     href: DOCS/guidelines/index.qmd
+  page-footer:
+    left: |
+      © 2025 EEA. All rights reserved.
+    right: |
+      [GitHub](https://github.com/eea/CLMS_documents)
 
 format:
   html:
     output-dir: ../_site # Moves rendered files outside src/
-    include-before-body: DOCS/styles/main-logos.html
-    css: DOCS/styles/main.css
+    include-before-body: includes/main-logos.html
+    css: DOCS/theme/main.css
 
 filters:
   - .github/scripts/filters/extract-images.lua

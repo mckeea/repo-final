@@ -9,13 +9,13 @@ product-name: Product Name
 description: "Product DESCRIPTION"
 
 metadata-files:
-- ../../metadata/default.yml
+- ../../includes/default.yml
 
 format:
   html:
-    css: ../styles/styles.css
+    css: ../theme/styles.css
   docx:
-    reference-doc: ../styles/template-pum.docx
+    reference-doc: ../theme/template-pum.docx
     hidden: true
   pdf: default
 ---
