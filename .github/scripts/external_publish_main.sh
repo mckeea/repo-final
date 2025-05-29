@@ -4,21 +4,34 @@ set -euo pipefail
 source "$(dirname "$0")/helpers/git-utils.sh"
 
 filter_changed_files() {
-  echo "start"
   local input_file="$1"
-  local -n exclude_list=$2  # Reference to array by name
+  local -n exclude_list=$2  # name-reference to an array
 
-  echo "start2"
-  # Build exclusion pattern
+  if [[ ! -f "$input_file" ]]; then
+    echo "❌ Input file '$input_file' does not exist." >&2
+    return 1
+  fi
+
+  if [[ "${#exclude_list[@]}" -eq 0 ]]; then
+    echo "⚠️ Exclusion list is empty. No filtering applied." >&2
+    return 0
+  fi
+
+  # Build grep pattern
   local pattern
   pattern=$(printf '^%s$|' "${exclude_list[@]}")
-  pattern="${pattern%|}"  # Remove trailing pipe
+  pattern="${pattern%|}"  # Trim trailing '|'
 
-  echo "star3"
-  # Filter the file
-  grep -vE "$pattern" "$input_file" > "${input_file}.filtered"
-  echo "start4"
+  echo "🔍 Filtering '$input_file' with pattern: $pattern"
+
+  # Perform the filtering
+  if ! grep -vE "$pattern" "$input_file" > "${input_file}.filtered"; then
+    echo "❌ grep failed with pattern: $pattern" >&2
+    return 1
+  fi
+
   mv "${input_file}.filtered" "$input_file"
+  echo "✅ Filtered file saved to '$input_file'"
 }
 
 echo "🚀 Starting validation..."
