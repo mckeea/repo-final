@@ -1,49 +1,72 @@
-import { readdir, writeFile, mkdir } from "fs/promises";
-import { join } from "path";
+import { readdir, writeFile, access } from "fs/promises";
+import { join, basename } from "path";
 
-async function generateDirectoryIndex(dirPath, relPath = "") {
-  const items = await readdir(dirPath, { withFileTypes: true });
-  const entries = [];
-  const links = [];
+const DOCS_DIR = "DOCS";
+const IGNORED_FOLDERS = new Set(["styles", "templates"]);
 
-  for (const item of items) {
-    if (item.isDirectory()) {
-      const subdir = join(dirPath, item.name);
-      const subrel = join(relPath, item.name);
-      await generateDirectoryIndex(subdir, subrel);
-      entries.push(`- [${item.name}](${item.name}/index.qmd)`);
-    } else if (item.name.endsWith(".qmd") && item.name !== "index.qmd") {
-      const name = item.name.replace(".qmd", "");
-      links.push(`- [${name}](${item.name})`);
-    }
-  }
+function formatTitle(name) {
+  return name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
-  if (relPath === "") {
-    // Root index.qmd
-    const content = `---
-title: Documentation Index
-sidebar: docs
+async function generateSubdirIndex(dirPath) {
+  const dirName = basename(dirPath);
+  const title = formatTitle(dirName);
+  const indexPath = join(dirPath, "index.qmd");
+
+  const indexContent = `---
+title: ${title}
+listing:
+  type: table
+  contents: .
+  sort: title
+  fields: [title]
 ---
 
-# Documentation
+# ${title}
 
-${entries.join("\n")}
+Browse all documents in this section.
 `;
-    await writeFile(join(dirPath, "index.qmd"), content);
-  } else {
-    // Per-folder index.qmd
-    const content = `---
-title: ${relPath}
-sidebar: docs
----
 
-# ${relPath}
-
-${links.join("\n")}
-`;
-    await writeFile(join(dirPath, "index.qmd"), content);
+  try {
+    await access(indexPath);
+  } catch {
+    await writeFile(indexPath, indexContent);
   }
 }
 
-await generateDirectoryIndex("DOCS");
-console.log("✔ All index.qmd files generated.");
+async function generateDocsRootIndex(subfolders) {
+  const indexPath = join(DOCS_DIR, "index.qmd");
+
+  const indexContent = `---
+title: Documentation
+listing:
+  type: table
+  contents:
+${subfolders.map((f) => `    - ${f}/index.qmd`).join("\n")}
+  sort: title
+  fields: [title]
+---
+
+# All Documentation
+`;
+
+  await writeFile(indexPath, indexContent);
+}
+
+async function main() {
+  const entries = await readdir(DOCS_DIR, { withFileTypes: true });
+
+  const subfolders = [];
+
+  for (const entry of entries) {
+    if (entry.isDirectory() && !IGNORED_FOLDERS.has(entry.name)) {
+      subfolders.push(entry.name);
+      const subdir = join(DOCS_DIR, entry.name);
+      await generateSubdirIndex(subdir);
+    }
+  }
+
+  await generateDocsRootIndex(subfolders);
+}
+
+main();

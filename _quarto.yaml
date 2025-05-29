@@ -19,23 +19,9 @@ website:
     background: "#a0b128"
     foreground: "#ffffff"
     search: false
-    left:
-      - text: "Guidelines"
-        href: DOCS/guidelines/index.qmd
-  sidebar:
-    id: docs
-    title: Documentation
-    contents:
-      - DOCS/index.qmd
-      - section: Guidelines
-        contents: DOCS/guidelines/*.qmd
-      - section: Products
-        contents: DOCS/products/*.qmd
-      - section: Other
-        contents: DOCS/*/*.qmd
-
-metadata:
-  sidebar: docs
+    # left:
+    #   - text: "Guidelines"
+    #     href: DOCS/guidelines/index.qmd
 
 format:
   html:

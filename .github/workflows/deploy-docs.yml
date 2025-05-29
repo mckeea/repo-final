@@ -28,5 +28,5 @@ jobs:
           branch: gh-pages
           folder: _site
           target-folder: ${{ github.ref_name }}
-          clean: false
+          clean: true
           token: ${{ secrets.GITHUB_TOKEN }}
