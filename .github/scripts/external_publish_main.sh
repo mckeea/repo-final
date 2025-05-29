@@ -10,7 +10,7 @@ echo "Project: $PROJECT_NAME"
 echo "🔎 Checking files inside publish branch (fast tree scan)..."
 run_git "fetching develop branch" fetch origin develop
 PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
-cat "PUBLISH_COMMIT: $PUBLISH_COMMIT"
+echo "PUBLISH_COMMIT: $PUBLISH_COMMIT"
 git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
 cat changed-files.txt
 
