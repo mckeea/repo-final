@@ -22,6 +22,9 @@ website:
     left:
       - text: "Guidelines"
         href: DOCS/guidelines/index.qmd
+  sidebar:
+    contents:
+      - DOCS/**.qmd
 
 format:
   html:

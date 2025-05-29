@@ -5,16 +5,16 @@ on:
     branches:
       - develop
 
-  # pull_request:
-  #   branches:
-  #     - test
-  #     - main
-  #   types:
-  #     - closed
+  pull_request:
+    branches:
+      - test
+      - main
+    types:
+      - closed
 
 jobs:
   deploy_docs:
-    #if: github.event.pull_request.merged == true || github.ref == 'refs/heads/develop'
+    if: github.event.pull_request.merged == true || github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
     container:
       image: mckeea/quarto-doc-builder:latest

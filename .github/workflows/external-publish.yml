@@ -32,7 +32,6 @@ jobs:
       - name: Merge publish content
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
 
-      #- name: Cleanup
-      #  run: |
-      #   bash .github/scripts/external_publish_after.sh || true
-      #bash .github/scripts/external_publish_report_failure.sh || true
+      - name: Cleanup
+        run: |
+          bash .github/scripts/external_publish_after.sh || true
