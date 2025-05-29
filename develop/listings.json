@@ -7,23 +7,18 @@
     ]
   },
   {
+    "listing": "/DOCS/index.html",
+    "items": [
+      "/DOCS/guidelines/index.html",
+      "/DOCS/project-a/index.html"
+    ]
+  },
+  {
     "listing": "/DOCS/guidelines/index.html",
     "items": [
       "/DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html",
       "/DOCS/guidelines/technical_overview.pdf",
       "/DOCS/guidelines/user_guidelines.pdf"
     ]
-  },
-  {
-    "listing": "/DOCS/index.html",
-    "items": [
-      "/DOCS/products/index.html",
-      "/DOCS/guidelines/index.html",
-      "/DOCS/project-a/index.html"
-    ]
-  },
-  {
-    "listing": "/DOCS/products/index.html",
-    "items": []
   }
 ]
