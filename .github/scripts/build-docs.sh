@@ -28,8 +28,12 @@ set -e
 # echo "🏷 Generating keywords..."
 # python scripts/render/generate_keywords.py
 
-echo "🧹 Cleaning up cached _site directory..."
-rm -rf _site
+#echo "🧹 Cleaning up cached _site directory..."
+#rm -rf _site
+
+
+echo "🛠 Generate index.qmd files for all DOCS/* folders"
+node .github/scripts/generate_index_all.mjs
 
 echo "🖼 Render all documents into to HTML/DOCX"
 sudo cp /usr/bin/chromium /usr/bin/chromium-browser
@@ -42,5 +46,8 @@ echo "📄 Converting .docx files to .pdf..."
 # chmod +x ./convert_docx_to_pdf.sh
 timeout 3s .github/scripts/convert_docx_to_pdf.sh || true
 timeout 10m .github/scripts/convert_docx_to_pdf.sh
+
+echo "🧹 Cleaning up..."
+find _site -type f -name '*.docx' -delete
 
 echo "✅ Docs built successfully"
