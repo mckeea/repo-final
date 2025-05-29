@@ -8,6 +8,10 @@ jobs:
   merge_external_publish:
     if: startsWith(github.event.client_payload.branch, 'publish-')
     runs-on: ubuntu-latest
+
+    env:
+      GITHUB_REF_NAME: ${{ github.event.client_payload.branch }}
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -19,9 +23,6 @@ jobs:
           git fetch origin main
           git checkout origin/main -- .github/scripts
           git reset HEAD .github/scripts
-
-      - name: Set GITHUB_REF_NAME for compatibility
-        run: echo "GITHUB_REF_NAME=${{ github.event.client_payload.branch }}" >> $GITHUB_ENV
 
       - name: Setup (before script)
         run: bash .github/scripts/external_publish_before.sh | tee -a job.log
