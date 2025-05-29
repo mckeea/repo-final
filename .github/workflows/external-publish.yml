@@ -17,8 +17,8 @@ jobs:
       - name: Restore needed merge scripts from main
         run: |
           git fetch origin main
-          git checkout origin/main -- .github/scripts/external_publish_*.sh
-          git reset HEAD .github/scripts/external_publish_*.sh
+          git checkout origin/main -- .github/scripts
+          git reset HEAD .github/scripts
 
       - name: Set GITHUB_REF_NAME for compatibility
         run: echo "GITHUB_REF_NAME=${{ github.event.client_payload.branch }}" >> $GITHUB_ENV
