@@ -5,7 +5,7 @@ source "$(dirname "$0")/helpers/git-utils.sh"
 
 filter_changed_files() {
   local input_file="$1"
-  local -n exclude_list=$2  # name-reference to an array
+  local -n exclude_list=$2  # name-reference to array
 
   if [[ ! -f "$input_file" ]]; then
     echo "❌ Input file '$input_file' does not exist." >&2
@@ -17,14 +17,17 @@ filter_changed_files() {
     return 0
   fi
 
-  # Build grep pattern
-  local pattern
-  pattern=$(printf '^%s$|' "${exclude_list[@]}")
-  pattern="${pattern%|}"  # Trim trailing '|'
+  # Escape each file pattern for grep
+  local escaped
+  local pattern=""
+  for path in "${exclude_list[@]}"; do
+    escaped=$(printf '%s\n' "$path" | sed -E 's/[][\.^$*+?(){}|]/\\&/g')
+    pattern+="^${escaped}$|"
+  done
+  pattern="${pattern%|}"  # Remove trailing pipe
 
-  echo "🔍 Filtering '$input_file' with pattern: $pattern"
+  echo "🔍 Filtering '$input_file' with escaped pattern: $pattern"
 
-  # Perform the filtering
   if ! grep -vE "$pattern" "$input_file" > "${input_file}.filtered"; then
     echo "❌ grep failed with pattern: $pattern" >&2
     return 1
