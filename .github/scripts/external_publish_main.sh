@@ -4,16 +4,20 @@ set -euo pipefail
 source "$(dirname "$0")/helpers/git-utils.sh"
 
 filter_changed_files() {
+  echo "start"
   local input_file="$1"
   local -n exclude_list=$2  # Reference to array by name
 
+  echo "start2"
   # Build exclusion pattern
   local pattern
   pattern=$(printf '^%s$|' "${exclude_list[@]}")
   pattern="${pattern%|}"  # Remove trailing pipe
 
+  echo "star3"
   # Filter the file
   grep -vE "$pattern" "$input_file" > "${input_file}.filtered"
+  echo "start4"
   mv "${input_file}.filtered" "$input_file"
 }
 
@@ -26,6 +30,8 @@ run_git "fetching develop branch" fetch origin develop
 PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
 echo "PUBLISH_COMMIT: $PUBLISH_COMMIT"
 git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
+cat changed-files.txt
+echo "filteruingout"
 
 # Define the list of files to remove
 EXCLUDE_FILES=(
