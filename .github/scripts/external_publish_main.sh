@@ -5,37 +5,40 @@ source "$(dirname "$0")/helpers/git-utils.sh"
 
 filter_changed_files() {
   local input_file="$1"
-  local -n exclude_list=$2  # name-reference to array
+  local -n exclude_list=$2
 
   if [[ ! -f "$input_file" ]]; then
-    echo "❌ Input file '$input_file' does not exist." >&2
+    echo "❌ Input file '$input_file' not found!" >&2
     return 1
   fi
 
-  if [[ "${#exclude_list[@]}" -eq 0 ]]; then
-    echo "⚠️ Exclusion list is empty. No filtering applied." >&2
+  if [[ ! -s "$input_file" ]]; then
+    echo "⚠️ Input file '$input_file' is empty." >&2
     return 0
   fi
 
-  # Escape each file pattern for grep
-  local escaped
+  # Escape filenames for grep
   local pattern=""
   for path in "${exclude_list[@]}"; do
+    local escaped
     escaped=$(printf '%s\n' "$path" | sed -E 's/[][\.^$*+?(){}|]/\\&/g')
     pattern+="^${escaped}$|"
   done
-  pattern="${pattern%|}"  # Remove trailing pipe
+  pattern="${pattern%|}"
 
   echo "🔍 Filtering '$input_file' with escaped pattern: $pattern"
 
-  if ! grep -vE "$pattern" "$input_file" > "${input_file}.filtered"; then
+  # Filter the file
+  if grep -vE "$pattern" "$input_file" > "${input_file}.filtered"; then
+    mv "${input_file}.filtered" "$input_file"
+    echo "✅ Filtered file saved to '$input_file'"
+  else
     echo "❌ grep failed with pattern: $pattern" >&2
+    cat "$input_file" || echo "(could not read input file)"
     return 1
   fi
-
-  mv "${input_file}.filtered" "$input_file"
-  echo "✅ Filtered file saved to '$input_file'"
 }
+
 
 echo "🚀 Starting validation..."
 PROJECT_NAME=$(echo "$PUBLISH_BRANCH" | sed -E 's/^publish-(.+)-[0-9]{8}-[0-9]{6}$/\1/')
@@ -56,7 +59,7 @@ EXCLUDE_FILES=(
 )
 
 # Call the function
-filter_changed_files "changed-files.txt" EXCLUDE_FILES
+filter_changed_files "changed-files.txt" EXCLUDE_FILES || exit 1
 
 cat changed-files.txt
 
