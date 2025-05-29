@@ -8,10 +8,14 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_run:
+    workflows: ["auto_title"]
+    types:
+      - completed
 
 jobs:
   validate_pr_title:
-    if: github.event_name == 'pull_request'
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     container: node:23
     steps:
