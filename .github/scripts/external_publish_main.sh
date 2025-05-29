@@ -9,7 +9,9 @@ echo "Project: $PROJECT_NAME"
 
 echo "🔎 Checking files inside publish branch (fast tree scan)..."
 run_git "fetching develop branch" fetch origin develop
-git ls-tree -r --name-only "$GITHUB_SHA" > changed-files.txt
+PUBLISH_COMMIT=$(git rev-parse origin/${PUBLISH_BRANCH})
+cat "PUBLISH_COMMIT: $PUBLISH_COMMIT"
+git ls-tree -r --name-only "$PUBLISH_COMMIT" > changed-files.txt
 cat changed-files.txt
 
 INVALID_FILES=$(grep -v "^DOCS/${PROJECT_NAME}/" changed-files.txt || true)
@@ -22,7 +24,6 @@ fi
 echo "✅ Folder validation passed."
 
 echo "🔀 Preparing secure diff-aware merge into develop..."
-PUBLISH_COMMIT="$GITHUB_SHA"
 git checkout develop
 git pull origin develop
 mkdir -p tmp_publish
@@ -69,8 +70,8 @@ COMMIT_MSG=$(cat <<EOF
 
 Triggered by: CI Workflow
 Branch: $PUBLISH_BRANCH
-Commit: $GITHUB_SHA
-Repo: https://github.com/$GITHUB_REPOSITORY/commit/$GITHUB_SHA
+Commit: $PUBLISH_COMMIT
+Repo: https://github.com/$GITHUB_REPOSITORY/commit/$PUBLISH_COMMIT
 EOF
 )
 
