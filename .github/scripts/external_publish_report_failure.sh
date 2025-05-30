@@ -43,6 +43,8 @@ EOF
 # ${LOG_SNIPPET}
 # \`\`\`
 
+ISSUE_BODY="**Triggered by**: ${USER_MENTION} "
+
 # Create GitHub issue
 CREATE_RESPONSE=$(curl -s -X POST \
   -H "Authorization: token ${GITHUB_TOKEN}" \
