@@ -33,15 +33,15 @@ The publish pipeline failed.
 ---
 
 ### 🔍 Error log excerpt:
-\`\`\`log
-${LOG_SNIPPET}
-\`\`\`
+
 
 Please check and re-submit after addressing the problem.
 EOF
 )
 
-ISSUE_BODY="test body issue"
+# \`\`\`log
+# ${LOG_SNIPPET}
+# \`\`\`
 
 # Create GitHub issue
 CREATE_RESPONSE=$(curl -s -X POST \
