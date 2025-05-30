@@ -48,6 +48,8 @@ CREATE_RESPONSE=$(curl -s -X POST \
   https://api.github.com/repos/${GITHUB_REPOSITORY}/issues \
   -d "{\"title\":\"${ISSUE_TITLE}\",\"body\":\"${ISSUE_BODY}\"}")
 
+echo $CREATE_RESPONSE
+
 # Extract issue number
 ISSUE_NUMBER=$(echo "$CREATE_RESPONSE" | jq -r '.number')
 
@@ -55,10 +57,10 @@ ISSUE_NUMBER=$(echo "$CREATE_RESPONSE" | jq -r '.number')
 sleep 10
 
 # Close the issue (auto-dismiss)
-curl -s -X PATCH \
-  -H "Authorization: token ${GITHUB_TOKEN}" \
-  -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER} \
-  -d '{"state":"closed"}'
+#curl -s -X PATCH \
+#  -H "Authorization: token ${GITHUB_TOKEN}" \
+#  -H "Accept: application/vnd.github+json" \
+#  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER} \
+#  -d '{"state":"closed"}'
 
 echo "✅ Issue #${ISSUE_NUMBER} created and closed to notify ${USER_MENTION}."
