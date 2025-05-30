@@ -53,12 +53,18 @@ CREATE_RESPONSE=$(curl -s -X POST \
   -H "Authorization: token ${GITHUB_TOKEN}" \
   -H "Accept: application/vnd.github+json" \
   -d "$JSON_PAYLOAD" \
-  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues \
+  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues)
 
 echo $CREATE_RESPONSE
 
 # Extract issue number
 ISSUE_NUMBER=$(echo "$CREATE_RESPONSE" | jq -r '.number')
+
+if [ "$ISSUE_NUMBER" = "null" ]; then
+  echo "❌ Failed to create issue"
+  echo "$CREATE_RESPONSE"
+  exit 1
+fi
 
 echo "issue_number: ${ISSUE_NUMBER}"
 
