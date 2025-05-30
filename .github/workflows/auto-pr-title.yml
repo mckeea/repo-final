@@ -1,11 +1,14 @@
 name: Auto Title PRs
 
+# on:
+#   pull_request:
+#     types: [opened]
+#     branches:
+#       - test
+#       - main
+
 on:
-  pull_request:
-    types: [opened]
-    branches:
-      - test
-      - main
+  workflow_dispatch:
 
 jobs:
   auto_title:
