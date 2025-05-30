@@ -21,7 +21,6 @@ fi
 
 # Prepare notification content
 USER_MENTION="@${GITHUB_ACTOR}"
-ISSUE_TITLE="❌ Secure publish failed for ${GITHUB_REF_NAME}"
 REPO_URL="https://github.com/${GITHUB_REPOSITORY}"
 ISSUE_BODY=$(cat <<EOF
 The publish pipeline failed.
@@ -33,24 +32,29 @@ The publish pipeline failed.
 ---
 
 ### 🔍 Error log excerpt:
+\`\`\`log
+${LOG_SNIPPET}
+\`\`\`
 
 
 Please check and re-submit after addressing the problem.
 EOF
 )
 
-# \`\`\`log
-# ${LOG_SNIPPET}
-# \`\`\`
 
-ISSUE_BODY="**Triggered by**: ${USER_MENTION} you shouldn't see it"
+
+# Create JSON payload using jq to escape properly
+JSON_PAYLOAD=$(jq -n \
+  --arg title "🚨 Publish Failed [${GITHUB_REF_NAME}]" \
+  --arg body "$ISSUE_BODY" \
+  '{title: $title, body: $body}')
 
 # Create GitHub issue
 CREATE_RESPONSE=$(curl -s -X POST \
   -H "Authorization: token ${GITHUB_TOKEN}" \
   -H "Accept: application/vnd.github+json" \
+  -d "$JSON_PAYLOAD" \
   https://api.github.com/repos/${GITHUB_REPOSITORY}/issues \
-  -d "{\"title\":\"${ISSUE_TITLE}\",\"body\":\"${ISSUE_BODY}\"}")
 
 echo $CREATE_RESPONSE
 
