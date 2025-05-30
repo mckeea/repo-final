@@ -34,4 +34,6 @@ jobs:
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
 
       - name: Cleanup (after script)
-        run: bash .github/scripts/external_publish_after.sh
+        run: |
+          bash .github/scripts/external_publish_report_failure.sh
+          bash .github/scripts/external_publish_after.sh

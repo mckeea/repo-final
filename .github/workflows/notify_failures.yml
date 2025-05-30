@@ -7,7 +7,7 @@ on:
 
 jobs:
   notify_failure:
-    if: failure()
+    #if: failure()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 2
 
       - name: Report failure if publish-* merge
-        run: bash .github/scripts/report-failure.sh
+        run: bash .github/scripts/external_publish_report_failure.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_ACTOR: ${{ github.actor }}

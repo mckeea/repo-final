@@ -7,8 +7,8 @@ source "$(dirname "$0")/helpers/git-utils.sh"
 MERGE_COMMIT_MSG=$(git log -1 --pretty=%B)
 
 if ! echo "$MERGE_COMMIT_MSG" | grep -qE "Merge (branch|pull request).*publish-"; then
-  echo "❎ Not a publish-* → develop merge. Skipping issue creation."
-  exit 0
+ echo "❎ Not a publish-* → develop merge. Skipping issue creation."
+ exit 0
 fi
 
 echo "🔍 Detected publish-* → develop failed merge."
@@ -21,9 +21,8 @@ fi
 
 # Prepare notification content
 USER_MENTION="@${GITHUB_ACTOR}"
-ISSUE_TITLE="❌ Secure publish failed for ${GITHUB_REF_NAME}"
 REPO_URL="https://github.com/${GITHUB_REPOSITORY}"
-ISSUE_BODY=$(cat <<EOF
+ISSUE_BODY="$(cat <<EOF
 The publish pipeline failed.
 
 **Triggered by**: ${USER_MENTION}  
@@ -39,26 +38,44 @@ ${LOG_SNIPPET}
 
 Please check and re-submit after addressing the problem.
 EOF
-)
+)"
+
+
+
+# Create JSON payload using jq to escape properly
+JSON_PAYLOAD=$(jq -n \
+  --arg title "🚨 Publish Failed [${GITHUB_REF_NAME}]" \
+  --arg body "$ISSUE_BODY" \
+  '{title: $title, body: $body}')
 
 # Create GitHub issue
 CREATE_RESPONSE=$(curl -s -X POST \
   -H "Authorization: token ${GITHUB_TOKEN}" \
   -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues \
-  -d "{\"title\":\"${ISSUE_TITLE}\",\"body\":\"${ISSUE_BODY}\"}")
+  -d "$JSON_PAYLOAD" \
+  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues)
+
+echo $CREATE_RESPONSE
 
 # Extract issue number
 ISSUE_NUMBER=$(echo "$CREATE_RESPONSE" | jq -r '.number')
+
+if [ "$ISSUE_NUMBER" = "null" ]; then
+  echo "❌ Failed to create issue"
+  echo "$CREATE_RESPONSE"
+  exit 1
+fi
+
+echo "issue_number: ${ISSUE_NUMBER}"
 
 # Wait briefly to ensure GitHub sends the notification
 sleep 10
 
 # Close the issue (auto-dismiss)
 curl -s -X PATCH \
-  -H "Authorization: token ${GITHUB_TOKEN}" \
-  -H "Accept: application/vnd.github+json" \
-  https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER} \
-  -d '{"state":"closed"}'
+ -H "Authorization: token ${GITHUB_TOKEN}" \
+ -H "Accept: application/vnd.github+json" \
+ https://api.github.com/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER} \
+ -d '{"state":"closed"}'
 
 echo "✅ Issue #${ISSUE_NUMBER} created and closed to notify ${USER_MENTION}."
