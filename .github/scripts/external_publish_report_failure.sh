@@ -41,6 +41,8 @@ Please check and re-submit after addressing the problem.
 EOF
 )
 
+ISSUE_BODY="test body issue"
+
 # Create GitHub issue
 CREATE_RESPONSE=$(curl -s -X POST \
   -H "Authorization: token ${GITHUB_TOKEN}" \
