@@ -5,12 +5,12 @@ on:
     branches:
       - develop
 
-  pull_request:
-    branches:
-      - test
-      - main
-    types:
-      - closed
+  # pull_request:
+  #   branches:
+  #     - test
+  #     - main
+  #   types:
+  #     - closed
 
 jobs:
   deploy_docs:
