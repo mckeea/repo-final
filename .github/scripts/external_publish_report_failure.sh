@@ -22,7 +22,7 @@ fi
 # Prepare notification content
 USER_MENTION="@${GITHUB_ACTOR}"
 REPO_URL="https://github.com/${GITHUB_REPOSITORY}"
-ISSUE_BODY=$(cat <<EOF
+ISSUE_BODY="$(cat <<EOF
 The publish pipeline failed.
 
 **Triggered by**: ${USER_MENTION}  
@@ -36,10 +36,9 @@ The publish pipeline failed.
 ${LOG_SNIPPET}
 \`\`\`
 
-
 Please check and re-submit after addressing the problem.
 EOF
-)
+)"
 
 
 
