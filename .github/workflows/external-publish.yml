@@ -30,8 +30,8 @@ jobs:
         env:
           CI_DEPLOY_KEY: ${{ secrets.CI_DEPLOY_KEY }}
 
-      - name: Merge publish content
+      - name: Merge publish content 2
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
 
-      - name: Cleanup
+      - name: Cleanup (after script)
         run: bash .github/scripts/external_publish_after.sh
