@@ -6,9 +6,10 @@ source "$(dirname "$0")/helpers/git-utils.sh"
 # Only run if this was a merge from a publish-* branch
 MERGE_COMMIT_MSG=$(git log -1 --pretty=%B)
 
-if ! echo "$MERGE_COMMIT_MSG" | grep -qE "Merge (branch|pull request).*publish-"; then
- echo "❎ Not a publish-* → develop merge. Skipping issue creation."
- exit 0
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+if [[ "$CURRENT_BRANCH" != "develop" ]] || ! echo "$MERGE_COMMIT_MSG" | grep -qE "from publish-"; then
+  echo "❎ Not a publish-* → develop merge. Skipping issue creation."
+  exit 0
 fi
 
 echo "🔍 Detected publish-* → develop failed merge."
