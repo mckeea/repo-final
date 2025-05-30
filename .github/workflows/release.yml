@@ -35,7 +35,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
         run: |
-          BRANCH="${{ github.event.workflow_run.head_branch }}"
+          BRANCH="${{ github.ref_name }}"
           if [[ "$BRANCH" == "test" ]]; then
             echo "🔁 Running test (prerelease) release"
             npx semantic-release --tag test
