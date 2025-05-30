@@ -1,30 +1,48 @@
 name: Release
 
-# on:
-#   push:
-#     branches:
-#       - main
-#       - test
-
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["deploy_docs"]
+    types:
+      - completed
 
 jobs:
   release:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      (github.event.workflow_run.head_branch == 'main' || github.event.workflow_run.head_branch == 'test')
     runs-on: ubuntu-latest
-    container:
-      image: node:23
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout source (release target)
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Setup release environment
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install release dependencies
         run: |
           npm install --no-save semantic-release \
             @semantic-release/git \
             @semantic-release/changelog \
             @semantic-release/exec \
             @semantic-release/github
-          export GH_TOKEN="${{ secrets.GH_RELEASE_TOKEN }}"
+
       - name: Run Semantic Release
-        run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_RELEASE_TOKEN }}
+        run: |
+          BRANCH="${{ github.event.workflow_run.head_branch }}"
+          if [[ "$BRANCH" == "test" ]]; then
+            echo "🔁 Running test (prerelease) release"
+            npx semantic-release --tag test
+          elif [[ "$BRANCH" == "main" ]]; then
+            echo "🚀 Running official production release"
+            npx semantic-release
+          else
+            echo "❌ Invalid branch: $BRANCH"
+            exit 1
+          fi

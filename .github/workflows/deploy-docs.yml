@@ -4,26 +4,26 @@ on:
   push:
     branches:
       - develop
-
-  # pull_request:
-  #   branches:
-  #     - test
-  #     - main
-  #   types:
-  #     - closed
+      - test
+      - main
 
 jobs:
   deploy_docs:
-    if: |
-      (github.event_name == 'push' && github.ref == 'refs/heads/develop') ||
-      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    name: Build and Deploy Docs [${{ github.ref_name }}]
     runs-on: ubuntu-latest
+
     container:
       image: mckeea/quarto-doc-builder:latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Build Docs
         run: .github/scripts/build-docs.sh
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
