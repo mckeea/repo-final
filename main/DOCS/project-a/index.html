@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="keywords" content="test git, git commands, editor commit, repository make, publish pull, feature branch, branch github, create edit, publishing main, ensuring documents">
 
-<title>User Guide: Working with Documents and Publishing to GitHub Pages – Technical Library</title>
+<title>Project A – Technical Library</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -66,6 +30,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -103,12 +69,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../DOCS/theme/main.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -128,9 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="user_guidelines.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 <div class="logo-header">
@@ -140,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">User Guide: Working with Documents and Publishing to GitHub Pages</h1>
+<h1 class="title">Project A</h1>
 </div>
 
 
@@ -153,140 +175,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Keywords</div>
-    <p>test git, git commands, editor commit, repository make, publish pull, feature branch, branch github, create edit, publishing main, ensuring documents</p>
-  </div>
-</div>
 
 </header>
 
 
-<hr>
-<section id="step-1-create-your-feature-branch" class="level2">
-<h2 class="anchored" data-anchor-id="step-1-create-your-feature-branch">Step 1: Create Your Feature Branch</h2>
-<p>You can do this either through GitHub’s website or using Git commands in your terminal:</p>
-<section id="using-github-easy-option" class="level3">
-<h3 class="anchored" data-anchor-id="using-github-easy-option">Using GitHub (Easy Option):</h3>
-<ol type="1">
-<li>Open GitHub and navigate to your repository.</li>
-<li>Select the <strong>test</strong> branch from the dropdown menu at the top left.</li>
-<li>Click the button labeled <strong>New branch</strong> and name it clearly, for example, <code>feature/new-document</code>.</li>
-</ol>
-</section>
-<section id="using-command-line-recommended-for-frequent-users" class="level3">
-<h3 class="anchored" data-anchor-id="using-command-line-recommended-for-frequent-users">Using Command Line (Recommended for frequent users):</h3>
-<ul>
-<li>Open your terminal or command prompt.</li>
-<li>Navigate to your local repository using:</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> path/to/your/repository</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Make sure your repository is updated:</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout test</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Create and switch to your new feature branch:</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> feature/new-document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="working-on-documents" class="level2">
-<h2 class="anchored" data-anchor-id="working-on-documents">Working on Documents</h2>
-<section id="suggested-editors" class="level3">
-<h3 class="anchored" data-anchor-id="suggested-editors">Suggested Editors:</h3>
-<ul>
-<li><strong>RStudio:</strong> Easy integration with Quarto and Git.</li>
-<li><strong>Visual Studio Code:</strong> Great support for Quarto documents.</li>
-<li><strong>Any plain text editor</strong> you prefer.</li>
-</ul>
-</section>
-<section id="create-or-edit-documents" class="level3">
-<h3 class="anchored" data-anchor-id="create-or-edit-documents">Create or Edit Documents:</h3>
-<ul>
-<li>Add new documents by creating <code>.qmd</code> files.</li>
-<li>Edit existing <code>.qmd</code> files directly in your chosen editor.</li>
-</ul>
-</section>
-<section id="commit-your-changes-command-line" class="level3">
-<h3 class="anchored" data-anchor-id="commit-your-changes-command-line">Commit Your Changes (Command Line):</h3>
-<ul>
-<li>Stage your changes:</li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Commit your changes with a clear message:</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Added introduction to the Privacy Guide"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Push your changes to GitHub:</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin feature/new-document</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-</section>
-<section id="publishing-for-review-test-environment" class="level2">
-<h2 class="anchored" data-anchor-id="publishing-for-review-test-environment">Publishing for Review (Test Environment)</h2>
-<section id="create-a-pull-request-pr" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-pull-request-pr">Create a Pull Request (PR):</h3>
-<ol type="1">
-<li>Go to your feature branch in GitHub.</li>
-<li>Click on <strong>Compare &amp; pull request</strong>.</li>
-<li>Set the pull request destination to the <code>test</code> branch.</li>
-<li>Provide a simple description of your changes and click <strong>Create pull request</strong>.</li>
-</ol>
-</section>
-<section id="review-and-publish" class="level3">
-<h3 class="anchored" data-anchor-id="review-and-publish">Review and Publish:</h3>
-<ul>
-<li>Once your pull request is reviewed and approved by the team, it will be merged into the <code>test</code> branch.</li>
-<li>The merged content will automatically be published to the <strong>test GitHub Pages</strong>.</li>
-<li>View and review your documents by visiting the test pages link provided by your team.</li>
-</ul>
-</section>
-</section>
-<section id="final-publishing-to-main-environment" class="level2">
-<h2 class="anchored" data-anchor-id="final-publishing-to-main-environment">Final Publishing to Main Environment</h2>
-<p>After reviewing and ensuring your documents are correct:</p>
-<section id="merge-to-main" class="level3">
-<h3 class="anchored" data-anchor-id="merge-to-main">Merge to Main:</h3>
-<ol type="1">
-<li>Create another pull request from the <code>test</code> branch to the <code>main</code> branch.</li>
-<li>Clearly mention that the content is ready for final publishing.</li>
-</ol>
-</section>
-<section id="final-review-and-approval" class="level3">
-<h3 class="anchored" data-anchor-id="final-review-and-approval">Final Review and Approval:</h3>
-<ul>
-<li>Your team reviews and approves the pull request.</li>
-<li>Once merged, the documents are automatically published to the main GitHub Pages for everyone to access.</li>
-</ul>
-</section>
-</section>
-<section id="versioning" class="level2">
-<h2 class="anchored" data-anchor-id="versioning">Versioning</h2>
-<p>Every time new changes are published to the main branch, a version number is automatically assigned. You don’t need to do anything—this happens behind the scenes to help track document versions clearly.</p>
-</section>
-<section id="how-to-revert-to-a-previous-version" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-revert-to-a-previous-version">How to Revert to a Previous Version</h2>
-<p>If you need to go back to an earlier version:</p>
-<ol type="1">
-<li>Go to your repository on GitHub and click on <strong>Tags</strong>.</li>
-<li>Find the version (tag) you want to revert to.</li>
-<li>To revert locally using command line:</li>
-</ol>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout tags/v1.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Replace <code>v1.0</code> with your desired version.</p>
-<ol start="4" type="1">
-<li>If you want to make the reverted version the new main version again, create a new feature branch from this tag and follow the usual pull request workflow described above.</li>
-</ol>
-<hr>
 
 
-</section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-listing-file-modified-sort="1748602433367" data-listing-title-sort="nowa tresc dokumentu 123 567 890 111  YOYOY - spr notyfikacje" data-listing-filename-sort="sample-doc1.qmd">
+<td>
+<a href="../../DOCS/project-a/sample-doc1.html" class="title listing-title">nowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-listing-file-modified-sort="1748602433367" data-listing-reading-time-sort="1" data-listing-word-count-sort="2" data-listing-filename-sort="sample-doc2.qmd">
+<td>
+<a href="../../DOCS/project-a/sample-doc2.html" class="title listing-title">&nbsp;</a>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

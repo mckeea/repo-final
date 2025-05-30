@@ -77,11 +77,18 @@
     "text": "9.3 Product Technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)"
   },
   {
-    "objectID": "DOCS/products/index.html",
-    "href": "DOCS/products/index.html",
-    "title": "Documents",
+    "objectID": "DOCS/project-a/sample-doc2.html",
+    "href": "DOCS/project-a/sample-doc2.html",
+    "title": "Technical Library",
     "section": "",
-    "text": "Title\nversion\nDate\n\n\n\n\n\nNo matching items"
+    "text": "nowy docs\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "DOCS/project-a/index.html",
+    "href": "DOCS/project-a/index.html",
+    "title": "Project A",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nnowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html#overview",
@@ -184,16 +191,16 @@
   {
     "objectID": "DOCS/index.html",
     "href": "DOCS/index.html",
-    "title": "Documents",
+    "title": "Documentation",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nDocuments\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nProject A\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/index.html",
     "href": "DOCS/guidelines/index.html",
     "title": "Guidelines",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nversion\n\n\n\nDate\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n1.4b\n\n\nApr 8, 2025\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n \n\n\n \n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nversion\n\n\n\nDate\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n1.4b\n\n\nApr 8, 2025\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n \n\n\n \n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n \n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/user_guidelines.html#step-1-create-your-feature-branch",
@@ -236,6 +243,13 @@
     "title": "User Guide: Working with Documents and Publishing to GitHub Pages",
     "section": "How to Revert to a Previous Version",
     "text": "How to Revert to a Previous Version\nIf you need to go back to an earlier version:\n\nGo to your repository on GitHub and click on Tags.\nFind the version (tag) you want to revert to.\nTo revert locally using command line:\n\ngit checkout tags/v1.0\nReplace v1.0 with your desired version.\n\nIf you want to make the reverted version the new main version again, create a new feature branch from this tag and follow the usual pull request workflow described above."
+  },
+  {
+    "objectID": "DOCS/project-a/sample-doc1.html",
+    "href": "DOCS/project-a/sample-doc1.html",
+    "title": "nowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje",
+    "section": "",
+    "text": "nowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",

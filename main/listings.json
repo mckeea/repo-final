@@ -1,13 +1,16 @@
 [
   {
-    "listing": "/DOCS/products/index.html",
-    "items": []
+    "listing": "/DOCS/project-a/index.html",
+    "items": [
+      "/DOCS/project-a/sample-doc1.html",
+      "/DOCS/project-a/sample-doc2.html"
+    ]
   },
   {
     "listing": "/DOCS/index.html",
     "items": [
-      "/DOCS/products/index.html",
-      "/DOCS/guidelines/index.html"
+      "/DOCS/guidelines/index.html",
+      "/DOCS/project-a/index.html"
     ]
   },
   {
