@@ -1,6 +1,7 @@
 name: Auto Merge Approved PRs
 
 on:
+<<<<<<< HEAD
   pull_request_review:
     types: [submitted]
 
@@ -8,12 +9,21 @@ jobs:
   auto-merge:
     if: github.event.review.state == 'approved' &&
       (github.event.pull_request.base.ref == 'test' || github.event.pull_request.base.ref == 'main')
+=======
+  pull_request:
+    types: [labeled, opened, synchronize, reopened]
+
+jobs:
+  auto-merge:
+    if: github.event.pull_request.base.ref == 'test' || github.event.pull_request.base.ref == 'main'
+>>>>>>> d904cb9 (update)
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
       contents: write
 
     steps:
+<<<<<<< HEAD
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -30,5 +40,44 @@ jobs:
           gh pr merge ${{ github.event.pull_request.number }} \
             --squash \
             --subject "${{ steps.title.outputs.title }}"
+=======
+      - name: Checkout (required for gh)
+        uses: actions/checkout@v4
+
+      - name: Install GitHub CLI
+        uses: cli/cli-action@v2
+
+      - name: Wait for required status checks
+        uses: softprops/turnstyle@v1
+        with:
+          poll-interval: 10s
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check PR Approval
+        id: approval
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          APPROVED=$(gh pr view "$PR_NUMBER" --json reviews -q '.reviews | map(select(.state=="APPROVED")) | length')
+          echo "approved=$APPROVED" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get PR title
+        id: title
+        run: |
+          TITLE=$(gh pr view ${{ github.event.pull_request.number }} --json title -q .title)
+          echo "title=$TITLE" >> $GITHUB_OUTPUT
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Auto-merge PR
+        if: steps.approval.outputs.approved != '0'
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --squash \
+            --subject "${{ steps.title.outputs.title }}" \
+            --delete-branch
+>>>>>>> d904cb9 (update)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
