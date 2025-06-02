@@ -30,7 +30,7 @@ jobs:
         env:
           CI_DEPLOY_KEY: ${{ secrets.CI_DEPLOY_KEY }}
 
-      - name: Merge publish content 3
+      - name: Merge publish content
         id: external_publish_merge
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+#set -euo pipefail
 
 RENDERED_DOCS_DIR="../../_site"
 
@@ -13,11 +13,6 @@ if [ "$OS" = "Darwin" ]; then
     LIBREOFFICE_PROFILE="$HOME/Library/Application Support/LibreOffice/4/user"
 else
     LIBREOFFICE_PROFILE="$HOME/.config/libreoffice/4/user"
-fi
-
-if [ ! -d "$LIBREOFFICE_PROFILE" ]; then
-    echo "Error: LibreOffice profile directory does not exist."
-    exit 1
 fi
 
 # Kill any running LibreOffice instances
