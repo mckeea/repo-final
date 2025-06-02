@@ -79,16 +79,16 @@
   {
     "objectID": "DOCS/project-a/sample-doc2.html",
     "href": "DOCS/project-a/sample-doc2.html",
-    "title": "To jest nowy dokument 2 ABC (Update)",
+    "title": "To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE",
     "section": "",
-    "text": "To jest nowy dokument 2 ABC (Update)\n\n\n\n\n Back to top"
+    "text": "To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/project-a/index.html",
     "href": "DOCS/project-a/index.html",
     "title": "Project A",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nTo jest nowy dokument 1 (Update) 2 - nowy release 5555\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nCalkiem nowy doc1 17:15 3333\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html#overview",
@@ -247,9 +247,9 @@
   {
     "objectID": "DOCS/project-a/sample-doc1.html",
     "href": "DOCS/project-a/sample-doc1.html",
-    "title": "To jest nowy dokument 1 (Update) 2 - nowy release 5555",
+    "title": "Calkiem nowy doc1 17:15 3333",
     "section": "",
-    "text": "To jest nowy dokument 1 (Update) 2 - nowy release 5555\n\n\n\n\n Back to top"
+    "text": "Calkiem nowy doc1 17:15 3333\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",
