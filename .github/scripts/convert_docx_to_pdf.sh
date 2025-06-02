@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+#set -euo pipefail
 
 RENDERED_DOCS_DIR="../../_site"
 
