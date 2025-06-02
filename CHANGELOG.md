@@ -1,3 +1,10 @@
+# [1.4.0-test.2](https://github.com/mckeea/repo-final/compare/v1.4.0-test.1...v1.4.0-test.2) (2025-06-02)
+
+
+### Features
+
+* **merge:** promote develop to test ([a5791d3](https://github.com/mckeea/repo-final/commit/a5791d3451da8935b50faab4b3b0544b2b14628d))
+
 # [1.4.0-test.1](https://github.com/mckeea/repo-final/compare/v1.3.0...v1.4.0-test.1) (2025-06-02)
 
 ### Features
