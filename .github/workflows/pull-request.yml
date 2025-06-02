@@ -18,10 +18,32 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request;
+            if (!pr) {
+              core.setFailed("No PR context found.");
+              return;
+            }
+
             const base = pr.base.ref;
             const head = pr.head.ref;
-            const type = base === 'test' ? 'feat' : 'chore';
-            const title = `${type}(merge): ${head} → ${base}`;
+
+            // Define semantic-release type
+            const typeMap = {
+              test: 'feat',
+              main: 'release'
+            };
+            const type = typeMap[base] || 'chore';
+
+            // Sanitize and prepare title content
+            const sanitize = (name) => name.toLowerCase().replace(/[^\w.-]/g, '-');
+            const content = `sync ${sanitize(head)} into ${sanitize(base)}`;
+            let title = `${type}(merge): ${content}`;
+
+            // Truncate to 100 characters safely
+            if (title.length > 100) {
+              const maxContentLength = 100 - `${type}(merge): `.length;
+              const truncatedContent = content.slice(0, maxContentLength - 1) + '…';
+              title = `${type}(merge): ${truncatedContent}`;
+            }
 
             console.log(`Setting PR title to: ${title}`);
 

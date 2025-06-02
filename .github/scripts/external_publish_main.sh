@@ -74,7 +74,7 @@ for file in "${MODIFIED_FILES[@]}"; do
 done
 
 COMMIT_MSG=$(cat <<EOF
-[CI Merge] Update DOCS/$PROJECT_NAME from $PUBLISH_BRANCH
+chore(ci): merge DOCS/$PROJECT_NAME from $PUBLISH_BRANCH
 
 Triggered by: CI Workflow
 Branch: $PUBLISH_BRANCH
