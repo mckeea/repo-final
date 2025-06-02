@@ -1,25 +1,28 @@
 # [1.5.0](https://github.com/mckeea/repo-final/compare/v1.4.0...v1.5.0) (2025-06-02)
 
-
 ### Features
 
-* **merge:** promote develop to test ([741320f](https://github.com/mckeea/repo-final/commit/741320fd0aa6a96f439091d8995e4820a61930d0))
+- **merge:** promote develop to test ([741320f](https://github.com/mckeea/repo-final/commit/741320fd0aa6a96f439091d8995e4820a61930d0))
 
 # [1.4.0](https://github.com/mckeea/repo-final/compare/v1.3.0...v1.4.0) (2025-06-02)
 
+### Features
+
+- **merge:** promote develop to test ([a5791d3](https://github.com/mckeea/repo-final/commit/a5791d3451da8935b50faab4b3b0544b2b14628d))
+- **merge:** promote develop to test ([9c27f5f](https://github.com/mckeea/repo-final/commit/9c27f5f7e3d7550117f9dda89bde5ff77836e966))
+- **merge:** promote develop to test ([c0ebea1](https://github.com/mckeea/repo-final/commit/c0ebea1527bf333aec0c9f5ba1381f1ac3c83074))
+
+# [1.4.0-test.3](https://github.com/mckeea/repo-final/compare/v1.4.0-test.2...v1.4.0-test.3) (2025-06-02)
 
 ### Features
 
-* **merge:** promote develop to test ([a5791d3](https://github.com/mckeea/repo-final/commit/a5791d3451da8935b50faab4b3b0544b2b14628d))
-* **merge:** promote develop to test ([9c27f5f](https://github.com/mckeea/repo-final/commit/9c27f5f7e3d7550117f9dda89bde5ff77836e966))
-* **merge:** promote develop to test ([c0ebea1](https://github.com/mckeea/repo-final/commit/c0ebea1527bf333aec0c9f5ba1381f1ac3c83074))
+- **merge:** promote develop to test ([741320f](https://github.com/mckeea/repo-final/commit/741320fd0aa6a96f439091d8995e4820a61930d0))
 
 # [1.4.0-test.2](https://github.com/mckeea/repo-final/compare/v1.4.0-test.1...v1.4.0-test.2) (2025-06-02)
 
-
 ### Features
 
-* **merge:** promote develop to test ([a5791d3](https://github.com/mckeea/repo-final/commit/a5791d3451da8935b50faab4b3b0544b2b14628d))
+- **merge:** promote develop to test ([a5791d3](https://github.com/mckeea/repo-final/commit/a5791d3451da8935b50faab4b3b0544b2b14628d))
 
 # [1.4.0-test.1](https://github.com/mckeea/repo-final/compare/v1.3.0...v1.4.0-test.1) (2025-06-02)
 
