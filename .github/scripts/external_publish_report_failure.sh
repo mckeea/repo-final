@@ -56,8 +56,6 @@ CREATE_RESPONSE=$(curl -s -X POST \
   -d "$JSON_PAYLOAD" \
   https://api.github.com/repos/${GITHUB_REPOSITORY}/issues)
 
-echo $CREATE_RESPONSE
-
 # Extract issue number
 ISSUE_NUMBER=$(echo "$CREATE_RESPONSE" | jq -r '.number')
 

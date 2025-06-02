@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Exit immediately if any command fails
-#set -e
+set -euo pipefail
 
 RENDERED_DOCS_DIR="../../_site"
 
@@ -14,7 +13,11 @@ if [ "$OS" = "Darwin" ]; then
     LIBREOFFICE_PROFILE="$HOME/Library/Application Support/LibreOffice/4/user"
 else
     LIBREOFFICE_PROFILE="$HOME/.config/libreoffice/4/user"
-    #LIBREOFFICE_PROFILE="/tmp/soffice-profile/user"
+fi
+
+if [ ! -d "$LIBREOFFICE_PROFILE" ]; then
+    echo "Error: LibreOffice profile directory does not exist."
+    exit 1
 fi
 
 # Kill any running LibreOffice instances
@@ -43,18 +46,6 @@ cat <<EOF > "$LIBREOFFICE_PROFILE/basic/script.xlc"
     <library:library library:name="Standard" xlink:href="\$(USER)/basic/Standard/script.xlb/" xlink:type="simple" library:link="false"/>
 </library:libraries>
 EOF
-
-
-# Disable macro security by modifying registrymodifications.xcu
-#cat <<EOF > "$LIBREOFFICE_PROFILE/config/registrymodifications.xcu"
-#<?xml version="1.0" encoding="UTF-8"?>
-#<oor:modifications xmlns:oor="http://openoffice.org/2001/registry">
-#    <!-- Set macro security level to LOW -->
-#    <item oor:path="/org.openoffice.Office.Common/Security" oor:name="MacroSecurityLevel">
-#        <value>1</value>
-#    </item>
-#</oor:modifications>
-#EOF
 
 # Make sure not other process is running or locking the soffice
 rm -f "$LIBREOFFICE_PROFILE/../.lock"
