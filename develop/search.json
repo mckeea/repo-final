@@ -79,16 +79,16 @@
   {
     "objectID": "DOCS/project-a/sample-doc2.html",
     "href": "DOCS/project-a/sample-doc2.html",
-    "title": "Technical Library",
+    "title": "To jest nowy dokument 2 ABC (Update)",
     "section": "",
-    "text": "nowy docs\n\n\n\n Back to top"
+    "text": "To jest nowy dokument 2 ABC (Update)\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/project-a/index.html",
     "href": "DOCS/project-a/index.html",
     "title": "Project A",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nnowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje finalne znowu@@@ SEPEARATION 222\n\n\n\n\n\n\n \n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nTo jest nowy dokument 1 (Update)\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html#overview",
@@ -247,9 +247,9 @@
   {
     "objectID": "DOCS/project-a/sample-doc1.html",
     "href": "DOCS/project-a/sample-doc1.html",
-    "title": "nowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje finalne znowu@@@ SEPEARATION 222",
+    "title": "To jest nowy dokument 1 (Update)",
     "section": "",
-    "text": "nowa tresc dokumentu 123 567 890 111 YOYOY - spr notyfikacje finalne znowu@@@ SEPEARATION 222\n\n\n\n\n Back to top"
+    "text": "To jest nowy dokument 1 (Update)\n\n\n\n\n Back to top"
   },
   {
     "objectID": "DOCS/templates/CLMS_ATBD_Template.html#document-control-information-internal-project-use",
