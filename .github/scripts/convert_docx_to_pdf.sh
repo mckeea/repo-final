@@ -15,11 +15,6 @@ else
     LIBREOFFICE_PROFILE="$HOME/.config/libreoffice/4/user"
 fi
 
-if [ ! -d "$LIBREOFFICE_PROFILE" ]; then
-    echo "Error: LibreOffice profile directory does not exist."
-    exit 1
-fi
-
 # Kill any running LibreOffice instances
 pkill -f soffice
 
