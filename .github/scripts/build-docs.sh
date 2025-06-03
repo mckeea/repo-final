@@ -41,16 +41,11 @@ find _site -type f -name 'index.docx' -delete
 echo "🛠 Generate index.qmd files for all DOCS/* folders"
 node .github/scripts/generate_index_all.mjs
 
-echo "📄 Rendering all index.qmd files without metadata-files..."
-mv .github/config/_quarto-index.yml .github/config/_quarto.yml
+echo "📄 Render only index.qmd files using 'index' profile"
 find DOCS -type f -name index.qmd -print0 | while IFS= read -r -d '' src; do
-  echo "🔧 Rendering $src without metadata..."
-  (
-    cd .github/config
-    quarto render "../../$src" --to html
-  )
+  echo "🔧 Rendering $src using profile=index..."
+  QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render "$src" --profile index --to html
 done
-mv .github/config/_quarto.yml .github/config/_quarto-index.yml
 
 echo "📄 Converting .docx files to .pdf..."
 # chmod +x ./convert_docx_to_pdf.sh
