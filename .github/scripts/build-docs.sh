@@ -32,6 +32,12 @@ set -e
 #rm -rf _site
 
 
+echo "🖼 Render all documents into to HTML/DOCX"
+sudo cp /usr/bin/chromium /usr/bin/chromium-browser
+QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to html
+QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to docx --no-clean
+find _site -type f -name 'index.docx' -delete
+
 echo "🛠 Generate index.qmd files for all DOCS/* folders"
 node .github/scripts/generate_index_all.mjs
 
@@ -45,13 +51,6 @@ find DOCS -type f -name index.qmd -print0 | while IFS= read -r -d '' src; do
   )
 done
 mv .github/config/_quarto.yml .github/config/_quarto-index.yml
-
-echo "🖼 Render all documents into to HTML/DOCX"
-sudo cp /usr/bin/chromium /usr/bin/chromium-browser
-QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to html
-QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to docx --no-clean
-find _site -type f -name 'index.docx' -delete
-
 
 echo "📄 Converting .docx files to .pdf..."
 # chmod +x ./convert_docx_to_pdf.sh
