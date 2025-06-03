@@ -1,10 +1,7 @@
 ---
-title: Jakis nowy dokument 222
-
-metadata-files:
-    - includes/default.yml
+title: Jakis nowy dokument Update 14:00
 ---
 
 # Jakis nowy dokument
 
-Nowa tresc publish 2222
+Nowa tresc publish 3333
