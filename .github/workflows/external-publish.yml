@@ -19,10 +19,10 @@ jobs:
           ref: ${{ github.event.client_payload.branch }}
           fetch-depth: 0
 
-      - name: Restore needed merge scripts from main
+      - name: Restore needed merge scripts from develop
         run: |
-          git fetch origin main
-          git checkout origin/main -- .github/scripts
+          git fetch origin develop
+          git checkout origin/develop -- .github/scripts
           git reset HEAD .github/scripts
 
       - name: Setup (before script)
