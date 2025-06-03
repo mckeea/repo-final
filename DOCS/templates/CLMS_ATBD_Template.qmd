@@ -7,16 +7,11 @@ version: Issue x.y (“(x) version of the document” + “.”+ “(y) version 
 template-version: 1.0.0
 product-name: Product Name
 description: "Product DESCRIPTION"
-metadata-files:
-- ../../includes/default.yml
 
 format:
-  html:
-    css: ../theme/styles.css
   docx:
     reference-doc: ../theme/template-atbd.docx
     hidden: true
-  pdf: default  
 ---
 
 {{< pagebreak >}}
