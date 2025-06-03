@@ -19,11 +19,11 @@ jobs:
           ref: ${{ github.event.client_payload.branch }}
           fetch-depth: 0
 
-      - name: Restore needed merge scripts from develop
-        run: |
-          git fetch origin develop
-          git checkout origin/develop -- .github/scripts
-          git reset HEAD .github/scripts
+      #- name: Restore needed merge scripts from develop
+      #  run: |
+      #    git fetch origin develop
+      #    git checkout origin/develop -- .github/scripts
+      #    git reset HEAD .github/scripts
 
       - name: Setup (before script)
         run: bash .github/scripts/external_publish_before.sh | tee -a job.log
