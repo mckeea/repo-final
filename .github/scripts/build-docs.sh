@@ -65,7 +65,7 @@ echo '<!DOCTYPE html>
 
 
 echo "📄 Converting .docx files to .pdf..."
-chmod +x ./convert_docx_to_pdf.sh
+#chmod +x ./convert_docx_to_pdf.sh
 timeout 3s .github/scripts/convert_docx_to_pdf.sh || true
 timeout 10m .github/scripts/convert_docx_to_pdf.sh
 
