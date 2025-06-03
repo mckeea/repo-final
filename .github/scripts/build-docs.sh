@@ -36,7 +36,7 @@ echo "🛠 Generate index.qmd files for all DOCS/* folders"
 node .github/scripts/generate_index_all.mjs
 
 echo "📄 Rendering all index.qmd files without metadata-files..."
-mv .github/config/_quarto-index.yaml .github/config/_quarto.yaml
+mv .github/config/_quarto-index.yml .github/config/_quarto.yml
 find DOCS -type f -name index.qmd -print0 | while IFS= read -r -d '' src; do
   echo "🔧 Rendering $src without metadata..."
   (
