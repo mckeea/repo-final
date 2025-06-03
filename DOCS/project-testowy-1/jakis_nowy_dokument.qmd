@@ -1,0 +1,10 @@
+---
+title: Jakis nowy dokument 222
+
+metadata-files:
+    - includes/default.yml
+---
+
+# Jakis nowy dokument
+
+Nowa tresc publish
