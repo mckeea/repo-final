@@ -19,11 +19,10 @@ jobs:
           ref: ${{ github.event.client_payload.branch }}
           fetch-depth: 0
 
-      #- name: Restore needed merge scripts from develop
-      #  run: |
-      #    git fetch origin develop
-      #    git checkout origin/develop -- .github/scripts
-      #    git reset HEAD .github/scripts
+      - name: Restore needed merge scripts from develop
+        run: |
+          git fetch origin develop
+          git checkout origin/develop -- .github/scripts
 
       - name: Setup (before script)
         run: bash .github/scripts/external_publish_before.sh | tee -a job.log
@@ -35,7 +34,7 @@ jobs:
         run: bash .github/scripts/external_publish_main.sh | tee -a job.log
 
       - name: Report failure if publish-* merge fails
-        #if: ${{ failure() && steps.step1.outcome == 'failure' }}
+        if: ${{ failure() && steps.external_publish_merge.outcome == 'failure' }}
         run: bash .github/scripts/external_publish_report_failure.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
