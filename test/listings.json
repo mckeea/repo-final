@@ -7,10 +7,17 @@
     ]
   },
   {
+    "listing": "/DOCS/project-testowy-1/index.html",
+    "items": [
+      "/DOCS/project-testowy-1/jakis_nowy_dokument.html"
+    ]
+  },
+  {
     "listing": "/DOCS/index.html",
     "items": [
       "/DOCS/guidelines/index.html",
-      "/DOCS/project-a/index.html"
+      "/DOCS/project-a/index.html",
+      "/DOCS/project-testowy-1/index.html"
     ]
   },
   {

@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://eea.github.io/CLMS_documents/DOCS/project-a/index.html</loc>
-    <lastmod>2025-06-03T10:00:00.939Z</lastmod>
+    <lastmod>2025-06-03T12:06:25.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eea.github.io/CLMS_documents/DOCS/project-testowy-1/index.html</loc>
+    <lastmod>2025-06-03T12:06:25.279Z</lastmod>
   </url>
   <url>
     <loc>https://eea.github.io/CLMS_documents/DOCS/index.html</loc>
-    <lastmod>2025-06-03T10:00:00.939Z</lastmod>
+    <lastmod>2025-06-03T12:06:25.280Z</lastmod>
   </url>
   <url>
     <loc>https://eea.github.io/CLMS_documents/DOCS/guidelines/index.html</loc>
-    <lastmod>2025-06-03T10:00:00.939Z</lastmod>
+    <lastmod>2025-06-03T12:06:25.279Z</lastmod>
   </url>
 </urlset>
