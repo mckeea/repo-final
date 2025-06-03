@@ -12,15 +12,10 @@ description: "This document presents the IT Architecture Principles and Implemen
   guidelines support the CLMS program's IT vision, ensuring solutions are coherent,
   adaptable, and efficiently operated."
 
-metadata-files:
-- ../../includes/default.yml
-
 format:
-  html:
-    css: ../theme/styles.css
   docx:
     reference-doc: ../theme/template-guideline.docx
-  pdf: default
+
 keywords: ["framework eea", "clms architecture", "eea clms", "functionality automation",
   "standardized infrastructure", "terms software", "responsibilities implement", "program
     principles", "themes architecture", "standards regulations"]

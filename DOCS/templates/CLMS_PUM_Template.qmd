@@ -8,16 +8,10 @@ template-version: 1.0.0
 product-name: Product Name
 description: "Product DESCRIPTION"
 
-metadata-files:
-- ../../includes/default.yml
-
 format:
-  html:
-    css: ../theme/styles.css
   docx:
     reference-doc: ../theme/template-pum.docx
     hidden: true
-  pdf: default
 ---
 
 {{< pagebreak >}}
