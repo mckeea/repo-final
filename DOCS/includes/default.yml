@@ -19,4 +19,5 @@ format:
     toc-location: before-body
     toc-pagebreak: true
     data: false
+    reference-doc: ../theme/template-guideline.docx
   pdf: default

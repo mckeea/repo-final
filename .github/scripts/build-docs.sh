@@ -38,17 +38,34 @@ QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to html
 QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render --to docx --no-clean
 find _site -type f -name 'index.docx' -delete
 
-echo "🛠 Generate index.qmd files for all DOCS/* folders"
+echo "🛠 Generate index.qmd files for all DOCS/* folders"e
 node .github/scripts/generate_index_all.mjs
 
 echo "📄 Render only index.qmd files using 'index' profile"
+mv _quarto.yml _quarto_not_used.yml
+mv _quarto-index.yml _quarto.yml
 find DOCS -type f -name index.qmd -print0 | while IFS= read -r -d '' src; do
   echo "🔧 Rendering $src using profile=index..."
-  QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render "$src" --profile index --to html
+  QUARTO_CHROMIUM_HEADLESS_MODE=new quarto render "$src" --profile index --to html --no-clean
 done
+mv _quarto.yml _quarto-index.yml
+cp _quarto_not_used.yml _quarto.yml && rm _quarto_not_used.yml
+
+echo "🔄 Additional processing of index.html file"
+echo '<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="refresh" content="0; url=DOCS/index.html" />
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <p>If you are not redirected automatically, <a href="DOCS/index.html">click here</a>.</p>
+  </body>
+</html>' > _site/index.html
+
 
 echo "📄 Converting .docx files to .pdf..."
-# chmod +x ./convert_docx_to_pdf.sh
+chmod +x ./convert_docx_to_pdf.sh
 timeout 3s .github/scripts/convert_docx_to_pdf.sh || true
 timeout 10m .github/scripts/convert_docx_to_pdf.sh
 

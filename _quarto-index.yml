@@ -23,6 +23,6 @@ website:
 
 format:
   html:
-    output-dir: ../_site # Moves rendered files outside src/
+    output-dir: ../_site # Moves rendered files outside DOCS/
     include-before-body: DOCS/includes/main-logos.html
     css: DOCS/theme/main.css
