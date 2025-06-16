@@ -1,9 +1,23 @@
 [
   {
+    "listing": "/DOCS/test-project-win/index.html",
+    "items": [
+      "/DOCS/test-project-win/nowy.html"
+    ]
+  },
+  {
     "listing": "/DOCS/project-a/index.html",
     "items": [
       "/DOCS/project-a/sample-doc1.html",
       "/DOCS/project-a/sample-doc2.html"
+    ]
+  },
+  {
+    "listing": "/DOCS/guidelines/index.html",
+    "items": [
+      "/DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html",
+      "/DOCS/guidelines/technical_overview.pdf",
+      "/DOCS/guidelines/user_guidelines.pdf"
     ]
   },
   {
@@ -17,15 +31,8 @@
     "items": [
       "/DOCS/guidelines/index.html",
       "/DOCS/project-a/index.html",
-      "/DOCS/project-testowy-1/index.html"
-    ]
-  },
-  {
-    "listing": "/DOCS/guidelines/index.html",
-    "items": [
-      "/DOCS/guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html",
-      "/DOCS/guidelines/technical_overview.pdf",
-      "/DOCS/guidelines/user_guidelines.pdf"
+      "/DOCS/project-testowy-1/index.html",
+      "/DOCS/test-project-win/index.html"
     ]
   }
 ]
