@@ -1,5 +1,9 @@
 ---
-title: Jakis nowy dokument Update 14:00
+title: "Jakis nowy dokument Update 14:00"
+subtitle: "Copernicus Land Monitoring Service"
+date: "2021"
+version: 1.1
+category: coastal
 ---
 
 # Jakis nowy dokument

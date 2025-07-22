@@ -4,6 +4,8 @@ format: pdf
 keywords: ["test git", "git commands", "editor commit", "repository make", "publish
     pull", "feature branch", "branch github", "create edit", "publishing main", "ensuring
     documents"]
+category: guidelines    
+
 ---
 
 ---

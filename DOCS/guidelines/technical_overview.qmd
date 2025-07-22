@@ -4,6 +4,8 @@ format: pdf
 keywords: ["tagging versioning", "versioning automatic", "versioning makes", "branches
     workflow", "qmd documents", "documents project", "manage quarto", "test branch",
   "main publishing", "details github"]
+category: guidelines    
+
 ---
 
 ## Overview
