@@ -3,7 +3,6 @@ import json
 import yaml
 import re
 from pathlib import Path
-from datetime import datetime
 
 DOCS_DIR = "origin_DOCS"
 CATEGORIZED_DOCS_DIR = "_site/DOCS"

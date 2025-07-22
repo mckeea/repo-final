@@ -1,8 +1,16 @@
 #!/bin/bash
 set -e
 
-# echo "🏷 Generating keywords..."
-# python scripts/render/generate_keywords.py
+echo "🐍 Setting up Python environment..."
+apt-get update -qq
+apt-get install -y python3 python3-venv python3-pip > /dev/null
+
+echo "📦 Creating and activating virtual environment..."
+python3 -m venv venv
+source venv/bin/activate
+
+echo "⬆️ Upgrading pip and installing dependencies..."
+pip install --upgrade pip pyyaml
 
 echo "🧹 Cleaning up cached _site directory..."
 rm -rf _site
