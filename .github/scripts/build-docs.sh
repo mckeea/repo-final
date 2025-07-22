@@ -19,10 +19,10 @@ echo "🔄 Copying DOCS to origin_DOCS..."
 mv DOCS origin_DOCS
 
 echo "🔄 Updating URL mappings..."
-python ./update_url_mappings.py
+python .github/scripts/update_url_mappings.py
 
 echo "🔄 Grouping documents by category..."
-python ./group_docs_by_category.py
+python .github/scripts/group_docs_by_category.py
 
 echo "🖼 Render all documents into to HTML/DOCX"
 sudo cp /usr/bin/chromium /usr/bin/chromium-browser
