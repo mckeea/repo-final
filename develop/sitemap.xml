@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/test-project-win/index.html</loc>
-    <lastmod>2025-06-16T08:11:06.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/project-a/index.html</loc>
-    <lastmod>2025-06-16T08:11:06.908Z</lastmod>
-  </url>
-  <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/guidelines/index.html</loc>
-    <lastmod>2025-06-16T08:11:06.908Z</lastmod>
-  </url>
-  <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/project-testowy-1/index.html</loc>
-    <lastmod>2025-06-16T08:11:06.909Z</lastmod>
+    <loc>https://eea.github.io/CLMS_documents/DOCS/architectures/index.html</loc>
+    <lastmod>2025-07-22T14:52:45.479Z</lastmod>
   </url>
   <url>
     <loc>https://eea.github.io/CLMS_documents/DOCS/index.html</loc>
-    <lastmod>2025-06-16T08:11:06.909Z</lastmod>
+    <lastmod>2025-07-22T14:52:45.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eea.github.io/CLMS_documents/DOCS/tutorials/index.html</loc>
+    <lastmod>2025-07-22T14:52:45.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eea.github.io/CLMS_documents/DOCS/coastal/index.html</loc>
+    <lastmod>2025-07-22T14:52:45.480Z</lastmod>
+  </url>
+  <url>
+    <loc>https://eea.github.io/CLMS_documents/DOCS/guidelines/index.html</loc>
+    <lastmod>2025-07-22T14:52:45.480Z</lastmod>
   </url>
 </urlset>
