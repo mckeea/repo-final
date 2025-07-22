@@ -128,7 +128,7 @@ run_git "fetching develop branch" fetch origin develop
 
 get_changed_files
 check_files_within_project || exit 1
-python .github/scripts/validate_qmd_files.py -s "$TEMP_WORKSPACE"/DOCS/ || exit 1
+python3 .github/scripts/validate_qmd_files.py -s "$TEMP_WORKSPACE"/DOCS/ || exit 1
 
 prepare_merge_environment
 cleanup_extracted_files
