@@ -64,4 +64,9 @@ timeout 10m .github/scripts/convert_docx_to_pdf.sh
 echo "🧹 Cleaning up..."
 find _site -type f -name '*.docx' -delete
 
+cp ../../404.html _site/404.html
+cp ../../redirect_map.json _site/redirect_map.json
+cp ../../url_mapping.json _site/url_mapping.json
+
+
 echo "✅ Docs built successfully"

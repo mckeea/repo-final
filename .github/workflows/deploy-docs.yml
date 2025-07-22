@@ -28,6 +28,20 @@ jobs:
       - name: Build Docs
         run: .github/scripts/build-docs.sh
 
+      - name: Commit updated redirect and url mappings
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          git add redirect_map.json url_mapping.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update redirect and URL mappings [skip ci]"
+            git push origin HEAD
+          fi
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
