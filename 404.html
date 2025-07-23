@@ -59,7 +59,7 @@
             document.getElementById("redirect-status").innerHTML =
               "<p>Found redirect! Redirecting to new location...</p>";
             setTimeout(() => {
-              window.location.replace(basePath + redirectMap[pathKey]);
+              window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
             }, 2000);
           } else {
             document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
