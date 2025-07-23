@@ -74,7 +74,7 @@
           const pathKey = normalizePathForLookup(currentPath);
 
           document.getElementById("redirect-status").innerHTML =
-              "<p>Found redirect! Redirecting to new location...</p> basePath:" + basePath + "DOCS/" + " pathKey: " + pathKey+ " redirect: " + redirectMap[pathKey];
+              "<p>Found redirect! Redirecting to new location...</p> basePath:" + basePath + "DOCS/" + " pathKey: " + pathKey+ " redirect: (" + basePath + "DOCS/" + redirectMap[pathKey] + ")";
           
 
           if (redirectMap[pathKey]) {
