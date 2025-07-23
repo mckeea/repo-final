@@ -3,6 +3,7 @@ title: "Coastal Zones Monitoring - Nomenclature Guidelines"
 subtitle: "Copernicus Land Monitoring Service"
 date: "2021"
 version: 1.1
-category: tutorials
+category: architectures
 ---
 # Calkiem nowy doc1 18:35 111111
+

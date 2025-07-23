@@ -3,6 +3,6 @@ title: "To jest nowy dokument 2 ABC (Update)"
 subtitle: "Copernicus Land Monitoring Service"
 date: "2021"
 version: 1.1
-category: tutorials
+category: architectures
 ---
 # To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE
