@@ -1,8 +1,8 @@
 {
   "project-testowy-1/jakis_nowy_dokument.qmd": "coastal/jakis_nowy_dokument.html",
   "project-testowy-1/jakis_nowy_dokument.qmd:pdf": "coastal/jakis_nowy_dokument.pdf",
-  "project-a/sample-doc2.qmd": "architectures/sample-doc2.html",
-  "project-a/sample-doc2.qmd:pdf": "architectures/sample-doc2.pdf",
+  "project-a/sample-doc2.qmd": "guidelines/sample-doc2.html",
+  "project-a/sample-doc2.qmd:pdf": "guidelines/sample-doc2.pdf",
   "project-a/sample-doc1.qmd": "architectures/sample-doc1.html",
   "project-a/sample-doc1.qmd:pdf": "architectures/sample-doc1.pdf",
   "guidelines/technical_overview.qmd": "guidelines/technical_overview.html",
@@ -11,8 +11,10 @@
   "guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.qmd:pdf": "architectures/IT_Architecture_Principles_and_Implementation_Guidelines.pdf",
   "guidelines/user_guidelines.qmd": "guidelines/user_guidelines.html",
   "guidelines/user_guidelines.qmd:pdf": "guidelines/user_guidelines.pdf",
-  "redirect:tutorials/sample-doc2.html": "architectures/sample-doc2.html",
-  "redirect:tutorials/sample-doc2.pdf": "architectures/sample-doc2.pdf",
+  "redirect:tutorials/sample-doc2.html": "guidelines/sample-doc2.html",
+  "redirect:tutorials/sample-doc2.pdf": "guidelines/sample-doc2.pdf",
   "redirect:tutorials/sample-doc1.html": "architectures/sample-doc1.html",
-  "redirect:tutorials/sample-doc1.pdf": "architectures/sample-doc1.pdf"
+  "redirect:tutorials/sample-doc1.pdf": "architectures/sample-doc1.pdf",
+  "redirect:architectures/sample-doc2.html": "guidelines/sample-doc2.html",
+  "redirect:architectures/sample-doc2.pdf": "guidelines/sample-doc2.pdf"
 }
