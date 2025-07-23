@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+  </head>
+  <body>
+    <div class="error-message">
+      <h1>404 - Page Not Found</h1>
+      <p>The page you're looking for might have moved to a new category.</p>
+      <p>Checking for redirects...</p>
+      <div id="redirect-status"></div>
+      <p><a href="/repo-final/develop/">Return to Home</a></p>
+    </div>
+
+    <script>
+      function getRedirectMapPath() {
+        const currentPath = window.location.pathname;
+
+        if (currentPath.startsWith("/repo-final/develop/")) {
+          return "/repo-final/develop/redirect_map.json";
+        } else if (currentPath.startsWith("/repo-final/test/")) {
+          return "/repo-final/test/redirect_map.json";
+        } else if (currentPath.startsWith("/repo-final/main/")) {
+          return "/repo-final/main/redirect_map.json";
+        } else {
+          // Default fallback
+          return "/repo-final/redirect_map.json";
+        }
+      }
+
+      function getBasePath() {
+        const currentPath = window.location.pathname;
+
+        if (currentPath.startsWith("/repo-final/develop/")) {
+          return "/repo-final/develop/";
+        } else if (currentPath.startsWith("/repo-final/test/")) {
+          return "/repo-final/test/";
+        } else if (currentPath.startsWith("/repo-final/main/")) {
+          return "/repo-final/main/";
+        } else {
+          return "/repo-final/";
+        }
+      }
+
+      // Get environment-specific paths
+      const redirectMapPath = getRedirectMapPath();
+      const basePath = getBasePath();
+
+      // Try to find redirect for current URL
+      fetch(redirectMapPath)
+        .then((response) => response.json())
+        .then((redirectMap) => {
+          const currentPath = window.location.pathname.replace(basePath, "");
+          const pathKey = currentPath.endsWith(".html") ? currentPath : currentPath + ".html";
+
+          if (redirectMap[pathKey]) {
+            document.getElementById("redirect-status").innerHTML =
+              "<p>Found redirect! Redirecting to new location...</p>";
+            setTimeout(() => {
+              window.location.replace(basePath + redirectMap[pathKey]);
+            }, 2000);
+          } else {
+            document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
+          }
+        })
+        .catch((error) => {
+          document.getElementById("redirect-status").innerHTML = "<p>Could not check for redirects.</p>";
+        });
+    </script>
+  </body>
+</html>
