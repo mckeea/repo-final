@@ -119,11 +119,11 @@
     "text": "6 How to Revert to a Previous Version\nIf you need to go back to an earlier version:\n\nGo to your repository on GitHub and click on Tags.\nFind the version (tag) you want to revert to.\nTo revert locally using command line:\n\ngit checkout tags/v1.0\nReplace v1.0 with your desired version.\n\nIf you want to make the reverted version the new main version again, create a new feature branch from this tag and follow the usual pull request workflow described above."
   },
   {
-    "objectID": "DOCS/coastal/jakis_nowy_dokument.html",
-    "href": "DOCS/coastal/jakis_nowy_dokument.html",
-    "title": "Jakis nowy dokument Update 14:00",
+    "objectID": "DOCS/guidelines/sample-doc2.html",
+    "href": "DOCS/guidelines/sample-doc2.html",
+    "title": "To jest nowy dokument 2 ABC (Update)",
     "section": "",
-    "text": "1 Jakis nowy dokument\nNowa tresc publish 333344444\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
+    "text": "1 To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
   },
   {
     "objectID": "DOCS/architectures/sample-doc1.html",
@@ -203,11 +203,11 @@
     "text": "Footnotes\n\n\nhttps://commission.europa.eu/content/european-union-public-licence_en↩︎"
   },
   {
-    "objectID": "DOCS/architectures/sample-doc2.html",
-    "href": "DOCS/architectures/sample-doc2.html",
-    "title": "To jest nowy dokument 2 ABC (Update)",
+    "objectID": "DOCS/coastal/jakis_nowy_dokument.html",
+    "href": "DOCS/coastal/jakis_nowy_dokument.html",
+    "title": "Jakis nowy dokument Update 14:00",
     "section": "",
-    "text": "1 To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
+    "text": "1 Jakis nowy dokument\nNowa tresc publish 333344444\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html",
@@ -368,7 +368,7 @@
     "href": "DOCS/architectures/index.html",
     "title": "Architectures",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nCoastal Zones Monitoring - Nomenclature Guidelines\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nCoastal Zones Monitoring - Nomenclature Guidelines\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/index.html",
@@ -389,6 +389,6 @@
     "href": "DOCS/guidelines/index.html",
     "title": "Guidelines",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nTechnical Implementation Overview: Quarto Docs Workflow with GitHub Actions\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nUser Guide: Working with Documents and Publishing to GitHub Pages\n\n\n\n\n\n\nNo matching items\n Back to top"
   }
 ]

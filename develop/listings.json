@@ -3,8 +3,7 @@
     "listing": "/DOCS/architectures/index.html",
     "items": [
       "/DOCS/architectures/sample-doc1.html",
-      "/DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html",
-      "/DOCS/architectures/sample-doc2.html"
+      "/DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html"
     ]
   },
   {
@@ -25,6 +24,7 @@
     "listing": "/DOCS/guidelines/index.html",
     "items": [
       "/DOCS/guidelines/technical_overview.pdf",
+      "/DOCS/guidelines/sample-doc2.html",
       "/DOCS/guidelines/user_guidelines.pdf"
     ]
   }
