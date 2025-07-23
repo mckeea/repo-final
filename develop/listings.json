@@ -2,7 +2,9 @@
   {
     "listing": "/DOCS/architectures/index.html",
     "items": [
-      "/DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html"
+      "/DOCS/architectures/sample-doc1.html",
+      "/DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html",
+      "/DOCS/architectures/sample-doc2.html"
     ]
   },
   {
@@ -10,15 +12,7 @@
     "items": [
       "/DOCS/architectures/index.html",
       "/DOCS/coastal/index.html",
-      "/DOCS/guidelines/index.html",
-      "/DOCS/tutorials/index.html"
-    ]
-  },
-  {
-    "listing": "/DOCS/tutorials/index.html",
-    "items": [
-      "/DOCS/tutorials/sample-doc1.html",
-      "/DOCS/tutorials/sample-doc2.html"
+      "/DOCS/guidelines/index.html"
     ]
   },
   {

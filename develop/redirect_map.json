@@ -1,1 +1,6 @@
-{}
+{
+  "tutorials/sample-doc2.html": "architectures/sample-doc2.html",
+  "tutorials/sample-doc2.pdf": "architectures/sample-doc2.pdf",
+  "tutorials/sample-doc1.html": "architectures/sample-doc1.html",
+  "tutorials/sample-doc1.pdf": "architectures/sample-doc1.pdf"
+}

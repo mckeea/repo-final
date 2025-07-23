@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "DOCS/tutorials/sample-doc2.html",
-    "href": "DOCS/tutorials/sample-doc2.html",
-    "title": "To jest nowy dokument 2 ABC (Update)",
-    "section": "",
-    "text": "1 To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
-  },
-  {
     "objectID": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
     "href": "DOCS/templates/CLMS_PUM_Template.html#document-control-information-internal-project-use",
     "title": "Product SHORT NAME Product User Manual (PUM)",
@@ -133,6 +126,13 @@
     "text": "1 Jakis nowy dokument\nNowa tresc publish 333344444\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
   },
   {
+    "objectID": "DOCS/architectures/sample-doc1.html",
+    "href": "DOCS/architectures/sample-doc1.html",
+    "title": "Coastal Zones Monitoring - Nomenclature Guidelines",
+    "section": "",
+    "text": "1 Calkiem nowy doc1 18:35 111111\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
+  },
+  {
     "objectID": "DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html",
     "href": "DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html",
     "title": "IT Architecture Principles and Implementation Guidelines",
@@ -201,6 +201,13 @@
     "title": "IT Architecture Principles and Implementation Guidelines",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nhttps://commission.europa.eu/content/european-union-public-licence_en↩︎"
+  },
+  {
+    "objectID": "DOCS/architectures/sample-doc2.html",
+    "href": "DOCS/architectures/sample-doc2.html",
+    "title": "To jest nowy dokument 2 ABC (Update)",
+    "section": "",
+    "text": "1 To jest nowy dokument 2 ABC (Update) JAKIS UDPATE Z RELEASE\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
   },
   {
     "objectID": "DOCS/guidelines/technical_overview.html",
@@ -357,32 +364,18 @@
     "text": "0.12 Product technical support (mandatory subchapter)\n\nPresents information on the support available for users of the product, including contact details.\nHere an example of a standard text.\n\n\nProduct technical support is provided by the product custodian through Copernicus Land Monitoring Service – Service desk. Product technical support does not include software specific user support or general GIS or remote sensing support.\nMore information on the products can be found on the Copernicus Land Monitoring Service website (https://land.copernicus.eu/)\n\n # List of abbreviations & acronyms (mandatory chapter)\n\nLists abbreviations and acronyms used throughout the document.\n\n\n\n\n\n\n\n\n\nAbbreviation\nName\nReference\n\n\n\n\nATBD\nAlgorithm Theoretical Basis Document\n\n\n\nDOI\nDigital Object Identifier\n\n\n\nEEA\nEuropean Environment Agency\nwww.eea.europa.eu\n\n\nPUM\nProduct User Manual\n\n\n\n\n # References (mandatory chapter)\n\nLists references cited throughout the document.\n\n # Annexes (optional chapter)\n\nAnnexes should be kept to a minimum but can be placed as needed to present technical details, data and information repository, resources on product development."
   },
   {
-    "objectID": "DOCS/tutorials/sample-doc1.html",
-    "href": "DOCS/tutorials/sample-doc1.html",
-    "title": "Coastal Zones Monitoring - Nomenclature Guidelines",
-    "section": "",
-    "text": "1 Calkiem nowy doc1 18:35 111111\n\n\n\n\n Back to topReuseEUPL (&gt;= 1.2)"
-  },
-  {
     "objectID": "DOCS/architectures/index.html",
     "href": "DOCS/architectures/index.html",
     "title": "Architectures",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nCoastal Zones Monitoring - Nomenclature Guidelines\n\n\n\n\n\n\nIT Architecture Principles and Implementation Guidelines\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/index.html",
     "href": "DOCS/index.html",
     "title": "Documentation",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nArchitectures\n\n\n\n\n\n\nCoastal\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nTutorials\n\n\n\n\n\n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "DOCS/tutorials/index.html",
-    "href": "DOCS/tutorials/index.html",
-    "title": "Tutorials",
-    "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nCoastal Zones Monitoring - Nomenclature Guidelines\n\n\n\n\n\n\nTo jest nowy dokument 2 ABC (Update)\n\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nArchitectures\n\n\n\n\n\n\nCoastal\n\n\n\n\n\n\nGuidelines\n\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "DOCS/coastal/index.html",
