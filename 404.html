@@ -57,10 +57,10 @@
 
           if (redirectMap[pathKey]) {
             document.getElementById("redirect-status").innerHTML =
-              "<p>Found redirect! Redirecting to new location...</p>";
-            setTimeout(() => {
-              window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
-            }, 2000);
+              "<p>Found redirect! Redirecting to new location...</p>" + basePath + "DOCS/" + redirectMap[pathKey];
+            // setTimeout(() => {
+            //   window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
+            // }, 2000);
           } else {
             document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
           }
