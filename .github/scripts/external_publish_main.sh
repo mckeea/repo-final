@@ -36,7 +36,7 @@ prepare_merge_environment() {
     echo "🔀 Preparing secure diff-aware merge into develop..."
     git checkout develop
     git pull origin develop
-    mkdir -p"$TEMP_WORKSPACE"
+    mkdir -p "$TEMP_WORKSPACE"
     git archive "$PUBLISH_COMMIT" DOCS/"$PROJECT_NAME" | tar -x -C $TEMP_WORKSPACE
 }
 
