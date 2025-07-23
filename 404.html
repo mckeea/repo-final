@@ -74,19 +74,19 @@
           const pathKey = normalizePathForLookup(currentPath);
 
           document.getElementById("redirect-status").innerHTML =
-              "<p>Found redirect! Redirecting to new location...</p> basePath:" + basePath + "DOCS/" + " pathKey: " + pathKey+ " redirect: (" + basePath + "DOCS/" + redirectMap[pathKey] + ")";
+              "<p>Found redirect! Redirecting to new location...</p>";
           
 
           if (redirectMap[pathKey]) {
-            // document.getElementById("redirect-status").innerHTML =
-            //   "<p>Found redirect! Redirecting to new location...</p>" + basePath + "DOCS/" + redirectMap[pathKey];
-            // setTimeout(() => {
-            //   window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
-            // }, 20000);
+            document.getElementById("redirect-status").innerHTML =
+              "<p>Found redirect! Redirecting to new location... (" + basePath + "DOCS/" + redirectMap[pathKey] + ")";
+            setTimeout(() => {
+              window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
+            }, 2000);
           } 
-          // else {
-            // document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
-          // }
+          else {
+            document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
+          }
         })
         .catch((error) => {
           document.getElementById("redirect-status").innerHTML = "<p>Could not check for redirects.</p>";
