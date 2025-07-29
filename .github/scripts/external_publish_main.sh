@@ -123,13 +123,17 @@ commit_and_push_changes() {
 
 ########## Main logic ##########
 
+# 1. Get changed files in the publish branch
 echo "🔎 Checking files inside publish branch (fast tree scan)..."
 run_git "fetching develop branch" fetch origin develop
 
 get_changed_files
+
+# 2. Validate that the changes are correctly scoped to the project and are correct
 check_files_within_project || exit 1
 python .github/scripts/validate_qmd_files.py || exit 1
 
+# 3. Merge the changes into develop
 prepare_merge_environment
 cleanup_extracted_files
 find_file_changes

@@ -11,39 +11,83 @@
       <p>The page you're looking for might have moved to a new category.</p>
       <p>Checking for redirects...</p>
       <div id="redirect-status"></div>
-      <p><a href="/repo-final/develop/">Return to Home</a></p>
+      <p><a href="#" id="home-link">Return to Home</a></p>
     </div>
 
     <script>
+      function getRedirectMapPath() {
+        const currentPath = window.location.pathname;
+
+        if (currentPath.startsWith("/repo-final/develop/")) {
+          return "/repo-final/develop/redirect_map.json";
+        } else if (currentPath.startsWith("/repo-final/test/")) {
+          return "/repo-final/test/redirect_map.json";
+        } else if (currentPath.startsWith("/repo-final/main/")) {
+          return "/repo-final/main/redirect_map.json";
+        } else {
+          // Default fallback
+          return "/repo-final/main/redirect_map.json";
+        }
+      }
+
+      function getBasePath() {
+        const currentPath = window.location.pathname;
+
+        if (currentPath.startsWith("/repo-final/develop/")) {
+          return "/repo-final/develop/";
+        } else if (currentPath.startsWith("/repo-final/test/")) {
+          return "/repo-final/test/";
+        } else if (currentPath.startsWith("/repo-final/main/")) {
+          return "/repo-final/main/";
+        } else {
+          return "/repo-final/main/"; // Default fallback
+        }
+      }
+
+      function normalizePathForLookup(path) {
+        // Remove DOCS/ prefix if present
+        const cleanPath = path.replace(/^DOCS\//, "");
+
+        // Handle different file types
+        if (cleanPath.endsWith(".html")) {
+          return cleanPath;
+        } else if (cleanPath.endsWith(".pdf")) {
+          return cleanPath;
+        } else {
+          // Unknown extension or no extension - try adding .html
+          return cleanPath + ".html";
+        }
+      }
+
+      // Get environment-specific paths
+      const redirectMapPath = getRedirectMapPath();
+      const basePath = getBasePath();
+
+      // Set the home link dynamically
+      document.getElementById("home-link").href = basePath;
+
       // Try to find redirect for current URL
-      fetch("/repo-final/develop/redirect_map.json")
+      fetch(redirectMapPath)
         .then((response) => response.json())
         .then((redirectMap) => {
-          {
-            const currentPath = window.location.pathname.replace(/^\//, "");
-            const pathWithoutExtension = currentPath.replace(/\.html$/, "") + ".html";
+          const currentPath = window.location.pathname.replace(basePath, "");
+          const pathKey = normalizePathForLookup(currentPath);
 
-            if (redirectMap[pathWithoutExtension]) {
-              {
-                document.getElementById("redirect-status").innerHTML =
-                  "<p>Found redirect! Redirecting to new location...</p>";
-                setTimeout(() => {
-                  {
-                    window.location.replace("/" + redirectMap[pathWithoutExtension]);
-                  }
-                }, 2000);
-              }
-            } else {
-              {
-                document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
-              }
-            }
+          document.getElementById("redirect-status").innerHTML =
+            "<p>Found redirect! Redirecting to new location...</p>";
+
+          if (redirectMap[pathKey]) {
+            document.getElementById("redirect-status").innerHTML =
+              "<p>Found redirect! Redirecting to new location... (" + basePath + "DOCS/" + redirectMap[pathKey] + ")";
+            setTimeout(() => {
+              window.location.replace(basePath + "DOCS/" + redirectMap[pathKey]);
+            }, 2000);
+          } else {
+            document.getElementById("redirect-status").innerHTML = "<p>No redirect found for this URL.</p>";
           }
         })
         .catch((error) => {
-          {
-            document.getElementById("redirect-status").innerHTML = "<p>Could not check for redirects.</p>";
-          }
+          document.getElementById("redirect-status").innerHTML = "<p>Could not check for redirects.</p>";
         });
     </script>
   </body>
