@@ -7,12 +7,36 @@ import yaml
 
 EXCLUDED_DOCS_DIRS = {"templates", "theme", "includes"}
 
+# Quarto configuration files to copy
+QUARTO_CONFIG_FILES = ["_quarto.yml", "_quarto-index.yml"]
+
+# Category to directory mapping
+# Multiple categories can map to the same directory
+CATEGORY_TO_DIRECTORY_MAP = {
+    # Architecture and Guidelines - Technical documentation and standards
+    "architectures": "architecture-guidelines",
+    "guidelines": "architecture-guidelines",
+    
+    # Thematic areas - Specific subject matter
+    "coastal": "thematic-areas",
+    
+}
 
 # Change working directory to root of the repository
 script_dir = Path(__file__).parent
 root_dir = script_dir / "../../"
 os.chdir(root_dir.resolve())
 
+def get_directory_for_category(category):
+    if not category:
+        return "uncategorized"
+    
+    # Check if category is in the mapping
+    if category in CATEGORY_TO_DIRECTORY_MAP:
+        return CATEGORY_TO_DIRECTORY_MAP[category]
+    
+    # If not mapped, use the category name as directory name
+    return category
 
 def extract_category_from_qmd(file_path):
     try:
@@ -26,9 +50,9 @@ def extract_category_from_qmd(file_path):
         if yaml_match:
             yaml_content = yaml_match.group(1)
 
-            # Extract category field (handles quoted and unquoted values)
+            # Look for category field in YAML frontmatter only (single line)
             category_match = re.search(
-                r'^category:\s*["\']?([^"\']+)["\']?', yaml_content, re.MULTILINE
+                r'^category:\s*["\']?([^"\'\n\r]+)["\']?\s*$', yaml_content, re.MULTILINE
             )
             if category_match:
                 return category_match.group(1).strip()
@@ -65,26 +89,25 @@ def group_qmd_files_by_category(source_dir="origin_DOCS", target_dir="DOCS"):
     # Group files by category
     for qmd_file in qmd_files:
         category = extract_category_from_qmd(qmd_file)
+        
+        # Get the target directory name using the mapping
+        target_directory = get_directory_for_category(category)
+        
+        # Create target directory folder
+        target_folder = target_path / target_directory
+        target_folder.mkdir(exist_ok=True)
+
+        # Copy file to target directory
+        target_file = target_folder / qmd_file.name
+        shutil.copy2(qmd_file, target_file)
 
         if category:
-            # Create category folder
-            category_folder = target_path / category
-            category_folder.mkdir(exist_ok=True)
-
-            # Copy file to category folder
-            target_file = category_folder / qmd_file.name
-            shutil.copy2(qmd_file, target_file)
-
-            print(f"\tCopied {qmd_file.name} → {category}/")
+            if category in CATEGORY_TO_DIRECTORY_MAP:
+                print(f"\tCopied {qmd_file.name} → {target_directory}/ (category: {category})")
+            else:
+                print(f"\tCopied {qmd_file.name} → {target_directory}/")
         else:
-            # Handle files without category
-            uncategorized_folder = target_path / "uncategorized"
-            uncategorized_folder.mkdir(exist_ok=True)
-
-            target_file = uncategorized_folder / qmd_file.name
-            shutil.copy2(qmd_file, target_file)
-
-            print(f"\tCopied {qmd_file.name} → uncategorized/ (no category found)")
+            print(f"\tCopied {qmd_file.name} → {target_directory}/ (no category found)")
 
 
 def copy_excluded_dirs(source_dir="origin_DOCS", target_dir="DOCS"):
@@ -97,6 +120,24 @@ def copy_excluded_dirs(source_dir="origin_DOCS", target_dir="DOCS"):
             if dst.exists():
                 shutil.rmtree(dst)
             shutil.copytree(src, dst)
+
+
+def copy_quarto_config_files(source_dir="origin_DOCS", target_dir="DOCS"):
+    source_path = Path(source_dir)
+    target_path = Path(target_dir)
+    
+    # Ensure target directory exists
+    target_path.mkdir(exist_ok=True)
+    
+    for quarto_file in QUARTO_CONFIG_FILES:
+        src_file = source_path / quarto_file
+        dst_file = target_path / quarto_file
+        
+        if src_file.exists() and src_file.is_file():
+            shutil.copy2(src_file, dst_file)
+            print(f"Copied {quarto_file} to DOCS folder")
+        else:
+            print(f"Warning: {quarto_file} not found in {source_dir}")
 
 
 def update_bibliography_paths_before_regroup(
@@ -135,7 +176,6 @@ def update_bibliography_paths_before_regroup(
         original_bib = bib_files[0]
         new_bib_name = f"{project_name}.bib"
         new_bib_path = bib_dir_path / new_bib_name
-
         new_bib_reference = f"../../{bibliography_dir}/{new_bib_name}"
 
         # Find all .qmd files in this project directory
@@ -216,4 +256,6 @@ if __name__ == "__main__":
     group_qmd_files_by_category()
 
     copy_excluded_dirs()
-    print("\nGrouping complete! Check the 'grouped_qmd' folder.")
+    copy_quarto_config_files()
+    
+    print("\nGrouping complete! Check the 'DOCS' folder.")

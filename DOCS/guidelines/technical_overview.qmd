@@ -1,7 +1,6 @@
 ---
 bibliography: ../../bibliography/guidelines.bib
 category: guidelines
-format: pdf
 keywords:
 - tagging versioning
 - versioning automatic

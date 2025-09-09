@@ -1,8 +1,8 @@
 import { readdir, writeFile, access } from "fs/promises";
 import { join, basename } from "path";
 
-const DOCS_DIR = "DOCS";
-const IGNORED_FOLDERS = new Set(["theme", "templates", "includes"]);
+const DOCS_DIR = "../DOCS";
+const IGNORED_FOLDERS = new Set(["theme", "templates", "includes", "assets", "_site", ".quarto"]);
 
 function formatTitle(name) {
   return name.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -19,7 +19,7 @@ listing:
   type: table
   contents: .
   sort: title
-  fields: [title]
+  fields: [title, category, version, date]
 ---
 `;
 
@@ -59,6 +59,7 @@ async function main() {
       await generateSubdirIndex(subdir);
     }
   }
+
 
   await generateDocsRootIndex(subfolders);
 }

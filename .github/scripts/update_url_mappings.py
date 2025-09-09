@@ -5,10 +5,11 @@ import re
 from pathlib import Path
 
 DOCS_DIR = "origin_DOCS"
-CATEGORIZED_DOCS_DIR = "_site/DOCS"
-EXCLUDED_DOCS_DIRS = {"templates", "theme", "includes"}
+CATEGORIZED_DOCS_DIR = "DOCS/_site"
+EXCLUDED_DOCS_DIRS = {"templates", "theme", "includes", "_site", ".quarto", "assets"}
 
-DOMAIN = "https://FINAL_DOMAIN_TO_SET"
+
+DOMAIN = "https://library.land.copernicus.eu"
 
 # GitHub Pages redirect template
 REDIRECT_TEMPLATE = """<!DOCTYPE html>

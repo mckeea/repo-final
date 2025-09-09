@@ -1,6 +1,5 @@
 ---
 title: "User Guide: Working with Documents and Publishing to GitHub Pages"
-format: pdf
 keywords: ["test git", "git commands", "editor commit", "repository make", "publish
     pull", "feature branch", "branch github", "create edit", "publishing main", "ensuring
     documents"]
