@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/architectures/index.html</loc>
-    <lastmod>2025-07-23T09:03:34.851Z</lastmod>
+    <loc>https://library.land.copernicus.eu/thematic-areas/jakis_nowy_dokument.html</loc>
+    <lastmod>2025-09-09T09:04:42.611Z</lastmod>
   </url>
   <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/index.html</loc>
-    <lastmod>2025-07-23T09:03:34.852Z</lastmod>
+    <loc>https://library.land.copernicus.eu/architecture-guidelines/technical_overview.html</loc>
+    <lastmod>2025-09-09T09:04:53.582Z</lastmod>
   </url>
   <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/coastal/index.html</loc>
-    <lastmod>2025-07-23T09:03:34.852Z</lastmod>
+    <loc>https://library.land.copernicus.eu/architecture-guidelines/sample-doc1.html</loc>
+    <lastmod>2025-09-09T09:04:53.580Z</lastmod>
   </url>
   <url>
-    <loc>https://eea.github.io/CLMS_documents/DOCS/guidelines/index.html</loc>
-    <lastmod>2025-07-23T09:03:34.852Z</lastmod>
+    <loc>https://library.land.copernicus.eu/architecture-guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html</loc>
+    <lastmod>2025-09-09T09:04:53.585Z</lastmod>
+  </url>
+  <url>
+    <loc>https://library.land.copernicus.eu/architecture-guidelines/sample-doc2.html</loc>
+    <lastmod>2025-09-09T09:04:42.611Z</lastmod>
+  </url>
+  <url>
+    <loc>https://library.land.copernicus.eu/architecture-guidelines/user_guidelines.html</loc>
+    <lastmod>2025-09-09T09:04:42.610Z</lastmod>
   </url>
 </urlset>

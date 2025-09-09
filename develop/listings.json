@@ -1,31 +1,25 @@
 [
   {
-    "listing": "/DOCS/architectures/index.html",
+    "listing": "/architecture-guidelines/index.html",
     "items": [
-      "/DOCS/architectures/sample-doc1.html",
-      "/DOCS/architectures/IT_Architecture_Principles_and_Implementation_Guidelines.html"
+      "/architecture-guidelines/sample-doc1.html",
+      "/architecture-guidelines/IT_Architecture_Principles_and_Implementation_Guidelines.html",
+      "/architecture-guidelines/technical_overview.html",
+      "/architecture-guidelines/sample-doc2.html",
+      "/architecture-guidelines/user_guidelines.html"
     ]
   },
   {
-    "listing": "/DOCS/index.html",
+    "listing": "/index.html",
     "items": [
-      "/DOCS/architectures/index.html",
-      "/DOCS/coastal/index.html",
-      "/DOCS/guidelines/index.html"
+      "/architecture-guidelines/index.html",
+      "/thematic-areas/index.html"
     ]
   },
   {
-    "listing": "/DOCS/coastal/index.html",
+    "listing": "/thematic-areas/index.html",
     "items": [
-      "/DOCS/coastal/jakis_nowy_dokument.html"
-    ]
-  },
-  {
-    "listing": "/DOCS/guidelines/index.html",
-    "items": [
-      "/DOCS/guidelines/technical_overview.pdf",
-      "/DOCS/guidelines/sample-doc2.html",
-      "/DOCS/guidelines/user_guidelines.pdf"
+      "/thematic-areas/jakis_nowy_dokument.html"
     ]
   }
 ]
